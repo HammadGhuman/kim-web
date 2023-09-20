@@ -2,7 +2,7 @@ import React from "react";
 
 function HowItWork() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mt-10">
       <div className="text-center">
         <span className="text-white text-[40px] font-medium leading-[72px]">
           HOW IT{" "}
@@ -11,7 +11,7 @@ function HowItWork() {
           WORKS
         </span>
       </div>{" "}
-      <div className="mt-8 flex flex-col items-center justify-center -space-y-5">
+      <div className="mt-5 flex flex-col items-center justify-center -space-y-5">
         <div className="text-gray-400 text-[22px] font-medium  leading-[72px]">
           Step #1
         </div>
