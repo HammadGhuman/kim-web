@@ -1,14 +1,11 @@
-import React from 'react'
+import React from "react";
+import VideoBackgroundMobile from "./VideoBackgroundMobile";
 function Hero() {
-
-  const videoSource = "https://www.youtube.com/watch?v=HodJLhRV7gY";
   return (
-    <div className='bg-red-400'>
-        <video autoPlay loop muted>
-          <source src={videoSource} />
-        </video>
+    <div>
+      <VideoBackgroundMobile />
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

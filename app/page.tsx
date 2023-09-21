@@ -6,6 +6,8 @@ import Brain from "@/public/Brain.svg";
 import LeaderShip from "@/components/LeaderShip";
 import HowItWork from "@/components/HowItWork";
 import MeetOurTeam from "@/components/MeetOurTeam";
+import OurPartners from "@/components/OurPartners";
+import BusinessSpecialist from "@/components/BusinessSpecialist";
 export default function Home() {
   const cards = [1, 2, 3, 4, 5, 6];
   return (
@@ -26,7 +28,8 @@ export default function Home() {
       <LeaderShip />
       <HowItWork />
       <MeetOurTeam />
-      
+      <OurPartners />
+      <BusinessSpecialist />
     </main>
   );
 }
