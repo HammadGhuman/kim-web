@@ -5,6 +5,7 @@ import Image from "next/image";
 import Brain from "@/public/Brain.svg";
 import LeaderShip from "@/components/LeaderShip";
 import HowItWork from "@/components/HowItWork";
+import MeetOurTeam from "@/components/MeetOurTeam";
 export default function Home() {
   const cards = [1, 2, 3, 4, 5, 6];
   return (
@@ -24,6 +25,8 @@ export default function Home() {
       </div>
       <LeaderShip />
       <HowItWork />
+      <MeetOurTeam />
+      
     </main>
   );
 }
