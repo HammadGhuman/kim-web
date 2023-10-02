@@ -3,5 +3,12 @@
 @tailwind utilities;
 @font-face {
   font-fmaily: "Marsden";
-  src: url("../public/FontMarsden/Marsden-Cm-Regular.otf");
+  src: url("../public/Fonts/Marsden-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-fmaily: "Marsden";
+  src: url("../public/Fonts/Marsden-SemiBold.ttf");
+  font-weight: semibold;
 }
