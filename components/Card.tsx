@@ -12,7 +12,7 @@ type Props = {
 
 function Card(props:Props) {
   return (
-    <div className="flex items-center justify-center mt-10">
+    <div className="flex items-center justify-center md:mt-0 mt-10">
       <div className="relative">
         <Image src={CardBg} alt="image" className="opacity-20" />
         <div className="absolute text-white left-20  top-6">

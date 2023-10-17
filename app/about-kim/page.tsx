@@ -76,7 +76,7 @@ function page() {
       <div className="w-[312px] h-[83px] text-center text-white text-base font-medium font-marsden leading-7 -mt-5">
         Mit dem modernen Ansatz des Mentoring on the job, gehen Unternehmen neue
         Wege der Führungskräfteentwicklung. Weg von Classroom Learning auf
-        "Vorrat" hin zu einer täglichen Begleitung der Führungskräfte bei der
+        &rdquo;Vorrat&ldquo; hin zu einer täglichen Begleitung der Führungskräfte bei der
         Bewältigung ihrer Aufgaben direkt am Arbeitsplatz.
       </div>
 
@@ -170,8 +170,8 @@ function page() {
         </div>
       </div>
 
-      <div className="mt-10 bg-blue-400 bg-opacity-20 border-2 border-white px-6 py-10 rounded-lg text-center ">
-        <div className="w-[335px] text-center">
+      <div className="mt-10 flex flex-col mx-6 max-w-[213px]  items-center justify-center bg-blue-400 bg-opacity-20 border-2 border-white px-6 py-10 rounded-lg text-center ">
+        <div className=" text-center flex flex-col items-center justify-center">
           <span className="text-white text-[32px] font-medium font-marsden leading-9">
             Unser Eigenes{" "}
           </span>
@@ -179,7 +179,7 @@ function page() {
             Sprachmodell
           </span>
         </div>
-        <div className="w-[218px] text-center ml-14 text-white text-base font-normal font-marsden leading-[31px] tracking-tight mt-5">
+        <div className="text-center  text-white text-base font-normal font-marsden leading-[31px] tracking-tight mt-5">
           Um einen bestmöglichen Schutz ihrer Daten zu garantieren, haben wir
           unser eigenes KI.m Sprachmodell entwickelt, welches ab Februar 2024
           für Sie verfügbar sein wird!

@@ -2,16 +2,16 @@ import React from "react";
 
 function Paragraph() {
   return (
-    <div className="flex flex-col items-center justify-center mt-8">
-      <div className="w-[263px] h-[1938px] text-center">
-        <span className="text-white text-[13px] font-bold">
+    <div className="flex flex-col items-center justify-center mt-8 font-Marsden md:mx-72">
+      <div className="w-[263px]  md:w-full text-center md:text-left">
+        <span className="text-white text-[13px]  md:text-[32px] font-bold">
           10 minutes of mentoring per day: The optimal way to more happiness and
           better leadership
-          <br />
-          Mentor 10 minutes per day for at least a 3 month period
+          <br className="md:hidden" />
+          {" "}Mentor 10 minutes per day for at least a 3 month period
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal">
+        <span className="text-white text-[13px] md:text-[32px] font-normal">
           <br />
           <br />
           Spotify model recommends 47-50 minutes per day for personal
@@ -39,11 +39,11 @@ function Paragraph() {
           <br />
           <br />
         </span>
-        <span className="text-white text-[13px] font-bold">
+        <span className="text-white text-[13px] md:text-[32px] font-bold">
           Happiness research: Happiness training 14 minutes a day
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal">
+        <span className="text-white text-[13px] md:text-[32px] font-normal">
           <br />
           Another recommendation comes from happiness research. Here they
           examined the question: &#34;How do you train managers for a higher
@@ -52,7 +52,7 @@ function Paragraph() {
           <br />
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal">
+        <span className="text-white text-[13px] md:text-[32px] font-normal">
           Each day, write down three new things you are grateful for;
           <br />
           Write 2 minutes a day and describe a positive experience you have had
@@ -66,14 +66,14 @@ function Paragraph() {
           member of your team
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal">
+        <span className="text-white text-[13px] md:text-[32px] font-normal">
           <br />
         </span>
-        <span className="text-white text-[13px] font-bold ">
+        <span className="text-white text-[13px] md:text-[32px] font-bold ">
           All in all, this daily happiness training takes around 14 minutes.
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal">
+        <span className="text-white text-[13px] md:text-[32px] font-normal">
           <br />
           <br />
           Mental Research: Increase social intelligence with 10 minutes of
@@ -93,13 +93,13 @@ function Paragraph() {
           <br />
           <br />
         </span>
-        <span className="text-white text-[13px] font-bold ">
+        <span className="text-white text-[13px] md:text-[32px] font-bold ">
           <br />
           Better Happiness, Better Leadership: Mentor 10 minutes a day for at
           least a 3 month period
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal ">
+        <span className="text-white text-[13px] md:text-[32px] font-normal ">
           <br />
           How can the recommendations for more happiness, more empathy, higher
           social intelligence be implemented through personal reflection,
@@ -107,27 +107,27 @@ function Paragraph() {
           <br />
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal ">
+        <span className="text-white text-[13px] md:text-[32px] font-normal ">
           Mentoring is ideal for this, as it includes the dialogue between
           mentor and mentee and works on the topics presented here.
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal ">
+        <span className="text-white text-[13px] md:text-[32px] font-normal ">
           <br />
         </span>
-        <span className="text-white text-[13px] font-bold ">
+        <span className="text-white text-[13px] md:text-[32px] font-bold ">
           How long and how often should this mentoring be carried out?
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal ">
+        <span className="text-white text-[13px] md:text-[32px] font-normal ">
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal ">
+        <span className="text-white text-[13px] md:text-[32px] font-normal ">
           The studies show that significant effects can be achieved with a daily
           10-minute use of these instruments over a period of at least 3 months.
           <br />
         </span>
-        <span className="text-white text-[13px] font-normal ">
+        <span className="text-white text-[13px] md:text-[32px] font-normal ">
           <br />
           <br />
           <br />

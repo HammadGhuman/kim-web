@@ -5,13 +5,13 @@ import Blog1 from "@/public/Blog1.png";
 import ReadMoreBlog from "@/public/ReadMoreBlog.svg";
 function BlogCard() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col md:flex-row md:mt-20 scale-125">
       <Image src={Blog1} alt={"Blog 1"} />
-      <div className="flex flex-col w-[265px] px-4 bg-[#264B78]">
+      <div className="flex flex-col w-[265px] md:w-[479px] px-4 md:px-8 bg-[#214777]">
         <div className="w-[65px] text-center text-white text-[10px] font-normal pt-5 capitalize leading-[22.82px] tracking-wide">
           1 Comment
         </div>
-        <div className="w-[209px] text-white text-base font-bold ">
+        <div className="w-[209px] md:w-[479px] text-white text-base font-bold ">
           Tomorrow&apos;s leadership development today
         </div>
         <div className="w-[194px] text-white text-[8px] pt-4 font-normal">

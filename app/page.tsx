@@ -16,7 +16,7 @@ export default function Home() {
     <main>
       <Hero />
       <AiDoesItBetter />
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col md:flex-row  mx-10 flex-wrap max-w-9xl md:gap-10 mt-10 md:space-y-0 items-center justify-center">
         {cards.map((item) => (
           <Card
             key={item}

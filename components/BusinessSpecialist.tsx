@@ -11,7 +11,7 @@ function BusinessSpecialist() {
           BUSINESS SPECIALIST
         </span>
       </div>
-      <div className="flex space-y-10 mt-20 flex-col items-center justify-center">
+      <div className="flex space-y-10 mt-40 mb-10 flex-col md:flex-row md:space-y-0 md:justify-around md:w-full  items-center justify-center">
         <ReviewCard />
         <ReviewCard />
         <ReviewCard />

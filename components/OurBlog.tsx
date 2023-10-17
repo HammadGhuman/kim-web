@@ -13,12 +13,12 @@ function OurBlog() {
           BLOGS
         </span>
       </div>
-     <div className="mt-10">
-     <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-     </div>
-<ReadMoreButton />
+      <div className="mt-10">
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+      </div>
+      <ReadMoreButton />
     </div>
   );
 }

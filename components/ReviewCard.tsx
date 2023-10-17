@@ -5,7 +5,7 @@ import CardBg from "@/public/Vector.png";
 import Reviewer from "@/public/ReviewPerson1.png";
 function ReviewCard() {
   return (
-    <div className="relative">
+    <div className="relative md:scale-125">
       <div className="">
         <Image className="w-80 h-32" src={CardBg} alt="reviewBg" />
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import TeamCard from "./TeamCard";
 
 function MeetOurTeam() {
-  const teamMembers = [1, 2, 3, 4];
+  const teamMembers = [1, 2, 3];
   return (
     <div>
       <div className="text-center">
@@ -13,9 +13,18 @@ function MeetOurTeam() {
           TEAM
         </span>
       </div>
-      {teamMembers.map((item) => (
-        <TeamCard key={item} />
-      ))}
+      <div className="md:flex md:items-center md:justify-between mx-32">
+        {teamMembers.map((item) => (
+          <TeamCard key={item} />
+        ))}
+      </div>
+      <div className="flex items-center justify-center mt-10">
+        <button className="w-[225px] h-[61px] bg-yellow-600 rounded-[10px]">
+          <div className="text-white text-xl font-medium font-Marsden">
+            Alle kennenlernen
+          </div>
+        </button>
+      </div>
     </div>
   );
 }
