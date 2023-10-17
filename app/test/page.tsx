@@ -1,0 +1,9 @@
+import React from 'react'
+
+function Page() {
+  return (
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi labore vitae amet veniam. Rerum illo ratione adipisci, quae ipsa laudantium debitis iure odio aperiam quis tempore expedita quo hic. Ex cum assumenda, voluptate animi necessitatibus provident nisi corrupti. Omnis, assumenda amet magni corporis reiciendis voluptatem ea fuga ducimus ipsa exercitationem repellat nesciunt adipisci alias ullam, atque quia dolores animi provident! Deserunt quo repudiandae provident nostrum mollitia sunt distinctio. Officiis accusamus unde consectetur quisquam, omnis repellat odio. Omnis dolore voluptates aperiam ad illum necessitatibus, cupiditate ipsam esse mollitia nobis corrupti pariatur illo sint eligendi voluptate praesentium aliquam itaque eius nulla adipisci totam ea! Adipisci dolore accusamus, eius dolor possimus, modi incidunt sed ex laborum eos commodi hic dicta iusto voluptas doloremque perspiciatis repellat sunt suscipit enim. Aliquid corporis aperiam deserunt quidem! Accusantium nesciunt eos iste provident fugit expedita, earum culpa quibusdam illo, doloribus placeat a sapiente deserunt temporibus aut. Neque distinctio vel repudiandae, similique dolorum quas nobis soluta minima beatae eius id consequuntur veritatis quis itaque quasi amet odit sequi repellendus ratione perspiciatis excepturi omnis, asperiores, sit suscipit. Expedita, totam corrupti odio eos ad numquam quisquam asperiores voluptates iure quibusdam impedit eveniet eius optio quo! Totam commodi tempore maxime ullam ipsum.</div>
+  )
+}
+
+export default Page
