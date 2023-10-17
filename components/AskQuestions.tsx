@@ -6,7 +6,7 @@ function AskQuestions() {
   return (
     <div className="flex flex-col items-center justify-center mt-10 font-Marsden">
       <div className="w-[225px] md:w-full text-center">
-        <span className="text-white text-[38px] md:text-[62px] font-medium leading-10">
+        <span className="text-white  text-[38px] md:text-[62px] font-medium leading-10">
           Ask{" "}
         </span>
         <span className="text-yellow-600 text-[38px] md:text-[62px]  font-medium leading-10">
