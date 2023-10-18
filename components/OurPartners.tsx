@@ -19,7 +19,7 @@ function OurPartners() {
           PARTNERS
         </span>
       </div>
-      <div className="flex md:flex-row md:space-y-0 md:justify-between md:mx-10 flex-col space-y-10 mt-10 items-center justify-center">
+      <div className="flex md:bg-[#263A64]  md:flex-row md:space-y-0 md:justify-between md:px-10 flex-col space-y-10 mt-10 items-center justify-center">
         <Image width={200} className="rounded" src={Partner1} alt="partner1" />
         <Image width={200} className="rounded" src={Partner2} alt="partner2" />
         <Image width={200} className="rounded" src={Partner3} alt="partner3" />

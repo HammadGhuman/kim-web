@@ -16,22 +16,24 @@ export default function Home() {
     <main>
       <Hero />
       <AiDoesItBetter />
-      <div className="flex flex-col md:flex-row  mx-10 flex-wrap max-w-9xl md:gap-10 mt-10 md:space-y-0 items-center justify-center">
-        {cards.map((item) => (
-          <Card
-            key={item}
-            image={Brain}
-            title="Lorem, ipsum."
-            description="
+      <div className="flex items-center justify-center">
+        <div className="flex flex-col md:flex-row mx-10 flex-wrap max-w-7xl md:gap-14 mt-10 md:space-y-0 items-center justify-center">
+          {cards.map((item) => (
+            <Card
+              key={item}
+              image={Brain}
+              title="Lorem, ipsum."
+              description="
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et repudiandae blanditiis recusandae dolore."
-          />
-        ))}
+            />
+          ))}
+        </div>
       </div>
       <LeaderShip />
       <HowItWork />
       <MeetOurTeam />
       <OurPartners />
-      <BusinessSpecialist />
+      {/* <BusinessSpecialist /> */}
       <OurBlog />
     </main>
   );

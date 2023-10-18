@@ -29,11 +29,37 @@ function page() {
       </div>
 
       <div className="flex flex-col md:flex-row flex-wrap  mt-10">
-        <Image className="md:w-[488px] md:h-[524px]" src={Team1} alt="team1" />
-        <Image className="md:w-[488px] md:h-[524px]" src={Team2} alt="team1" />
-        <Image className="md:w-[488px] md:h-[524px]" src={Team3} alt="team1" />
-        <Image className="md:w-[488px] md:h-[524px]" src={Team1} alt="team1" />
-        <Image className="md:w-[488px] md:h-[524px]" src={Team2} alt="team1" />
+        <div className="group relative">
+          <Image
+            className="md:w-[488px] md:h-[524px] cursor-pointer group-hover:opacity-50 "
+            src={Team1}
+            alt="team1"
+          />
+          <div className="absolute bottom-10 w-full text-white text-center mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur libero eaque natus incidunt explicabo veritatis perferendis deserunt vitae ipsa quos?
+          </div>
+        </div>
+
+        <Image
+          className="md:w-[488px] md:h-[524px] cursor-pointer hover:opacity-50"
+          src={Team2}
+          alt="team1"
+        />
+        <Image
+          className="md:w-[488px] md:h-[524px] cursor-pointer hover:opacity-50"
+          src={Team3}
+          alt="team1"
+        />
+        <Image
+          className="md:w-[488px] md:h-[524px] cursor-pointer hover:opacity-50"
+          src={Team1}
+          alt="team1"
+        />
+        <Image
+          className="md:w-[488px] md:h-[524px] cursor-pointer hover:opacity-50"
+          src={Team2}
+          alt="team1"
+        />
         <div className="hidden flex-col w-[488px] h-[524px] md:flex items-center justify-between">
           <div className="text-center text-white text-5xl font-semibold mt-10">
             Join Our <br />
@@ -55,52 +81,48 @@ function page() {
       <div className="mt-10 text-center text-white text-5xl font-semibold ">
         Partners
       </div>
-      <div className="flex items-center flex-col space-y-5 mt-10 mx-80">
-        <div className="flex items-center space-x-16">
-          <Image
-            width={200}
-            className="rounded"
-            src={Partner1}
-            alt="partner1"
-          />
-          <Image
-            width={200}
-            className="rounded"
-            src={Partner2}
-            alt="partner2"
-          />
-          <Image
-            width={200}
-            className="rounded"
-            src={Partner3}
-            alt="partner3"
-          />
-        </div>
-        <div className="flex items-center space-x-16">
-          <Image
-            width={200}
-            className="rounded"
-            src={Partner4}
-            alt="partner4"
-          />
-          <Image
-            width={200}
-            className="rounded"
-            src={Partner5}
-            alt="partner5"
-          />
-          <Image
-            width={200}
-            className="rounded"
-            src={Partner6}
-            alt="partner6"
-          />
-        </div>
+      <div className="grid grid-cols-1 mt-20 md:grid-cols-3 place-items-center">
+        <Image
+          width={200}
+          className="rounded md:ml-20"
+          src={Partner1}
+          alt="partner1"
+        />
+        <Image
+          width={200}
+          className="rounded md:ml-20"
+          src={Partner2}
+          alt="partner2"
+        />
+        <Image
+          width={200}
+          className="rounded md:ml-20"
+          src={Partner3}
+          alt="partner3"
+        />
+        <Image
+          width={200}
+          className="rounded md:ml-20"
+          src={Partner4}
+          alt="partner4"
+        />
+        <Image
+          width={200}
+          className="rounded md:ml-20"
+          src={Partner5}
+          alt="partner5"
+        />
+        <Image
+          width={200}
+          className="rounded md:ml-20"
+          src={Partner6}
+          alt="partner6"
+        />
       </div>
       <div className="text-center mt-10 text-white text-5xl font-medium font-Marsden md:text-[62px]  leading-[72px]">
         Roadmap
       </div>
-      <p className="w-[700px] mt-4 mb-5 font-Montserrat text-white text-lg font-normal leading-7 text-center">
+      <p className="md:w-[700px] mt-4 mb-5 font-Montserrat text-white text-lg font-normal leading-7 text-center">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore iusto,
         nostrum molestiae odit earum eveniet dolores ut assumenda. Quaerat,
         libero.
@@ -117,7 +139,7 @@ function page() {
           <div className="w-6 h-[5px] border-t-2 border-white absolute right-10 top-[-1.2px]" />
         </div>
 
-        <div className="md:self-end w-[700px]">
+        <div className="md:self-end md:w-[700px]">
           <Roadmap
             date="März 2020"
             title="Corona Pandemie, die Theorie wird zu Praxis"

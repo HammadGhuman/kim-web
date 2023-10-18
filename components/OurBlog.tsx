@@ -13,7 +13,7 @@ function OurBlog() {
           BLOGS
         </span>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 md:mt-0">
         <BlogCard />
         <BlogCard />
         <BlogCard />
