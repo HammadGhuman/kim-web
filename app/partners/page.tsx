@@ -4,13 +4,17 @@ import Image from "next/image";
 
 import Benefits from "@/components/Benifits";
 
-import Contact1 from "@/public/contact-form 1.png";
-import DataCapture from "@/public/data-capture 1.png";
-import HandShake from "@/public/handshake 1.png";
 import Steps from "@/components/Steps";
 import Reply from "@/components/Reply";
 
-import Quids from "@/public/Quids.png";
+import Partner1 from '@/public/logo 1.png';
+import Partner2 from '@/public/logo 2.png';
+import Partner3 from '@/public/Logo 3.png';
+import Partner4 from '@/public/Logo 4.png';
+import Partner5 from '@/public/Logo 5.png';
+import Partner6 from '@/public/logo 6.png';
+
+
 
 function AskQuestion() {
   return (
@@ -33,7 +37,8 @@ function AskQuestion() {
         <PartnerBackground />
       </div>
 
-      <div className="text-center mt-4">
+    <div className="flex flex-col md:flex-row items-center justify-between w-full px-10 bg-[#263a64]">
+    <div className="text-center md:mt-0 mt-4 mr-10">
         <span className="text-white text-4xl font-medium leading-[44px] tracking-wide">
           OUR <br />
         </span>
@@ -42,13 +47,17 @@ function AskQuestion() {
         </span>
       </div>
 
-      <div className="mt-10 flex flex-col items-center justify-center space-y-10">
-        <Image width={250} height={120} src={Quids} alt="quids" />
-        <Image width={250} height={120} src={Quids} alt="quids" />
-        <Image width={250} height={120} src={Quids} alt="quids" />
-        <Image width={250} height={120} src={Quids} alt="quids" />
+      <div className="mt-10 flex md:flex-row flex-col items-center justify-between space-y-10 md:space-y-0 w-full">
+        <Image width={150} height={150} src={Partner1} alt="quids" />
+        <Image width={150} height={150} src={Partner2} alt="quids" />
+        <Image width={150} height={150} src={Partner3} alt="quids" />
+        <Image width={150} height={150} src={Partner4} alt="quids" />
+        <Image className="scale-75" width={150} height={150} src={Partner5} alt="quids" />
+        <Image width={150} height={150} src={Partner6} alt="quids" />
+
 
       </div>
+    </div>
 
       <div className="mt-10 mb-10 text-center text-white text-4xl font-medium leading-[72px]">
         Benifits

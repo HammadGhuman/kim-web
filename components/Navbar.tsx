@@ -37,7 +37,7 @@ function Navbar() {
         } duration-300 transition-all ease-in-out`}
       >
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="abouts">Partners</Link>
+          <Link href="partners">Partners</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
           <Link href="abouts">New Use Cases</Link>
@@ -46,16 +46,16 @@ function Navbar() {
           <Link href="abouts">Tech Behid Kim</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="abouts">Blog</Link>
+          <Link href="ask-question">Blog</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
           <Link href="abouts">Solutions</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="abouts">Roadmap</Link>
+          <Link href="partners">Roadmap</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="abouts">The Team</Link>
+          <Link href="meet-our-tem">The Team</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
           <Link href="abouts">FAQs</Link>
