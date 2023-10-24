@@ -180,7 +180,7 @@ function page() {
             alt="partner6"
           />
         </div>
-        <div className="text-center mt-10 text-white text-5xl font-medium font-Marsden md:text-[62px]  leading-[72px]">
+        <div id="roadmap" className="text-center mt-10 text-white text-5xl font-medium font-Marsden md:text-[62px]  leading-[72px]">
           Roadmap
         </div>
         <p className="md:w-[700px] mt-4 mb-5 font-Montserrat text-white text-lg font-normal leading-7 text-center">
@@ -189,7 +189,7 @@ function page() {
           Quaerat, libero.
         </p>
 
-        <div className="flex flex-col  space-y-3">
+        <div className="flex flex-col  space-y-3" >
           <Roadmap
             date="2009"
             title="Die Entstehung des Leadership Modells"

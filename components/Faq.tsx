@@ -13,7 +13,7 @@ function Faq() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center mt-24  space-y-2 text-white text-center">
+    <div id="faqs" className="flex flex-col items-center justify-center mt-24  space-y-2 text-white text-center">
       {faqs && faqs.map((faq: any) => (
         <div
           key={faq.id}

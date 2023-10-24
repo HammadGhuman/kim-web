@@ -52,13 +52,13 @@ function Navbar() {
           <Link href="abouts">Solutions</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="partners">Roadmap</Link>
+          <Link href="meet-our-team/#roadmap">Roadmap</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="meet-our-tem">The Team</Link>
+          <Link href="meet-our-team">The Team</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="abouts">FAQs</Link>
+          <Link href="ask-question/#faqs">FAQs</Link>
         </li>
       </ul>
       <div>

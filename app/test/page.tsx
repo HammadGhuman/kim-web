@@ -1,13 +1,9 @@
-import React from "react";
+import React from 'react'
 
-function Page() {
+function page() {
   return (
-    <div className="drawer drawer-end">
-     
-    
-      
-    </div>
-  );
+    <div>test</div>
+  )
 }
 
-export default Page;
+export default page

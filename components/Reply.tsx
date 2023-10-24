@@ -2,7 +2,7 @@ import React from "react";
 
 function Reply() {
   return (
-    <div className="flex flex-col items-center justify-center space-y-5 mt-10 bg-white/10 px-10 py-10 mx-10 md:mx-96 rounded-[20px]">
+    <div className="flex flex-col items-center justify-center space-y-5 md:space-x-0 mt-10 bg-white/10 px-10 py-10 mx-10 md:mx-96 rounded-[20px]">
       <div className="flex flex-col items-center justify-center space-y-2">
         <div className="text-white text-xl font-bold">Leave a reply</div>
         <div className="text-white text-xs font-medium font-['Marsden']">
@@ -10,7 +10,7 @@ function Reply() {
         </div>
       </div>
 
-      <div className="md:flex items-center space-x-10 justify-between w-full">
+      <div className="md:flex md:flex-row flex-col items-center md:space-y-0 space-y-5 md:space-x-10  justify-between w-full">
      <div className="flex flex-col items-center md:items-start justify-center space-y-2 w-full">
         <div className="text-white text-base font-medium">Your Name *</div>
         <input
@@ -28,7 +28,7 @@ function Reply() {
       </div>
      </div>
 
-     <div className="md:flex items-center space-x-10 justify-between w-full">
+     <div className="flex flex-col md:flex-row items-center space-x-0 md:space-y-0 space-y-5 md:space-x-10 justify-between w-full">
      <div className="flex flex-col items-center md:items-start justify-center space-y-2 w-full">
         <div className="text-white text-base font-medium">Website *</div>
         <input
