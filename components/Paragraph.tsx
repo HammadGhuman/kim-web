@@ -1,10 +1,20 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
-function Paragraph() {
+function Paragraph({ content }: { content: string }) {
   return (
     <div className="flex flex-col items-center justify-center mt-8 font-Marsden md:mx-72">
-      <div className="w-[263px]  md:w-full text-center md:text-left">
-        <span className="text-white text-[13px]  md:text-[32px] font-bold">
+      <div dangerouslySetInnerHTML={{__html:content}} className="w-[263px]  md:w-full text-center md:text-left text-white">
+      </div>
+    </div>
+  );
+}
+
+export default Paragraph;
+
+/* 
+  <span className="text-white text-[13px]  md:text-[32px] font-bold">
           10 minutes of mentoring per day: The optimal way to more happiness and
           better leadership
           <br className="md:hidden" />
@@ -152,9 +162,4 @@ function Paragraph() {
           Differential benefits of mental training types for attention,
           compassion, and theory of mind. Cognition, 194, 104039.
         </span>
-      </div>
-    </div>
-  );
-}
-
-export default Paragraph;
+*/

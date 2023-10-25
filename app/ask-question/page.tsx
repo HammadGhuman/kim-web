@@ -9,7 +9,7 @@ function AskQuestion() {
       <AskQuestions />
       <Faq />
       <BlogTitle />
-      <BlogsCard />
+    <BlogsCard />
     </main>
   );
 }

@@ -1,8 +1,27 @@
 import React from "react";
 import TeamCard from "./TeamCard";
-
+import Team1 from "@/public/team-1.jpg.png";
+import Team2 from "@/public/team-2.jpg.png";
+import Team3 from "@/public/team-3.jpg.png";
+import { it } from "node:test";
 function MeetOurTeam() {
-  const teamMembers = [1, 2, 3];
+  const teamMembers = [
+    {
+      img: Team1,
+      name: "Christian Krauter",
+      position: "Gründer & Geschäftsführer",
+    },
+    {
+      img: Team2,
+      name: "Dr. Jörg Krauter",
+      position: "Experte & Berater",
+    },
+    {
+      img: Team3,
+      name: "Celine Jensen",
+      position: "Marketing Expertin",
+    },
+  ];
   return (
     <div>
       <div className="text-center">
@@ -13,9 +32,14 @@ function MeetOurTeam() {
           TEAM
         </span>
       </div>
-      <div className="md:flex md:items-center md:justify-between mx-32">
+      <div className="flex flex-col md:flex-row items-center md:justify-between md:mx-32">
         {teamMembers.map((item) => (
-          <TeamCard key={item} />
+          <TeamCard
+            key={item.name}
+            img={item.img}
+            name={item.name}
+            position={item.position}
+          />
         ))}
       </div>
       <div className="flex items-center justify-center mt-10">

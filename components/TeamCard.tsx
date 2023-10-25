@@ -1,21 +1,22 @@
 import Image from "next/image";
 import React from "react";
 import Member1 from "@/public/Member1.png";
-function TeamCard() {
+
+type Props = {
+  img: any;
+  name: string;
+  position: string;
+};
+
+function TeamCard({ img, name, position }: Props) {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <Image
-        alt="team-member"
-        width={181}
-        height={183}
-        className="w-[181px] h-[183px]"
-        src={Member1}
-      />
+    <div className="flex flex-col items-center justify-center md:w-auto w-[350px]">
+      <Image alt="team-member" className="w-[181px] h-[183px] rounded-full" src={img} />
       <div className="text-white text-2xl font-medium  leading-[72px] tracking-tight">
-        Christian Krauter
+        {name}
       </div>
       <div className="text-stone-300 text-2xl font-medium  leading-[72px]">
-        Gründer & Geschäftsführer
+        {position}
       </div>
     </div>
   );

@@ -2,17 +2,17 @@ import React from "react";
 
 function Page() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center md:px-20">
       <h1 className="text-center text-white text-[32px] font-semibold font-Marsden leading-[72px]">
         Nutzungsbedingungen
       </h1>
-      <h1 className="w-[281px] text-center text-white text-2xl font-medium font-Marsden">
+      <h1 className="w-[281px] md:w-auto text-center text-white text-2xl  font-Marsden">
         KI Mentor Technology GmbH Amtsgericht Mannheim HRB 744712
         Geschäftsführer: Christian Krauter
       </h1>
 
-      <div className="w-[257px] text-center">
-        <span className="text-white text-2xl font-medium font-Marsden">
+      <div className="w-[257px] md:w-auto ">
+        <span className="text-white text-lg md:text-2xl  font-Marsden">
           <br />
           Stand: 25.08.2022
           <br />​<br />
@@ -221,11 +221,11 @@ function Page() {
           <br />
           E-Mail:{" "}
         </span>
-        <span className="text-white text-2xl font-medium font-['Marsden'] underline">
+        <span className="text-white text-2xl  font-['Marsden'] underline">
           Christian.Krauter@ki-mentor.com
           <br />
         </span>
-        <span className="text-white text-2xl font-medium font-['Marsden']">
+        <span className="text-white text-2xl  font-['Marsden']">
           ​<br />​<br />
           Gewährleistungsausschluss für die Nutzung der Site und der Dienste
           <br />​<br />
@@ -334,10 +334,10 @@ function Page() {
           (2) Die Europäische Kommission stellt eine Plattform zur
           Online-Streitbeilegung (OS) bereit, aufrufbar unter:{" "}
         </span>
-        <span className="text-white text-2xl font-medium font-['Marsden'] underline">
+        <span className="text-white text-2xl  font-['Marsden'] underline">
           https://ec.europa.eu/consumers/odr/.
         </span>
-        <span className="text-white text-2xl font-medium font-['Marsden']">
+        <span className="text-white text-2xl  font-['Marsden']">
           {" "}
           Bitte beachten Sie, dass wir nicht verpflichtet sind, Streitigkeiten
           mit Verbrauchern vor alternativen Streitbeilegungsstellen beizulegen.
@@ -384,11 +384,11 @@ function Page() {
           <br />
           E-Mail:{" "}
         </span>
-        <span className="text-white text-2xl font-medium font-['Marsden'] underline">
+        <span className="text-white text-2xl  font-['Marsden'] underline">
           Christian.Krauter@ki-mentor.com
           <br />
         </span>
-        <span className="text-white text-2xl font-medium font-['Marsden']">
+        <span className="text-white text-2xl  font-['Marsden']">
           ​<br />
           KI Mentor Technology GmbH
           <br />

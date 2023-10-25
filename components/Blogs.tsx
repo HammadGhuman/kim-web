@@ -11,14 +11,11 @@ function Blogs(props: Props) {
   return (
     <div className="flex flex-col w-72 rounded-lg p-3 bg-white/10 mt-5">
       <div className="flex items-center justify-center">
-        <Image className="" src={props.image} alt="card" />
+        <Image width={300} height={200} src={props.image} alt="card" />
       </div>
 
       <div className="flex items-center text-white space-x-5 mt-4 ml-4">
-        <p className=" text-white text-[10px] font-normal font-Marsden capitalize leading-[22.82px] tracking-wide">
-          0 Comments
-          <br />
-        </p>
+       
         <p className=" text-white text-[10px] font-normal font-Marsden capitalize leading-[22.82px] tracking-wide">
           7th March
           <br />

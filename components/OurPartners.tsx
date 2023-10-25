@@ -24,7 +24,7 @@ function OurPartners() {
         <Image width={200} className="rounded" src={Partner2} alt="partner2" />
         <Image width={200} className="rounded" src={Partner3} alt="partner3" />
         <Image width={200} className="rounded" src={Partner4} alt="partner4" />
-        <Image width={200} className="rounded" src={Partner5} alt="partner5" />
+        <Image width={200} className="rounded scale-75" src={Partner5} alt="partner5" />
         <Image width={200} className="rounded" src={Partner6} alt="partner6" />
       </div>
      

@@ -14,7 +14,7 @@ function MobileCard({ odd }: { odd: boolean }) {
             Rapportaufbau:{" "}
           </div>
         </div>
-        <div className="w-[306px] md:w-[498px] md:h-[101px] h-[68px] md:leading-relaxed font-Marsden text-white text-sm font-medium ">
+        <div className="w-[306px] md:w-[498px] md:h-[101px] h-[68px] md:leading-relaxed mx-auto font-Marsden text-white text-sm font-medium ">
           - Vertrauensaufbau
           <br />- Verbesserung des Mental Wellbeing mittels gezielter Übungen 1x
         </div>
@@ -26,7 +26,6 @@ function MobileCard({ odd }: { odd: boolean }) {
       ) : (
         <Image className="md:mt-0 mt-7" src={Phone2} alt={"phone1"} />
       )}
-
     </div>
   );
 }
