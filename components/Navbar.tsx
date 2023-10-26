@@ -28,37 +28,37 @@ function Navbar() {
           className={`transition ease-in-out duration-300 ${isOpen ? "opacity-0 hidden" : "opacity-100 block"}`}
         />
       </div>
-      <div className="ml-10">
+      <Link href="/" className="ml-10" >
         <Image src={Logo} alt="Logo" />
-      </div>
+      </Link>
       <ul
         className={`md:flex items-center justify-between md:space-x-16 md:z-auto z-10 md:static absolute top-28 py-10 md:py-0 space-y-10 md:space-y-0  md:w-auto w-full md:h-auto bg-image bg-cover bg-no-repeat md:opacity-100 md:bg-none ${
           isOpen ? "opacity-100" : "opacity-0"
         } duration-300 transition-all ease-in-out`}
       >
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="partners">Partners</Link>
+          <Link href="/partners">Partners</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="abouts">New Use Cases</Link>
+          <Link href="/abouts">New Use Cases</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="abouts">Tech Behid Kim</Link>
+          <Link href="/abouts">Tech Behid Kim</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="ask-question">Blog</Link>
+          <Link href="/ask-question">Blog</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="abouts">Solutions</Link>
+          <Link href="/abouts">Solutions</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="meet-our-team/#roadmap">Roadmap</Link>
+          <Link href="/meet-our-team/#roadmap">Roadmap</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="meet-our-team">The Team</Link>
+          <Link href="/meet-our-team">The Team</Link>
         </li>
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
-          <Link href="ask-question/#faqs">FAQs</Link>
+          <Link href="/ask-question/#faqs">FAQs</Link>
         </li>
       </ul>
       <div>

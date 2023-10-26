@@ -11,12 +11,13 @@ function VideoBackgroundMobile() {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <video
         ref={videoRef}
         loop
         muted
         src="videoBgMob.mp4"
+        className="aspect-video"
       ></video>
     </div>
   );

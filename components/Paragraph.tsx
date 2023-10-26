@@ -1,12 +1,15 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 
 function Paragraph({ content }: { content: string }) {
   return (
     <div className="flex flex-col items-center justify-center mt-8 font-Marsden md:mx-72">
-      <div dangerouslySetInnerHTML={{__html:content}} className="w-[263px]  md:w-full text-center md:text-left text-white">
-      </div>
+      {/* <div dangerouslySetInnerHTML={{__html:content}} className="w-[263px]  md:w-full text-center md:text-left text-white">
+      </div> */}
+
+      <ReactMarkdown className="md:prose-2xl prose-li:decoration-white prose prose-headings:text-orange-500 text-white md:px-10 px-10">
+        {content}
+      </ReactMarkdown>
     </div>
   );
 }

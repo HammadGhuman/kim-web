@@ -6,11 +6,11 @@ function HowItWork() {
   return (
     <div className="flex flex-col items-center justify-center mt-10 relative">
       <div className="text-center">
-        <span className="text-white text-[40px] font-medium leading-[72px]">
-          HOW IT
+        <span className="text-white text-[40px] md:text-[62px] font-medium leading-[72px]">
+          Wie läuft das {"  "}
         </span>
-        <span className="text-yellow-600 text-[40px] font-medium leading-[72px]">
-          WORKS
+        <span className="text-yellow-600 text-[40px] md:text-[62px] font-medium leading-[72px]">
+          Mentoring ab?
         </span>
       </div>
 

@@ -2,23 +2,22 @@ import React from "react";
 import Image from "next/image";
 
 import LeaderShipMobile from "@/public/leadership mobile.png";
-import LeaderShipDesktop from '@/public/leadershipweb.png';
+import LeaderShipDesktop from "@/public/leadershipweb.png";
+import ReadMoreButton from "./ReadMoreButton";
 function LeaderShip() {
   return (
-    <div className="flex flex-col items-center justify-center mt-16 font-Marsden">
+    <div className="flex flex-col items-center justify-center mt-[130px] font-Marsden">
       <div className="text-center md:text-62px">
-        <span className="text-white text-4xl font-medium  leading-[72px]">
-          Leadership{" "}
-        </span>
-        <span className="text-yellow-600 text-4xl font-medium  leading-[72px]">
-          Model
+        <span className="text-white md:text-[62px] font-medium  leading-[72px]">
+          KI.m Leadership Model
         </span>
       </div>
-      <div className="w-[327px] h-[87px] md:h-[] md:text-2xl md:w-[1227px] md:font-medium text-center text-white text-xs font-normal leading-tight">
-        Allows leaders to gain unique insights and enables them to build
-        strongerand effective working relationships.
-        <br className="md:hidden" /> Looks at more than 43 individual indicators
-        that influence leadership
+      <div className="w-[327px] md:mt-3 h-[87px] md:h-[87px] md:text-2xl md:w-[1227px] text-center text-white text-xs font-normal leading-tight">
+        Ermöglicht Führungskräften einzigartige Einblicke in ihr eigenes
+        Führungsverhalten und in die Dynamiken in der Zusammenarbeit mit ihren
+        Teammitgliedern zu gewinnen. Das Modell betrachtet mehr als 43 einzelne
+        Indikatoren, die die Führung beeinflussen und den Rahmen für das
+        Mentoring bilden.
       </div>
 
       <div className="md:hidden">
@@ -32,12 +31,14 @@ function LeaderShip() {
       </div>
       <div className="hidden md:block">
         <Image
-          className="mr-32"
           width={1200}
           height={755}
           src={LeaderShipDesktop}
           alt="leadership"
         />
+      </div>
+      <div className="md:ml-16">
+        <ReadMoreButton text="Mehr" />
       </div>
     </div>
   );

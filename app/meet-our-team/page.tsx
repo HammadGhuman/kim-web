@@ -23,13 +23,13 @@ function page() {
     <div className="drawer drawer-end">
       <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
       <div className="flex flex-col items-center justify-center px-0 mx-0 font-Marsden drawer-content">
-        <div className="w-[225px] md:w-full text-center text-white text-[38px] md:text-[62px] font-medium  leading-10">
+        <div className="w-[225px] md:w-full mt-[149px] text-center text-white text-[38px] md:text-[62px] font-medium  leading-10">
           Meet Our
           <br className="md:hidden" />
           <span className="text-[#B77828]"> Team</span>
         </div>
 
-        <div className="w-[291px] md:w-full mt-10 text-center text-white text-sm font-normal md:text-lg md:leading-[27px]  leading-[25px]">
+        <div className="w-[291px] md:w-[634px] mt-10 text-center text-white text-lg font-normal md:text-lg md:leading-[27px]  leading-[25px]">
           Lorem Ipsum dolor sit amet sun progit droin qual de suis erestopius
           liqueenean sollicituin, lorem quis bibendum auct.
         </div>

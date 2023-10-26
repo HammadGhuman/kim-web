@@ -32,7 +32,8 @@ function MeetOurTeam() {
           TEAM
         </span>
       </div>
-      <div className="flex flex-col md:flex-row items-center md:justify-between md:mx-32">
+
+      <div className="flex flex-col md:flex-row items-center md:justify-between  md:max-w-[900px]">
         {teamMembers.map((item) => (
           <TeamCard
             key={item.name}
