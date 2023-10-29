@@ -16,7 +16,7 @@ function BusinessSpecialist() {
         <ReviewCard />
         <ReviewCard />
       </div>
-      <ReadMoreButton />
+      {/* <ReadMoreButton /> */}
     </div>
   );
 }
