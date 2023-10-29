@@ -33,8 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`bg-image bg-no-repeat bg-cover`}>
+    <html lang="en" className="">
+      <body className={`bg-image bg-no-repeat bg-cover overflow-x-hidden`}>
         <Navbar />
         {children}
         <Footer />

@@ -3,11 +3,11 @@ import React from "react";
 function AiDoesItBetter() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="text-center mt-2">
-        <span className="text-white md:text-[60px] md:leading-[72px] tracking-[-0.6px] md:max-w-[938px] font-medium  font-Marsden  text-[40px] ">
+      <div className="text-center mt-2 overflow-x-hidden md:w-auto ">
+        <span className="text-white md:text-[60px] md:leading-[72px] tracking-[-0.6px] md:max-w-[938px] font-medium  font-Marsden  text-[36px] ">
           Gesteigerte Führungsperformance <br />
         </span>
-        <span className="text-yellow-600 md:text-[62px] md:leading-[72px]  font-Marsden font-medium text-[40px] ">
+        <span className="text-yellow-600 md:text-[62px] md:leading-[72px]  font-Marsden font-medium text-[36px] ">
           durch KI.M
         </span>
       </div>
