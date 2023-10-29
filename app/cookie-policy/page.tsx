@@ -6,7 +6,7 @@ function Page() {
       <div className="w-[201px] md:w-auto text-center text-white text-[32px] font-semibold font-Marsden leading-[72px]">
         Cookie-Richtlinie
       </div>
-      <div className="w-[281px] md:w-auto md:px-20 ">
+      <div className="w-[281px] md:w-auto md:px-20 text-center prose-xl">
         <span className="text-white text-lg md:text-2xl  font-Marsden leading-[55.56px]">
           <br />
           1. Was ist ein Cookie?
@@ -37,7 +37,6 @@ function Page() {
           <br />
           3. Cookie-Übersicht:
           <br />
-          
           Sehen Sie{" "}
         </span>
         <span className="text-white text-lg md:text-2xl  font-Marsden underline leading-[55.56px]">
@@ -49,7 +48,6 @@ function Page() {
           <br />
           <br />
           4. Ihre Optionen:
-          
           <br />
           Um mehr über Cookies zu erfahren, u. a. wie man erkennt, welche
           Cookies gesetzt wurden und wie man sie verwaltet, löscht und
@@ -82,10 +80,7 @@ function Page() {
           „Hilfe“ in Ihrem Browser aufrufen.
           <br />
         </span>
-        <span className="text-white text-lg md:text-2xl  font-Marsden underline leading-[55.56px]">
-          Cookie-Einstellungen in Firefox
-          <br />
-        </span>
+
         <span className="text-white text-lg md:text-2xl  font-Marsden underline leading-[55.56px]">
           Cookie-Einstellungen im Internet Explorer
           <br />

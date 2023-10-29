@@ -11,11 +11,11 @@ type Props = {
 function TeamCard({ img, name, position }: Props) {
   return (
     <div className="flex flex-col items-center justify-center md:w-auto w-[350px]">
-      <Image alt="team-member" className="w-[181px] h-[183px] rounded-full" src={img} />
-      <div className="text-white text-2xl font-medium  leading-[72px] tracking-tight">
+      <Image alt="team-member" className="lg:w-[250px] lg:h-[250px] w-[180px] rounded-full" src={img} />
+      <div className="text-white text-2xl font-medium leading-[72px] tracking-tight">
         {name}
       </div>
-      <div className="text-stone-300 text-2xl font-medium  leading-[72px]">
+      <div className="text-stone-300 text-xl font-medium -mt-3">
         {position}
       </div>
     </div>

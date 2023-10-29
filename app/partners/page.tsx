@@ -42,52 +42,53 @@ const benifits = [
 
 function AskQuestion() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="w-[225px] text-center">
-        <span className="text-white text-[32px] font-medium  leading-[38px]">
+    <div className="flex flex-col items-center justify-center md:mt-20">
+      <div className="w-[225px] md:w-auto text-center">
+        <span className="text-white md:text-6xl text-[32px] font-medium  leading-[38px]">
           KI.m For
         </span>
-        <span className="text-yellow-600 text-[32px] font-medium  leading-[38px]">
+        <span className="text-yellow-600 md:text-6xl text-[32px] font-medium  leading-[38px]">
           {" "}
           Partners
         </span>
       </div>
 
-      <div className="w-[291px] mt-5 text-center text-white text-[15px] font-medium leading-relaxed">
+      <div className="w-[291px] mt-5 text-center md:w-auto md:text-[32px] text-white text-[15px] leading-relaxed">
         Here you can find out everything about the KI.m partner program.
       </div>
 
       <div className="mt-7">
         <PartnerBackground />
       </div>
-
-      <div className="flex flex-col md:flex-row items-center justify-between w-full px-10 bg-[#263a64]">
-        <div className="text-center md:mt-0 mt-4 mr-10">
-          <span className="text-white text-4xl font-medium leading-[44px] tracking-wide">
-            OUR <br />
+      <div className="text-center md:hidden mt-16 mb-10">
+        <span className="text-white text-4xl font-medium  leading-[44px] tracking-wide">
+          Unsere{" "}
+        </span>
+        <span className="text-yellow-600 text-4xl font-medium  leading-[44px] tracking-wide">
+          Partner
+        </span>
+      </div>
+      <div className="flex w-full md:bg-[#263A64]  md:flex-row md:space-y-0 md:justify-between md:px-10 flex-col space-y-10  items-center justify-center">
+        <div className="text-center hidden md:block">
+          <span className="text-white text-4xl font-medium  leading-[44px] tracking-wide">
+            Unsere{" "}
           </span>
           <span className="text-yellow-600 text-4xl font-medium  leading-[44px] tracking-wide">
-            PARTNERS
+            Partner
           </span>
         </div>
-
-        <div className="mt-10 flex md:flex-row flex-col items-center justify-between space-y-10 md:space-y-0 w-full">
-          <Image width={150} height={150} src={Partner1} alt="quids" />
-          <Image width={150} height={150} src={Partner2} alt="quids" />
-          <Image width={150} height={150} src={Partner3} alt="quids" />
-          <Image width={150} height={150} src={Partner4} alt="quids" />
-          <Image
-            className="scale-75"
-            width={150}
-            height={150}
-            src={Partner5}
-            alt="quids"
-          />
-          <Image width={150} height={150} src={Partner6} alt="quids" />
-        </div>
+        <Image width={180} className="rounded" src={Partner1} alt="partner1" />
+        <Image width={180} className="rounded" src={Partner2} alt="partner2" />
+        <Image width={180} className="rounded" src={Partner3} alt="partner3" />
+        <Image
+          width={180}
+          className="rounded mr-10"
+          src={Partner4}
+          alt="partner4"
+        />
       </div>
 
-      <div className="mt-10 md:-mb-10 mb-10 text-center text-white text-4xl font-medium leading-[72px]">
+      <div className="mt-10 md:-mb-10 mb-10 text-center text-white text-4xl md:text-6xl font-medium leading-[72px]">
         Benifits
       </div>
       <div className="md:hidden flex flex-col space-y-5">

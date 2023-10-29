@@ -8,11 +8,11 @@ type Props = {
 function BlogDetailCard({img}:Props) {
   return (
     <div className="flex flex-col items-center justify-center mt-10 space-y-20 md:space-y-10 md:mx-20">
-      <div className="w-[225px] text-center">
-        <span className="text-white text-[38px] font-medium leading-10">
+      <div className="w-[225px] md:w-auto text-center">
+        <span className="text-white md:text-[62px] text-[38px] font-medium leading-10">
           Blog{" "}
         </span>
-        <span className="text-yellow-600 text-[38px] font-medium leading-10">
+        <span className="text-yellow-600 md:text-[62px] text-[38px] font-medium leading-10">
           Details
         </span>
       </div>

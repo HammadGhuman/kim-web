@@ -1,19 +1,19 @@
 import React from "react";
 
-type Props ={
-  heading?:string;
-  description?:string;
-}
+type Props = {
+  heading?: string;
+  description?: string;
+};
 
-function Benifits({heading,description}:Props) {
+function Benifits({ heading, description }: Props) {
   return (
-    <div className="flex flex-col items-center space-y-5 px-4 w-[334px] h-[166px] relative bg-blue-400 bg-opacity-20 rounded-[5px] border border-white">
-      <h1 className="text-center text-[#CD9145] text-sm font-semibold tracking-tight mt-4">
+    <div className="flex flex-col items-center justify-center space-y-5 px-4 md:w-auto md:h-auto w-[334px] h-[166px] relative bg-blue-400 bg-opacity-20 rounded-[5px] border border-white md:px-24 md:py-10">
+      <div className="md:w-[697px] text-sm  text-center text-orange-400 md:text-[40px] font-semibold font-Marsden tracking-tight md:leading-10">
         {heading}
-      </h1>
-      <p className="text-center text-white text-[10px] font-normal">
-      {description}
-      </p>
+      </div>
+      <div className="md:w-[851px] text-[10px] text-center text-white md:text-[32px] font-normal font-['Marsden'] md:leading-[49px] tracking-tight">
+        {description}
+      </div>
     </div>
   );
 }

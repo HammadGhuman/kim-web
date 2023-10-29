@@ -24,27 +24,29 @@ function MeetOurTeam() {
   ];
   return (
     <div>
-      <div className="text-center">
-        <span className="text-white text-[38px] font-medium leading-[72px]">
-          MEET OUR{" "}
+      <div className="text-center mt-10 mb-20 font-Marsden">
+        <span className="text-white text-[38px] md:text-[62px] font-medium leading-[72px]">
+          Lerne das KI.m{" "}
         </span>
-        <span className="text-yellow-600 text-[38px] font-medium leading-[72px]">
-          TEAM
+        <span className="text-yellow-600 text-[38px] md:text-[62px] font-medium leading-[72px]">
+          Team kennen
         </span>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center md:justify-between  md:max-w-[900px]">
-        {teamMembers.map((item) => (
-          <TeamCard
-            key={item.name}
-            img={item.img}
-            name={item.name}
-            position={item.position}
-          />
-        ))}
+      <div className=" flex items-center justify-center">
+        <div className="flex flex-col md:space-y-0 space-y-10 md:flex-row items-center md:justify-between md:space-x-24  lg:min-w-[900px]">
+          {teamMembers.map((item) => (
+            <TeamCard
+              key={item.name}
+              img={item.img}
+              name={item.name}
+              position={item.position}
+            />
+          ))}
+        </div>
       </div>
-      <div className="flex items-center justify-center mt-10">
-        <button className="w-[225px] h-[61px] bg-yellow-600 rounded-[10px]">
+      <div className="flex items-center justify-center mt-[56px]">
+        <button className="w-[225px] h-[61px] bg-[#B77828] rounded-[10px]">
           <div className="text-white text-xl font-medium font-Marsden">
             Alle kennenlernen
           </div>

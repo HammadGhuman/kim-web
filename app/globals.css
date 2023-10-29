@@ -2,15 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-fmaily: "Marsden";
-  src: url("../public/Fonts/Marsden-Regular.ttf");
-  font-weight: normal;
+  font-family: "Marsden";
+  src: url("../public/Fonts/Marsden-Light.ttf") format("truetype"),
+    url("../public/Fonts/Marsden-Light.woff") format("woff"),
+    url("../public/Fonts/Marsden-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: light;
 }
 
 @font-face {
-  font-fmaily: "Marsden";
-  src: url("../public/Fonts/Marsden-SemiBold.ttf");
-  font-weight: semibold;
+  font-family: "Marsden";
+  src: url("../public/Fonts/Marsden-Regular.ttf") format("truetype"),
+    url("../public/Fonts/Marsden-Regular.woff") format("woff"),
+    url("../public/Fonts/Marsden-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marsden";
+  src: url("../public/Fonts/Marsden-SemiBold.ttf") format("truetype"),
+    url("../public/Fonts/Marsden-SemiBold.woff") format("woff"),
+    url("../public/Fonts/Marsden-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: semibold;
+}
+
+@font-face {
+  font-family: "Marsden";
+  src: url("../public/Fonts/Marsden-Medium.ttf") format("truetype"),
+    url("../public/Fonts/Marsden-Medium.woff") format("woff"),
+    url("../public/Fonts/Marsden-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: medium;
 }
 
 /* Custom CSS for code blocks */

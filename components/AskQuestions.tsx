@@ -20,7 +20,7 @@ function AskQuestions() {
       <div className="relative mt-24">
         <Image className="absolute top-6 left-4" src={Search} alt="search" />
         <input
-          className="w-[279px] md:w-[600px]  h-[59px] opacity-40 mix-blend-soft-light bg-white rounded-[7px] border-2 border-violet-300 px-16"
+          className="w-[279px] md:w-[600px]  h-[59px] bg-opacity-40  bg-[#4869a4] rounded-[7px] border-2 text-white  px-16"
           placeholder="Search here..."
         />
       </div>

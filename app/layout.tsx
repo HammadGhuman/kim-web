@@ -1,11 +1,26 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
-
-const inter = Inter({ subsets: ["latin"] });
+import localFont from "next/font/local";
+// const marsden = localFont({
+//   src: [
+//     {
+//       path: "../public/Fonts/Marsden-Regular.ttf",
+//       weight: "400",
+//     },
+//     {
+//       path: "../public/Fonts/Marsden-Medium.ttf",
+//       weight: "500",
+//     },
+//     {
+//       path: "../public/Fonts/Marsden-SemiBold.ttf",
+//       weight: "600",
+//     },
+//   ],
+//   variable: "--font-marsden",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",

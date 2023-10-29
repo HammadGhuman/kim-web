@@ -43,7 +43,7 @@ function BenefitsCarousal() {
     setCurrentIndex(index);
   };
   return (
-    <div className="w-[370px] py-16 px-4 relative flex flex-col items-center justify-center group">
+    <div className="w-auto py-16 px-4 relative flex flex-col items-center justify-center group">
       <div className="duration-500">
         <Benefits
           heading={benifits[currentIndex].heading}

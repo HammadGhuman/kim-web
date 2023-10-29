@@ -18,7 +18,7 @@ function Page() {
         <br />
       </div>
 
-      <div className="mt-10 w-[202px] md:w-auto text-center text-white text-2xl font-medium font-Marsden">
+      <div className="mt-10 w-[202px] md:w-[805px] text-center text-white text-2xl font-medium font-Marsden">
         KI Mentor Technology GmbH Amtsgericht Mannheim HRB 744712
         Geschäftsführer: Christian Krauter
       </div>
@@ -105,7 +105,7 @@ function Page() {
           />
         </div>
 
-        <button className="w-[225px] h-[61px] bg-yellow-600 rounded-[10px] flex items-center justify-center mx-auto mt-4">
+        <button className="w-[225px] h-[61px] bg-yellow-600 rounded-[10px] flex items-center justify-center  mt-4">
           <div className="text-white text-xl font-medium font-Marsden">
             Absenden
           </div>

@@ -13,7 +13,8 @@ import Gesture from "@/public/Gesture.png";
 import UpPeople from "@/public/upPeople.svg";
 import Target from "@/public/target.svg";
 import ReloadPeople from "@/public/reloadpeople.svg";
-
+import divInfoBox from "@/public/div.info-box 1.png";
+import Image from "next/image";
 export default function Home() {
   const cards = [
     {
@@ -64,7 +65,7 @@ export default function Home() {
       <Hero />
       <AiDoesItBetter />
       <div className="flex items-center justify-center">
-        <div className="flex flex-col md:flex-row mx-10 flex-wrap max-w-7xl md:gap-14 mt-10 md:space-y-0 items-center justify-center">
+        <div className="flex flex-col md:flex-row mx-10 flex-wrap max-w-8xl md:gap-14 mt-10 md:space-y-0 items-center justify-center">
           {cards.map((item) => (
             <Card
               key={item.id}
@@ -76,11 +77,14 @@ export default function Home() {
         </div>
       </div>
       <LeaderShip />
-      <HowItWork />
+      {/* <HowItWork /> */}
       <MeetOurTeam />
       <OurPartners />
       {/* <BusinessSpecialist /> */}
       <OurBlog />
+      <div className="mt-20 flex items-center justify-center">
+        <Image src={divInfoBox} alt="div-info" />
+      </div>
     </main>
   );
 }

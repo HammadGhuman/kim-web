@@ -15,11 +15,18 @@ const config: Config = {
         image: "url('/background.png')",
       },
       fontFamily: {
-        Marsden: ["Marsden", "cursive"],
+        Marsden: ["Marsden"],
+        // sans: ["var(--font-marsden)"],
+      },
+      fontWeight: {
+        normal: "400",
+        semibold: "600",
+        medium: "500",
+        light: "300",
       },
     },
   },
-  plugins: [require("daisyui"),require('@tailwindcss/typography')],
+  plugins: [require("daisyui"), require("@tailwindcss/typography")],
   daisyui: {
     themes: false,
     darkTheme: "light",
