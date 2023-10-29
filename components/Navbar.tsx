@@ -52,8 +52,21 @@ function Navbar() {
         <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
           <Link href="/ask-question">Blog & FAQs</Link>
         </li>
+        <li>
+          <div className="md:hidden flex items-center justify-center space-x-5">
+            <button className="flex items-center justify-center border-white border-2 space-x-3 hover:bg-[#B77828] hover:border-[#B77828] transition-colors duration-300 text-white px-1 py-1 rounded-lg">
+              <span className="text-center text-lg px-7 text-white">Login</span>
+            </button>
+            <button className="flex items-center justify-center bg-[#B77828] space-x-3 text-white px-1 py-1 rounded-lg">
+              <span className="text-center pl-3">Buy Now</span>
+              <div className="bg-white w-8 h-8 flex items-center justify-center rounded-md">
+                <Image src={Arrow} alt="arrow" />
+              </div>
+            </button>
+          </div>
+        </li>
       </ul>
-      <div className="flex items-center justify-center space-x-5">
+      <div className="hidden md:flex items-center justify-center space-x-5">
         <button className="flex items-center justify-center border-white border-2 space-x-3 hover:bg-[#B77828] hover:border-[#B77828] transition-colors duration-300 text-white px-1 py-1 rounded-lg">
           <span className="text-center text-lg px-7 text-white">Login</span>
         </button>
@@ -63,7 +76,7 @@ function Navbar() {
             <Image src={Arrow} alt="arrow" />
           </div>
         </button>
-      </div> 
+      </div>
     </div>
   );
 }

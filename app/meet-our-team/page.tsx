@@ -20,7 +20,7 @@ import ContactForm from "@/public/contact-form_1698477 1.png";
 import ReadMoreButton from "@/components/ReadMoreButton";
 import Roadmap from "@/components/Roadmap";
 function Page() {
-  const [sidebarData, setSidebarData] = useState({});
+  const [sidebarData, setSidebarData] = useState<any>({});
 
   return (
     <div className="drawer drawer-end">
