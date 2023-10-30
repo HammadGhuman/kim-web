@@ -5,10 +5,10 @@ type Props = {
   img?: any;
 };
 
-function BlogDetailCard({img}:Props) {
+function BlogDetailCard({ img }: Props) {
   return (
     <div className="flex flex-col items-center justify-center mt-10 space-y-20 md:space-y-10 md:mx-20">
-      <div className="w-[225px] md:w-auto text-center">
+      <div className="w-[225px] md:w-auto text-center my-10">
         <span className="text-white md:text-[62px] text-[38px] font-medium leading-10">
           Blog{" "}
         </span>

@@ -17,7 +17,7 @@ function Faq() {
   return (
     <div
       id="faqs"
-      className="flex flex-col items-center justify-center mt-24 space-y-2 text-white text-center"
+      className="flex flex-col items-center justify-center mt-24 space-y-2 h text-white text-center"
     >
       {faqs &&
         faqs.map((faq: any) => (
@@ -30,12 +30,12 @@ function Faq() {
             }`}
             onClick={() => setActiveFaqId(faq.id)}
           >
-            <div className="collapse collapse-plus max-w-4xl">
+            <div className="collapse collapse-plus max-w-4xl font-Marsden pl-3 ">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title text-xl font-medium">
+              <div className="collapse-title text-left text-xl font-bold pr-10">
                 {faq.attributes.Question}
               </div>
-              <div className="collapse-content">
+              <div className="collapse-content text-left text-[13px] font-medium pr-10">
                 <p>{faq.attributes.Answer}</p>
               </div>
             </div>

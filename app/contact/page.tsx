@@ -3,27 +3,27 @@ import React from "react";
 function Page() {
   return (
     <div className="flex flex-col items-center justify-center ">
-      <div className="w-[201px] md:w-auto text-center">
-        <span className="text-white text-[32px] font-semibold font-Marsden leading-10">
+      <div className="w-[201px] md:w-auto text-center mt-20">
+        <span className="text-white text-[32px] md:text-[62px] font-semibold font-Marsden leading-10">
           Impressum &{" "}
         </span>
-        <span className="text-orange-400 text-[32px] font-semibold font-Marsden leading-10">
+        <span className="text-[#ae7226] text-[32px] md:text-[62px] font-semibold font-Marsden leading-10">
           Kontakt
           <br />
         </span>
       </div>
 
-      <div className="mt-10 w-[243px] md:w-auto text-center text-orange-400 text-2xl font-semibold font-Marsden leading-[59.04px]">
+      <div className="mt-10 w-[243px] md:w-auto text-center text-[#ae7226] text-2xl font-semibold font-Marsden leading-[59.04px]">
         Unternehmen
         <br />
       </div>
 
-      <div className="mt-10 w-[202px] md:w-[805px] text-center text-white text-2xl font-medium font-Marsden">
+      <div className=" w-[202px] md:w-[805px] text-center text-white text-2xl font-medium font-Marsden">
         KI Mentor Technology GmbH Amtsgericht Mannheim HRB 744712
         Geschäftsführer: Christian Krauter
       </div>
 
-      <div className="md:w-auto mt-10 w-[243px] text-center text-orange-400 text-2xl font-semibold font-Marsden leading-[59.04px]">
+      <div className="md:w-auto mt-10 w-[243px] text-center text-[#ae7226] text-2xl font-semibold font-Marsden leading-[59.04px]">
         Adresse
         <br />
       </div>
@@ -32,7 +32,7 @@ function Page() {
         Wachtelstraße 4 75245 Neulingen
       </div>
 
-      <div className="mt-10 w-[243px] text-center text-orange-400 text-2xl font-semibold font-Marsden leading-[59.04px]">
+      <div className="mt-10 w-[243px] text-center text-[#ae7226] text-2xl font-semibold font-Marsden leading-[59.04px]">
         Telefon
         <br />
       </div>
@@ -44,7 +44,7 @@ function Page() {
         <span className="text-white text-[32px] font-semibold font-Marsden leading-[42px]">
           Kontakt{" "}
         </span>
-        <span className="text-orange-400 text-[32px] font-semibold font-Marsden leading-[42px]">
+        <span className="text-[#ae7226] text-[32px] font-semibold font-Marsden leading-[42px]">
           aufnehmen
         </span>
       </div>

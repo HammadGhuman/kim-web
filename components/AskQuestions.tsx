@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Search from "@/public/Search.svg";
+import Search from "@/public/Search.png";
 
 function AskQuestions() {
   return (
@@ -17,10 +17,10 @@ function AskQuestions() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         quis tortor vitae sapien mattis sagittis sed rhoncus ante.
       </div>
-      <div className="relative mt-24">
-        <Image className="absolute top-6 left-4" src={Search} alt="search" />
+      <div className="relative mt-12">
+        <Image className="absolute top-5 left-4" width={18} height={18} src={Search} alt="search" />
         <input
-          className="w-[279px] md:w-[600px]  h-[59px] bg-opacity-40  bg-[#4869a4] rounded-[7px] border-2 text-white  px-16"
+          className="w-[279px] md:w-[600px]  h-[59px] bg-opacity-40  bg-[#4869a4] rounded-[7px]  text-white  px-16"
           placeholder="Search here..."
         />
       </div>

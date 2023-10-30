@@ -6,15 +6,15 @@ import HowItWork from "@/components/HowItWork";
 import MeetOurTeam from "@/components/MeetOurTeam";
 import OurPartners from "@/components/OurPartners";
 import OurBlog from "@/components/OurBlog";
-
+import { Fragment } from "react";
 import Brain from "@/public/Brain.svg";
 import People from "@/public/Mentoring.svg";
-import Gesture from "@/public/Gesture.png";
 import UpPeople from "@/public/upPeople.svg";
 import Target from "@/public/target.svg";
 import ReloadPeople from "@/public/reloadpeople.svg";
 import divInfoBox from "@/public/div.info-box 1.png";
 import Image from "next/image";
+import GestureCard from "@/components/GestureCard";
 export default function Home() {
   const cards = [
     {
@@ -31,13 +31,7 @@ export default function Home() {
         'Die neue Form der Führungskräfteentwicklung, weg von Classroom Learning auf "Vorrat" hin zu einer täglichen Begleitung der Führungskräfte direkt am Arbeitsplatz',
       img: People,
     },
-    {
-      id: 3,
-      title: "Gesteigerte Mitarbeiterbindung",
-      description:
-        "Weiterbildungen sind ein wichtiger Teil der Mitarbeiterbindung. Unser budgetfreundliches Format ermöglicht es allen Führungskräften an diesen teilzunehmen",
-      img: Gesture,
-    },
+
     {
       id: 4,
       title: "Effektivere Führung",
@@ -66,23 +60,26 @@ export default function Home() {
       <AiDoesItBetter />
       <div className="flex items-center justify-center">
         <div className="flex flex-col md:flex-row md:mx-10 mx-4 flex-wrap max-w-8xl md:gap-14 mt-10 md:space-y-0 items-center justify-center">
-          {cards.map((item) => (
-            <Card
-              key={item.id}
-              image={item.img}
-              title={item.title}
-              description={item.description}
-            />
+          {cards.map((item, index) => (
+            <Fragment key={item.id}>
+              {index === 2 && <GestureCard />}
+              <Card
+                key={item.id}
+                image={item.img}
+                title={item.title}
+                description={item.description}
+              />
+            </Fragment>
           ))}
         </div>
       </div>
       <LeaderShip />
-      {/* <HowItWork /> */}
+      <HowItWork />
       <MeetOurTeam />
       <OurPartners />
       {/* <BusinessSpecialist /> */}
       <OurBlog />
-      <div className="mt-20 flex items-center justify-center">
+      <div className="mt-20 mb-40 flex items-center justify-center">
         <Image src={divInfoBox} alt="div-info" />
       </div>
     </main>

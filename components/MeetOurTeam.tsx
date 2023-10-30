@@ -35,17 +35,18 @@ function MeetOurTeam() {
 
       <div className=" flex items-center justify-center">
         <div className="flex flex-col md:space-y-0 space-y-10 md:flex-row items-center md:justify-between md:space-x-24  lg:min-w-[900px]">
-          {teamMembers.map((item) => (
+          {teamMembers.map((item, index) => (
             <TeamCard
               key={item.name}
               img={item.img}
               name={item.name}
               position={item.position}
+              index={index}
             />
           ))}
         </div>
       </div>
-      <div className="flex items-center justify-center mt-[56px]">
+      <div className="flex items-center justify-center mt-[65px]">
         <button className="w-[225px] h-[61px] bg-[#B77828] rounded-[10px]">
           <div className="text-white text-xl font-medium font-Marsden">
             Alle kennenlernen

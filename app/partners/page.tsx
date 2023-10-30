@@ -16,6 +16,7 @@ import Partner5 from "@/public/Logo 5.png";
 import Partner6 from "@/public/logo 6.png";
 import BenefitsCarousal from "@/components/BenifitsCarosal";
 import Benifits from "@/components/Benifits";
+import ReadMoreButton from "@/components/ReadMoreButton";
 
 const benifits = [
   {
@@ -42,7 +43,7 @@ const benifits = [
 
 function AskQuestion() {
   return (
-    <div className="flex flex-col items-center justify-center md:mt-20">
+    <div className="flex flex-col items-center justify-center md:mt-20 font-Marsden">
       <div className="w-[225px] md:w-auto text-center">
         <span className="text-white md:text-6xl text-[32px] font-medium  leading-[38px]">
           KI.m For
@@ -88,7 +89,7 @@ function AskQuestion() {
         />
       </div>
 
-      <div className="mt-10 md:-mb-10 mb-10 text-center text-white text-4xl md:text-6xl font-medium leading-[72px]">
+      <div className="mt-10 md:-mb-10 mb-10 text-center text-white text-4xl md:text-6xl font-medium leading-[72px] py-10">
         Benifits
       </div>
       <div className="md:hidden flex flex-col space-y-5">
@@ -103,16 +104,16 @@ function AskQuestion() {
       <div className="hidden md:block">
         <BenefitsCarousal />
       </div>
-      <div className="w-[249.60px] md:w-auto text-center md:-mt-10 mt-10">
-        <span className="text-white text-5xl font-medium  leading-[72px]">
+      <div className="w-[249.60px] md:w-auto text-center md:-mt-4 mt-10">
+        <span className="text-white text-6xl font-medium  leading-[72px]">
           Affiliate{" "}
         </span>
-        <span className="text-yellow-600 text-5xl font-medium  leading-[72px]">
+        <span className="text-yellow-600 text-6xl font-medium  leading-[72px]">
           Program
         </span>
       </div>
 
-      <div className="w-[285px] md:w-auto text-center text-white text-base font-normal leading-[27px]">
+      <div className="w-[285px] md:w-auto text-center text-white text-base font-normal mb-4 leading-[27px]">
         Lorem Ipsum dolor sit amet sun progit droin qual de suis erestopius
         liqueenean
         <br />
@@ -133,15 +134,16 @@ function AskQuestion() {
       </div>
 
       <div className="w-[291px] md:w-auto text-center md:mt-0 mt-10">
-        <span className="text-white text-5xl font-medium  leading-[72px]">
-          How to Become a<br />
+        <span className="text-white text-6xl font-medium  leading-[72px]">
+          How to Become a{" "}
         </span>
-        <span className="text-yellow-600 text-5xl font-medium  leading-[72px]">
+        <span className="text-yellow-600 text-6xl font-medium  leading-[72px]">
+          {" "}
           Partner
         </span>
       </div>
 
-      <div className="w-[299px] md:w-auto text-center text-white text-lg font-normal mt-10 leading-[27px]">
+      <div className="w-[299px] md:w-auto text-center text-white text-lg font-normal mt-3 leading-[27px]">
         Lorem Ipsum dolor sit amet sun progit droin qual de suis erestopius
         liqueenean
         <br />
@@ -172,9 +174,9 @@ function AskQuestion() {
         </div>
         <div className="w-[159px] h-[159px] left-[344px] top-0 absolute">
           <div className="w-[159px] h-[159px] left-0 top-0 absolute rounded-full border border-white" />
-          <div className="w-[63px] h-[63px] left-[48px] top-[48px] absolute">
+          <div className="w-16 h-16 left-[48px] top-[48px] absolute">
             <Image
-              className="w-[63px] h-[63px] left-0 top-0 absolute"
+              className="w-16 h-16 left-0 top-0 absolute"
               src={Check1}
               alt="check1"
             />
@@ -182,9 +184,9 @@ function AskQuestion() {
         </div>
         <div className="w-[159px] h-[159px] left-[690px] top-0 absolute">
           <div className="w-[159px] h-[159px] left-0 top-0 absolute rounded-full border border-white" />
-          <div className="w-[76px] h-[76px] left-[42px] top-[48px] absolute">
+          <div className="w-16 h-16 left-[42px] top-[48px] absolute">
             <Image
-              className="w-[76px] h-[76px] left-0 top-0 absolute"
+              className="w-16 h-16 left-0 top-0 absolute"
               src={Check1}
               alt="check1"
             />
@@ -192,9 +194,9 @@ function AskQuestion() {
         </div>
         <div className="w-[159px] h-[159px] left-[1036px] top-0 absolute">
           <div className="w-[159px] h-[159px] left-0 top-0 absolute rounded-full border border-white" />
-          <div className="w-[75px] h-[75px] left-[42px] top-[42px] absolute">
+          <div className="w-16 h-16 left-[42px] top-[42px] absolute">
             <Image
-              className="w-[75px] h-[75px] left-0 top-0 absolute"
+              className="w-16 h-16 left-0 top-0 absolute"
               src={Check1}
               alt="check1"
             />
@@ -236,7 +238,10 @@ function AskQuestion() {
       </div>
 
       <Reply />
-      <div></div>
+
+      <div className="mt-10">
+        <ReadMoreButton text="Send Message" />
+      </div>
     </div>
   );
 }

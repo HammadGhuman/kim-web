@@ -7,7 +7,7 @@ function Paragraph({ content }: { content: string }) {
       {/* <div dangerouslySetInnerHTML={{__html:content}} className="w-[263px]  md:w-full text-center md:text-left text-white">
       </div> */}
 
-      <ReactMarkdown className="md:prose-2xl prose-li:decoration-white prose prose-headings:text-orange-500 text-white md:px-10 px-10">
+      <ReactMarkdown className="md:prose-2xl min-w-[1100px] prose-li:decoration-white prose prose-headings:text-white text-white ">
         {content}
       </ReactMarkdown>
     </div>

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Team1 from "@/public/team-1.jpg.png";
 import Team2 from "@/public/team-2.jpg.png";
 import Team3 from "@/public/team-3.jpg.png";
-
+import Team1Land from "@/public/Team-1land.png";
 import Partner1 from "@/public/logo 1.png";
 import Partner2 from "@/public/logo 2.png";
 import Partner3 from "@/public/Logo 3.png";
@@ -26,23 +26,23 @@ function Page() {
     <div className="drawer drawer-end">
       <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
       <div className="flex flex-col items-center justify-center px-0 mx-0 font-Marsden drawer-content">
-        <div className="w-[225px] md:w-full mt-[149px] text-center text-white text-[38px] md:text-[62px] font-medium  leading-10">
-          Meet Our
+        <div className="w-[225px] md:w-full mt-[104px] text-center text-white text-[38px] md:text-[62px] font-medium  leading-10">
+          Meet our
           <br className="md:hidden" />
-          <span className="text-[#B77828]"> Team</span>
+          <span className="text-[#B77828]"> team</span>
         </div>
 
-        <div className="w-[291px] md:w-[634px] mt-10 text-center text-white text-lg font-normal md:text-lg md:leading-[27px]  leading-[25px]">
+        <div className="w-[291px] md:w-[634px] mt-5 mb-[118px] text-center text-white text-lg font-normal md:text-lg md:leading-[27px]  leading-[25px]">
           Lorem Ipsum dolor sit amet sun progit droin qual de suis erestopius
           liqueenean sollicituin, lorem quis bibendum auct.
         </div>
 
-        <div className="flex drawer-button flex-col md:flex-row flex-wrap  mt-10">
+        <div className="flex drawer-button flex-col xl:justify-center md:flex-row flex-wrap">
           <label
             htmlFor="my-drawer-1"
             onClick={() =>
               setSidebarData({
-                img: Team1,
+                img: Team1Land,
                 name: "Christian Krauter",
                 position: "  Gründer & Geschäftsführer",
               })
@@ -194,8 +194,14 @@ function Page() {
           <ReadMoreButton text="Apply Here" />
         </div>
 
-        <div className="mt-10 text-center text-white text-5xl font-semibold ">
+        <div className="text-center text-white text-[62px] mt-[138px] font-medium font-['Marsden'] leading-[72px]">
           Partners
+        </div>
+        <div className="text-center mt-4 text-white text-lg font-normal font-Marsden leading-[27px]">
+          Lorem Ipsum dolor sit amet sun progit droin qual de suis erestopius
+          liqueenean
+          <br />
+          sollicituin, lorem quis bibendum auct.
         </div>
         <div className="grid grid-cols-1 mt-20 md:grid-cols-3 place-items-center">
           <label
@@ -209,7 +215,7 @@ function Page() {
           >
             <Image
               width={200}
-              className="rounded md:ml-20"
+              className="rounded md:mx-10"
               src={Partner1}
               alt="partner1"
             />
@@ -225,7 +231,7 @@ function Page() {
           >
             <Image
               width={200}
-              className="rounded md:ml-20"
+              className="rounded md:mx-10"
               src={Partner2}
               alt="Partner2"
             />
@@ -241,7 +247,7 @@ function Page() {
           >
             <Image
               width={200}
-              className="rounded md:ml-20"
+              className="rounded md:mx-10"
               src={Partner3}
               alt="partner3"
             />
@@ -257,7 +263,7 @@ function Page() {
           >
             <Image
               width={200}
-              className="rounded md:ml-20"
+              className="rounded md:mx-10"
               src={Partner4}
               alt="partner4"
             />
@@ -273,7 +279,7 @@ function Page() {
           >
             <Image
               width={200}
-              className="rounded md:ml-20"
+              className="rounded md:mx-10 scale-[0.70]"
               src={Partner5}
               alt="partner1"
             />
@@ -289,7 +295,7 @@ function Page() {
           >
             <Image
               width={200}
-              className="rounded md:ml-20"
+              className="rounded md:mx-10"
               src={Partner6}
               alt="partner1"
             />
@@ -297,7 +303,7 @@ function Page() {
         </div>
         <div
           id="roadmap"
-          className="text-center mt-10 text-white text-5xl font-medium font-Marsden md:text-[62px]  leading-[72px]"
+          className="text-center mt-20 text-white text-5xl font-medium font-Marsden md:text-[62px]  leading-[72px]"
         >
           Roadmap
         </div>
@@ -306,24 +312,27 @@ function Page() {
           iusto, nostrum molestiae odit earum eveniet dolores ut assumenda.
           Quaerat, libero.
         </p>
-
-        <div className="flex flex-col  space-y-3">
-          <Roadmap
-            date="2009"
-            title="Die Entstehung des Leadership Modells"
-            description="Ausgelöst durch die Finanzkrise erforschte Jörg Krauter die Frage: „Wie führt man wirksam in Krisen und extremen Situationen in einem volatilen, unsicheren, komplexen und mehrdeutigen Geschäftsumfeld?“. In seiner Promotion zum PhD, die er in 2018 abschloss, entwickelte er die Grundlage für das Leadership Modell, das wir heute in KI.m einsetzen."
-          />
-          <div className="w-[1232px] hidden md:block h-1.5 border-t border-stone-300 relative">
-            <div className="w-6 h-[5px] border-t-2 border-white absolute left-10 top-[-1.2px]" />
-            <div className="w-6 h-[5px] border-t-2 border-white absolute right-10 top-[-1.2px]" />
-          </div>
-
-          <div className="md:self-end md:w-[700px]">
+        <div className="relative mb-20">
+          <div className="w-[1440px] h-[950px] bg-blue-400 bg-opacity-50 blur-[1085px] absolute z-10" />
+          <div className="flex items-center justify-center flex-col"></div>
+          <div className="flex flex-col mt-16  space-y-10 z-">
             <Roadmap
-              date="März 2020"
-              title="Corona Pandemie, die Theorie wird zu Praxis"
-              description="Die Corona Pandemie wird als Extremereignis in unsere Geschichte eingehen. Diesen Umstand nutzte Jörg, um anhand einer empirischen Studie die Erkenntnisse seiner bisherigen Forschungsarbeit zu überprüfen und um aktuelle Trends, wie Digitalisierung und agiles Arbeiten zu erweitern.  "
+              date="2009"
+              title="Die Entstehung des Leadership Modells"
+              description="Ausgelöst durch die Finanzkrise erforschte Jörg Krauter die Frage: „Wie führt man wirksam in Krisen und extremen Situationen in einem volatilen, unsicheren, komplexen und mehrdeutigen Geschäftsumfeld?“. In seiner Promotion zum PhD, die er in 2018 abschloss, entwickelte er die Grundlage für das Leadership Modell, das wir heute in KI.m einsetzen."
             />
+            <div className="w-[1232px] hidden md:block  border-t border-stone-300 relative ">
+              <div className="w-6 h-[5px] border-t-2 border-white absolute left-10 top-[-1.2px]" />
+              <div className="w-6 h-[5px] border-t-2 border-white absolute right-10 top-[-1.2px]" />
+            </div>
+
+            <div className="md:self-end md:w-[700px]">
+              <Roadmap
+                date="März 2020"
+                title="Corona Pandemie, die Theorie wird zu Praxis"
+                description="Die Corona Pandemie wird als Extremereignis in unsere Geschichte eingehen. Diesen Umstand nutzte Jörg, um anhand einer empirischen Studie die Erkenntnisse seiner bisherigen Forschungsarbeit zu überprüfen und um aktuelle Trends, wie Digitalisierung und agiles Arbeiten zu erweitern.  "
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -334,7 +343,7 @@ function Page() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <div className="bg-white min-h-full w-96">
+        <div className="bg-white min-h-full w-[718px]">
           <div className="flex flex-col items-center justify-center">
             <Image src={sidebarData.img} alt="partner1 side" />
 
@@ -342,7 +351,7 @@ function Page() {
               <h1 className="text-center text-black text-4xl font-bold font-Marsden leading-[27px]">
                 Christian Krauter
               </h1>
-              <h1 className="w-[295px] text-center text-yellow-600 text-2xl font-medium font-['Marsden'] leading-[37.50px]">
+              <h1 className="w-auto text-center text-yellow-600 text-2xl font-medium font-['Marsden'] leading-[37.50px]">
                 Gründer & Geschäftsführer
               </h1>
               <h1 className="text-black text-base text-center font-light font-['Marsden'] leading-[27px]">

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: "Marsden";
   src: url("../public/Fonts/Marsden-Light.ttf") format("truetype"),
@@ -37,6 +38,15 @@
   font-style: medium;
 }
 
+@font-face {
+  font-family: "Marsden";
+  src: url("../public/Fonts/Marsden-Bold.ttf") format("truetype"),
+    url("../public/Fonts/Marsden-Bold.woff") format("woff"),
+    url("../public/Fonts/Marsden-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
 /* Custom CSS for code blocks */
 pre {
   background-color: white;
@@ -64,4 +74,26 @@ code {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+}
+
+#scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+#scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-90%);
+  }
+}
+
+#logo-slide{
+  animation : slide 25s linear infinite;
 }

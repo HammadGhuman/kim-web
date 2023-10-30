@@ -24,6 +24,9 @@ const config: Config = {
         medium: "500",
         light: "300",
       },
+      animation:{
+        'pulse-fast' : 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+      } 
     },
   },
   plugins: [require("daisyui"), require("@tailwindcss/typography")],

@@ -10,7 +10,7 @@ function Steps(props: Props) {
   return (
     <>
       <div className="border-white border-2 p-5 rounded-full">
-        <Image width={75} height={75} src={Check1} alt="step1" />
+      <Image width={75} height={75} src={Check1} alt="step1" />
       </div>
       <div className="text-center text-orange-400 text-5xl font-extrabold mt-10">
         {props.step}

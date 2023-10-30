@@ -29,7 +29,7 @@ function LeaderShip() {
           alt="leadership"
         />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden md:block -mt-10">
         <Image
           width={1200}
           height={755}

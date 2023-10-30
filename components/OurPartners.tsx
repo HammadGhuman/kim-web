@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 
 import Partner1 from "@/public/logo 1.png";
 import Partner2 from "@/public/logo 2.png";
@@ -19,25 +20,82 @@ function OurPartners() {
           Partner
         </span>
       </div>
-      <div className="flex md:bg-[#263A64]  md:flex-row md:space-y-0 md:justify-between md:px-10 flex-col space-y-10 mt-10 items-center justify-center">
-        <div className="hidden md:block">
-          <span className="text-[#CD9145] text-4xl font-medium font-['Marsden'] leading-[44px] tracking-wide">
-            Unsere
-          </span>
-          <span className="text-white text-4xl font-medium font-['Marsden'] leading-[44px] tracking-wide">
-            {" "}
-            Partner
-          </span>
+      <div className="flex md:bg-[#263A64] relative  md:flex-row md:space-y-0 md:justify-between md:pr-10 flex-col space-y-10 mt-10 items-center justify-between">
+        <div className="hidden md:block min-w-[450px] md:pl-10 absolute z-10 bg-[#263a64] h-[200px]">
+          <div className="flex h-full items-center justify-center">
+            <span className="text-[#CD9145] text-4xl font-medium font-['Marsden'] leading-[44px] tracking-wide">
+              Unsere
+            </span>
+            <span className="text-white text-4xl font-medium font-['Marsden'] leading-[44px] tracking-wide">
+              {" "}
+              Partner
+            </span>
+          </div>
         </div>
-        <Image width={180} className="rounded" src={Partner1} alt="partner1" />
-        <Image width={180} className="rounded" src={Partner2} alt="partner2" />
-        <Image width={180} className="rounded" src={Partner3} alt="partner3" />
-        <Image
-          width={180}
-          className="rounded mr-10"
-          src={Partner4}
-          alt="partner4"
-        />
+        <div id="logos" className="py-4 ">
+          <div id="logo-slide" className=" whitespace-nowrap">
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner1}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner2}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner3}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner4}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner5}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner6}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner1}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner2}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner3}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner4}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner5}
+              alt="partner1"
+            />
+            <Image
+              className="w-44 inline-block mx-10 "
+              src={Partner6}
+              alt="partner1"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

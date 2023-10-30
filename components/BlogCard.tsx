@@ -5,21 +5,21 @@ import Blog1 from "@/public/Blog1.png";
 import ReadMoreBlog from "@/public/ReadMoreBlog.svg";
 function BlogCard() {
   return (
-    <div className="flex md:flex-row flex-col mt-18 md:mx-0 mx-10">
+    <div className="flex md:flex-row flex-col md:mx-0 mx-10 rounded-[10px] shadow-md">
       <Image
-        className="w-full lg:w-[516px] lg:h-[287px]"
+        className="w-full lg:w-[516px] lg:h-[287px] rounded-l-[10px]"
         src={Blog1}
         alt={"Blog 1"}
       />
-      <div className="lg:w-[516px]  md:h-[287px] bg-[#214777] pl-3 md:pl-12 pr-4 pt-8 rounded-t-none md:rounded-l-none rounded-b-[10px] md:rounded-r-[10px] shadow">
-        <h1 className=" text-white md:text-2xl text-xl font-bold font-Marsden leading-normal md:leading-loose">
+      <div className="lg:w-[516px]  md:h-[287px] bg-[#214777] pl-3 md:pl-12 pr-4 pt-8 rounded-t-none md:rounded-l-none rounded-b-[10px] md:rounded-r-[10px]">
+        <h1 className=" text-white md:text-2xl text-xl font-bold font-Marsden leading-normal ">
           Leadership is reshaping itself – what are the trends?
         </h1>
         <div className=" text-stone-300 mt-3 text-base font-normal font-Marsden leading-relaxed">
           Multi-crisis scenarios, technological and social change and the ESG
           paradigm of a sustainable economy are...
         </div>
-        <button className="flex items-center py-3 space-x-3 group text-white hover:text-orange-400">
+        <button className="flex items-center py-3 space-x-3 group text-white hover:text-[#b77828]">
           <div className="text-center  text-base font-normal font-Marsden capitalize group-hover:font-medium">
             Read More
           </div>
