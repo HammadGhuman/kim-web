@@ -11,8 +11,8 @@ function Page() {
         Geschäftsführer: Christian Krauter
       </h1>
 
-      <div className="w-[257px] md:w-auto ">
-        <span className="text-white text-lg md:text-2xl  font-Marsden">
+      <div className="w-[257px] mb-20 md:w-[820px] text-center">
+        <span className="text-white text-lg md:text-[32px] font-medium  font-Marsden">
           <br />
           Stand: 25.08.2022
           <br />​<br />
@@ -221,11 +221,11 @@ function Page() {
           <br />
           E-Mail:{" "}
         </span>
-        <span className="text-white text-2xl  font-['Marsden'] underline">
+        <span className="text-white text-2xl md:text-[32px] font-['Marsden'] underline">
           Christian.Krauter@ki-mentor.com
           <br />
         </span>
-        <span className="text-white text-2xl  font-['Marsden']">
+        <span className="text-white text-2xl md:text-[32px] font-['Marsden']">
           ​<br />​<br />
           Gewährleistungsausschluss für die Nutzung der Site und der Dienste
           <br />​<br />

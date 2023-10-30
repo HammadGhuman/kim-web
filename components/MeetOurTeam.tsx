@@ -4,6 +4,7 @@ import Team1 from "@/public/team-1.jpg.png";
 import Team2 from "@/public/team-2.jpg.png";
 import Team3 from "@/public/team-3.jpg.png";
 import { it } from "node:test";
+import Link from "next/link";
 function MeetOurTeam() {
   const teamMembers = [
     {
@@ -23,7 +24,7 @@ function MeetOurTeam() {
     },
   ];
   return (
-    <div>
+    <div id="TreffenSieunserTeam">
       <div className="text-center mt-10 mb-20 font-Marsden">
         <span className="text-white text-[38px] md:text-[62px] font-medium leading-[72px]">
           Lerne das KI.m{" "}
@@ -47,11 +48,13 @@ function MeetOurTeam() {
         </div>
       </div>
       <div className="flex items-center justify-center mt-[65px]">
-        <button className="w-[225px] h-[61px] bg-[#B77828] rounded-[10px]">
-          <div className="text-white text-xl font-medium font-Marsden">
-            Alle kennenlernen
-          </div>
-        </button>
+        <Link href="#">
+          <button className="w-[225px] h-[61px]  bg-[#B77828] rounded-[10px]">
+            <div className="text-white text-xl font-medium font-Marsden">
+              Alle kennenlernen
+            </div>
+          </button>
+        </Link>
       </div>
     </div>
   );

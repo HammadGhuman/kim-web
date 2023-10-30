@@ -2,7 +2,7 @@ import React from "react";
 
 function AiDoesItBetter() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div id="Gesteigerte" className="flex flex-col items-center justify-center">
       <div className="text-center mt-2  md:w-auto ">
         <span className="text-white md:text-[60px] md:leading-[72px] tracking-[-0.6px] md:max-w-[938px] font-medium  font-Marsden  text-[36px] ">
           Gesteigerte Führungsperformance <br />

@@ -1,22 +1,20 @@
 import PartnerBackground from "@/components/partnerBackground";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import Check1 from "@/public/check 1.png";
-
+import Check1 from "@/public/icons8-check-96.png";
+import HandShake from "@/public/icons8-handshake-50.png";
+import Contact from "@/public/contact-form.png";
 import Benefits from "@/components/Benifits";
 
 import Steps from "@/components/Steps";
 import Reply from "@/components/Reply";
 
-import Partner1 from "@/public/logo 1.png";
-import Partner2 from "@/public/logo 2.png";
-import Partner3 from "@/public/Logo 3.png";
-import Partner4 from "@/public/Logo 4.png";
-import Partner5 from "@/public/Logo 5.png";
-import Partner6 from "@/public/logo 6.png";
+import Folder from "@/public/folder.png";
+
 import BenefitsCarousal from "@/components/BenifitsCarosal";
 import Benifits from "@/components/Benifits";
 import ReadMoreButton from "@/components/ReadMoreButton";
+import OurPartners from "@/components/OurPartners";
 
 const benifits = [
   {
@@ -61,35 +59,14 @@ function AskQuestion() {
       <div className="mt-7">
         <PartnerBackground />
       </div>
-      <div className="text-center md:hidden mt-16 mb-10">
-        <span className="text-white text-4xl font-medium  leading-[44px] tracking-wide">
-          Unsere{" "}
-        </span>
-        <span className="text-yellow-600 text-4xl font-medium  leading-[44px] tracking-wide">
-          Partner
-        </span>
-      </div>
-      <div className="flex w-full md:bg-[#263A64]  md:flex-row md:space-y-0 md:justify-between md:px-10 flex-col space-y-10  items-center justify-center">
-        <div className="text-center hidden md:block">
-          <span className="text-white text-4xl font-medium  leading-[44px] tracking-wide">
-            Unsere{" "}
-          </span>
-          <span className="text-yellow-600 text-4xl font-medium  leading-[44px] tracking-wide">
-            Partner
-          </span>
-        </div>
-        <Image width={180} className="rounded" src={Partner1} alt="partner1" />
-        <Image width={180} className="rounded" src={Partner2} alt="partner2" />
-        <Image width={180} className="rounded" src={Partner3} alt="partner3" />
-        <Image
-          width={180}
-          className="rounded mr-10"
-          src={Partner4}
-          alt="partner4"
-        />
+      <div className="-mt-10">
+        <OurPartners />
       </div>
 
-      <div className="mt-10 md:-mb-10 mb-10 text-center text-white text-4xl md:text-6xl font-medium leading-[72px] py-10">
+      <div
+        id="Vorteile"
+        className="mt-10 md:-mb-10 mb-10 text-center text-white text-4xl md:text-6xl font-medium leading-[72px] py-10"
+      >
         Benifits
       </div>
       <div className="md:hidden flex flex-col space-y-5">
@@ -104,7 +81,10 @@ function AskQuestion() {
       <div className="hidden md:block">
         <BenefitsCarousal />
       </div>
-      <div className="w-[249.60px] md:w-auto text-center md:-mt-4 mt-10">
+      <div
+        id="Partnerprogramm"
+        className="w-[249.60px] md:w-auto text-center md:-mt-4 mt-10"
+      >
         <span className="text-white text-6xl font-medium  leading-[72px]">
           Affiliate{" "}
         </span>
@@ -133,7 +113,10 @@ function AskQuestion() {
         <BenefitsCarousal />
       </div>
 
-      <div className="w-[291px] md:w-auto text-center md:mt-0 mt-10">
+      <div
+        id="SowerdenSiePartner"
+        className="w-[291px] md:w-auto text-center md:mt-0 mt-10"
+      >
         <span className="text-white text-6xl font-medium  leading-[72px]">
           How to Become a{" "}
         </span>
@@ -162,39 +145,39 @@ function AskQuestion() {
       {/* desktop steps */}
 
       <div className="hidden md:block w-[1195px] h-[159px] relative mt-10">
-        <div className="w-[159px] h-[159px] left-0 top-0 absolute">
+        <div className="w-[159px] h-[159px] left-10 top-0 absolute">
           <div className="w-[159px] h-[159px] left-0 top-0 absolute rounded-full border border-white" />
           <div className="w-16 h-16 left-[48px] top-[48px] absolute">
             <Image
               className="w-16 h-16 left-0 top-0 absolute"
-              src={Check1}
+              src={Contact}
               alt="check1"
             />
           </div>
         </div>
         <div className="w-[159px] h-[159px] left-[344px] top-0 absolute">
-          <div className="w-[159px] h-[159px] left-0 top-0 absolute rounded-full border border-white" />
-          <div className="w-16 h-16 left-[48px] top-[48px] absolute">
+          <div className="w-[159px] h-[159px] left-10 top-0 absolute rounded-full border border-white" />
+          <div className="w-16 h-16 left-[88px] top-[48px] absolute">
             <Image
               className="w-16 h-16 left-0 top-0 absolute"
-              src={Check1}
+              src={Folder}
               alt="check1"
             />
           </div>
         </div>
         <div className="w-[159px] h-[159px] left-[690px] top-0 absolute">
-          <div className="w-[159px] h-[159px] left-0 top-0 absolute rounded-full border border-white" />
-          <div className="w-16 h-16 left-[42px] top-[48px] absolute">
+          <div className="w-[159px] h-[159px] left-10 top-0 absolute rounded-full border border-white" />
+          <div className="w-16 h-16 left-[82px] top-[48px] absolute">
             <Image
               className="w-16 h-16 left-0 top-0 absolute"
-              src={Check1}
+              src={HandShake}
               alt="check1"
             />
           </div>
         </div>
         <div className="w-[159px] h-[159px] left-[1036px] top-0 absolute">
-          <div className="w-[159px] h-[159px] left-0 top-0 absolute rounded-full border border-white" />
-          <div className="w-16 h-16 left-[42px] top-[42px] absolute">
+          <div className="w-[159px] h-[159px] -left-2 top-0 absolute rounded-full border border-white" />
+          <div className="w-16 h-16 left-[38px] top-[48px] absolute">
             <Image
               className="w-16 h-16 left-0 top-0 absolute"
               src={Check1}
@@ -238,10 +221,6 @@ function AskQuestion() {
       </div>
 
       <Reply />
-
-      <div className="mt-10">
-        <ReadMoreButton text="Send Message" />
-      </div>
     </div>
   );
 }

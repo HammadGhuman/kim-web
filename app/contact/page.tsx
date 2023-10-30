@@ -7,13 +7,13 @@ function Page() {
         <span className="text-white text-[32px] md:text-[62px] font-semibold font-Marsden leading-10">
           Impressum &{" "}
         </span>
-        <span className="text-[#ae7226] text-[32px] md:text-[62px] font-semibold font-Marsden leading-10">
+        <span className="text-[#CD9246] text-[32px] md:text-[62px] font-semibold font-Marsden leading-10">
           Kontakt
           <br />
         </span>
       </div>
 
-      <div className="mt-10 w-[243px] md:w-auto text-center text-[#ae7226] text-2xl font-semibold font-Marsden leading-[59.04px]">
+      <div className="mt-10 w-[243px] md:w-auto text-center text-[#CD9246] text-2xl md:text-[32px] font-semibold font-Marsden leading-[59.04px]">
         Unternehmen
         <br />
       </div>
@@ -23,16 +23,16 @@ function Page() {
         Geschäftsführer: Christian Krauter
       </div>
 
-      <div className="md:w-auto mt-10 w-[243px] text-center text-[#ae7226] text-2xl font-semibold font-Marsden leading-[59.04px]">
+      <div className="md:w-auto mt-10 w-[243px] text-center text-[#CD9246] md:text-[32px] text-2xl font-semibold font-Marsden leading-[59.04px]">
         Adresse
         <br />
       </div>
 
-      <div className="w-[203px] md:w-auto text-center text-white text-2xl font-medium font-Marsden">
+      <div className="w-[203px]  md:w-auto text-center text-white text-2xl font-medium font-Marsden">
         Wachtelstraße 4 75245 Neulingen
       </div>
 
-      <div className="mt-10 w-[243px] text-center text-[#ae7226] text-2xl font-semibold font-Marsden leading-[59.04px]">
+      <div className="mt-10 w-[243px] text-center text-[#CD9246] text-2xl md:text-[32px] font-semibold font-Marsden leading-[59.04px]">
         Telefon
         <br />
       </div>
@@ -40,11 +40,20 @@ function Page() {
         +49 176 60415870
       </div>
 
-      <div className="mt-10 w-[201px] md:w-auto text-center">
-        <span className="text-white text-[32px] font-semibold font-Marsden leading-[42px]">
+      <div className="mt-10 w-[243px] text-center text-[#CD9246] text-2xl md:text-[32px] font-semibold font-Marsden leading-[59.04px]">
+        Email
+        <br />
+      </div>
+      <div className="w-[203px] md:w-auto text-center text-white text-2xl font-medium font-Marsden">
+       email
+      </div>
+
+
+      <div className="mt-20 w-[201px] md:w-auto text-center">
+        <span className="text-white text-[32px] md:text-[62px] font-medium font-Marsden leading-[42px]">
           Kontakt{" "}
         </span>
-        <span className="text-[#ae7226] text-[32px] font-semibold font-Marsden leading-[42px]">
+        <span className="text-[#CD9246] text-[32px]   md:text-[62px] font-medium font-Marsden leading-[42px]">
           aufnehmen
         </span>
       </div>
@@ -57,7 +66,7 @@ function Page() {
           </label>
           <input
             id="vorname"
-            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[300px]"
+            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[425px]"
             type="text"
           />
         </div>
@@ -68,7 +77,7 @@ function Page() {
           </label>
           <input
             id="Nachname"
-            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[300px]"
+            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[425px]"
             type="text"
           />
         </div>
@@ -79,7 +88,7 @@ function Page() {
           </label>
           <input
             id="Unternehmen"
-            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[300px]"
+            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[425px]"
             type="text"
           />
         </div>
@@ -90,7 +99,7 @@ function Page() {
           </label>
           <input
             id="E-Mail-Adresse"
-            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[300px]"
+            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[425px]"
             type="text"
           />
         </div>
@@ -105,7 +114,7 @@ function Page() {
           />
         </div>
 
-        <button className="w-[225px] h-[61px] bg-yellow-600 rounded-[10px] flex items-center justify-center  mt-4">
+        <button className="w-[225px] h-[61px] bg-[#B77828] rounded-[10px] flex items-center justify-center  mt-4">
           <div className="text-white text-xl font-medium font-Marsden">
             Absenden
           </div>

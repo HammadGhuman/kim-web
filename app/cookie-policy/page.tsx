@@ -6,11 +6,11 @@ function Page() {
       <div className="w-[201px] md:w-auto text-center text-white text-[32px] md:text-[62px] mt-20 font-semibold font-Marsden leading-[72px]">
         Cookie-Richtlinie
       </div>
-      <div className="w-[805px] text-center text-white text-2xl font-medium font-['Marsden'] mt-5">
+      <div className="w-[805px] text-center  text-white text-2xl font-medium font-['Marsden'] mt-16">
         KI Mentor Technology GmbH Amtsgericht Mannheim HRB 744712
         Geschäftsführer: Christian Krauter
       </div>
-      <div className="w-[805px] text-center">
+      <div className="w-[820px] text-center  mb-10 ">
         <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
           <br />
           1. Was ist ein Cookie?

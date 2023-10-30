@@ -58,7 +58,7 @@ export default function Home() {
     <main>
       <Hero />
       <AiDoesItBetter />
-      <div className="flex items-center justify-center">
+      <div id="Wieläuft" className="flex items-center justify-center">
         <div className="flex flex-col md:flex-row md:mx-10 mx-4 flex-wrap max-w-8xl md:gap-14 mt-10 md:space-y-0 items-center justify-center">
           {cards.map((item, index) => (
             <Fragment key={item.id}>
@@ -76,7 +76,9 @@ export default function Home() {
       <LeaderShip />
       <HowItWork />
       <MeetOurTeam />
+      <div className="mt-16">
       <OurPartners />
+      </div>
       {/* <BusinessSpecialist /> */}
       <OurBlog />
       <div className="mt-20 mb-40 flex items-center justify-center">

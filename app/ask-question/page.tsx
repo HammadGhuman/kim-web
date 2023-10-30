@@ -14,7 +14,7 @@ function AskQuestion() {
       <AskQuestions />
       <Faq />
 
-      <div className="flex flex-col items-center justify-center mt-24">
+      <div id="BlogsundDetails" className="flex flex-col items-center justify-center mt-24">
         <div className="w-[225px] md:w-auto text-center">
           <span className="text-white md:text-[62px] text-[38px] font-medium leading-10">
             Blogs &{" "}

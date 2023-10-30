@@ -85,6 +85,27 @@ code {
   scrollbar-width: none;
 }
 
+/* For Webkit Browsers */
+::-webkit-scrollbar {
+  width: 12px;
+  margin-left: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8b99b9; /* Color of the thumb */
+  border-radius: 5px; /* Set the border-radius to make it rounded */
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: #264b78; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8b99b9; /* Color of the thumb on hover */
+}
+
+
 @keyframes slide {
   from {
     transform: translateX(0);

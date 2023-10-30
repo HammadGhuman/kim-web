@@ -11,7 +11,7 @@ import Partner6 from "@/public/logo 6.png";
 
 function OurPartners() {
   return (
-    <div className="mt-16">
+    <div className="">
       <div className="text-center md:hidden">
         <span className="text-white text-4xl font-medium  leading-[44px] tracking-wide">
           Unsere{" "}

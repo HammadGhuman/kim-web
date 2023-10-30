@@ -7,7 +7,7 @@ function Page() {
         Datenschutz
         <br />
       </h1>
-      <h1 className="w-[202px] md:w-auto text-center text-white text-lg md:text-2xl mt-5  font-Marsden">
+      <h1 className="w-[202px] md:w-auto text-center text-white text-lg md:text-2xl mt-20  font-Marsden">
         KI Mentor Technology GmbH Amtsgericht Mannheim HRB 744712
         Geschäftsführer: Christian Krauter
       </h1>

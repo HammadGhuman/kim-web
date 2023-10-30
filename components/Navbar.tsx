@@ -36,20 +36,20 @@ function Navbar() {
         <Image src={Logo} alt="Logo" />
       </Link>
       <ul
-        className={`md:flex items-center justify-between md:space-x-16 md:ml-16 md:z-auto z-10 md:static absolute top-28 py-10 md:py-0 space-y-10 md:space-y-0  md:w-auto w-full md:h-auto bg-image bg-cover bg-no-repeat md:opacity-100 md:bg-none ${
+        className={`md:flex items-center justify-between md:space-x-28 md:ml-20 md:z-auto z-10 md:static absolute top-28 py-10 md:py-0 space-y-10 md:space-y-0  md:w-auto w-full md:h-auto bg-image bg-cover bg-no-repeat md:opacity-100 md:bg-none ${
           isOpen ? "opacity-100" : "opacity-0"
         } duration-300 transition-all ease-in-out`}
       >
-        <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
+        <li className="text-white  duration-300 transition-all hover:text-[#B77828] ">
           <Link href="/about-kim">Uber KI.m</Link>
         </li>
-        <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
+        <li className="text-white  duration-300 transition-all hover:text-[#B77828] ">
           <Link href="/partners">Partner werden</Link>
         </li>
-        <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
+        <li className="text-white  duration-300 transition-all hover:text-[#B77828] ">
           <Link href="/meet-our-team">Uber Uns</Link>
         </li>
-        <li className="text-white hover:font-bold duration-300 transition-all hover:underline underline-offset-2">
+        <li className="text-white  duration-300 transition-all hover:text-[#B77828] ">
           <Link href="/ask-question">Blog & FAQs</Link>
         </li>
         <li>

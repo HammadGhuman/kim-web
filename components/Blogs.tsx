@@ -9,7 +9,7 @@ type Props = {
 
 function Blogs(props: Props) {
   return (
-    <div className="flex flex-col w-72 rounded-lg p-3 bg-[#4b6aa3] bg-opacity-40  mt-5">
+    <div className="flex flex-col w-72 rounded-lg p-3 bg-[#4b6aa3] bg-opacity-40 mt-5">
       <div className="flex items-center justify-center">
         <Image width={300} height={200} src={props.image} alt="card" />
       </div>

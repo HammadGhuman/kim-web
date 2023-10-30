@@ -22,28 +22,28 @@ function Footer() {
           <div className="flex flex-wrap  justify-center md:flex-row md:space-y-0 space-y-4 py-4 flex-col md:space-x-16 ">
             <div className="flex flex-col justify-center -space-y-8 ">
               <h1 className="text-white text-xl font-semibold font-Marsden leading-[72px]">
-                Home
+                Heim
               </h1>
               <Link
-                href="#"
+                href="/#Gesteigerte"
                 className="text-white text-base  font-Marsden leading-[72px]"
               >
                 Gesteigerte{" "}
               </Link>
               <Link
-                href="#"
+                href="/#Wieläuft"
                 className="text-white text-base  font-Marsden leading-[72px]"
               >
                 Wie läuft{" "}
               </Link>
               <Link
-                href="#"
+                href="/#TreffenSieunserTeam"
                 className="text-white text-base  font-Marsden leading-[72px]"
               >
-                Meet Our team{" "}
+                Treffen Sie unser Team{" "}
               </Link>
               <Link
-                href="#"
+                href="/#UnsereBlogs"
                 className="text-white text-base  font-Marsden leading-[72px]"
               >
                 Unsere Blogs{" "}
@@ -53,7 +53,7 @@ function Footer() {
             {/* About */}
             <div className="flex flex-col justify-center -space-y-8">
               <h1 className="text-white text-xl font-semibold font-Marsden leading-[72px]">
-                About
+                Uber KI.M
               </h1>
               <Link
                 href="#"
@@ -84,50 +84,50 @@ function Footer() {
             {/* Partners */}
             <div className="flex flex-col justify-center -space-y-8">
               <h1 className="text-white text-xl font-semibold font-Marsden leading-[72px]">
-                Partners
+                Partner Werden
               </h1>
               <Link
-                href="#"
+                href="/partners/#Vorteile"
                 className="text-white text-base  font-Marsden leading-[72px]"
               >
-                Benifits{" "}
+                Vorteile{" "}
               </Link>
               <Link
-                href="#"
+                href="/partners/#Partnerprogramm"
                 className="text-white text-base  font-Marsden leading-[72px]"
               >
-                Affiliate Program{" "}
+                Partner programm{" "}
               </Link>
               <Link
-                href="#"
+                href="/partners/#SowerdenSiePartner"
                 className="text-white text-base  font-Marsden leading-[72px]"
               >
-                How to Become a Partner{" "}
+                So werden Sie Partner{" "}
               </Link>
               <Link
-                href="#"
+                href="/partners/#BewerbenSiesichjetztalsPartner"
                 className="text-white text-base  font-Marsden leading-[72px]"
               >
-                Apply now as a Partner!{" "}
+                Bewerben Sie sich jetzt als Partner!{" "}
               </Link>
             </div>
 
             {/* Faqs And BLog */}
             <div className="flex flex-col  -space-y-8">
               <h1 className="text-white text-xl font-semibold font-Marsden leading-[72px]">
-                FAQs And Blogs
+                FAQs Und Blogs
               </h1>
               <Link
-                href="#"
+                href="/ask-question/#Fragenstellen"
                 className="text-white text-base  font-Marsden leading-[72px]"
               >
-                Ask Question{" "}
+                Fragen stellen{" "}
               </Link>
               <Link
-                href="#"
+                href="/ask-question/#BlogsundDetails"
                 className="text-white text-base  font-Marsden leading-[72px]"
               >
-                Blog Details{" "}
+                Blogs und Details{" "}
               </Link>
             </div>
           </div>
@@ -173,7 +173,11 @@ function Footer() {
           Copyright © 2023 Ki Mentor Technology GmbH. All rights reserved.
         </p>
         <p className="text-white text-xs md:text-base font-normal font-Outfit leading-7">
-          Designed and developed by: <Link href="www.codematetechnologies.com" > codematetechnologies.com </Link>
+          Designed and developed by:{" "}
+          <Link href="www.codematetechnologies.com">
+            {" "}
+            codematetechnologies.com{" "}
+          </Link>
         </p>
       </div>
     </div>

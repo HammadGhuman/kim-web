@@ -27,7 +27,7 @@ function BlogsCard({ query }: { query: string }) {
       <div className="flex md:grid md:grid-cols-3 md:gap-3 max-w-5xl flex-col items-center justify-center">
         {blogs.map((blog: any, index: number) => (
           <div
-            className={`cursor-pointer ${index === 0 || index === blogs.length - 1 ? " col-span-3" : "col-span-1"} `}
+            className={`cursor-pointer ${index === 0 || index === blogs.length - 1 ? " col-span-3 mr-10" : "col-span-1"} `}
             key={blog.id}
             onClick={() => {
               router.push(`blog-details/${blog.id}`);
