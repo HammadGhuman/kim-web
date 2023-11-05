@@ -1,121 +1,119 @@
-import React from "react";
+import React from 'react';
 
 function Page() {
   return (
-    <div className="flex flex-col items-center justify-center ">
-      <div className="w-[201px] md:w-auto text-center mt-20">
-        <span className="text-white text-[32px] md:text-[62px] font-semibold font-Marsden leading-10">
-          Impressum &{" "}
+    <div className='flex flex-col items-center justify-center '>
+      <div className='mt-20 w-[201px] text-center md:w-auto'>
+        <span className='font-Marsden text-[32px] font-semibold leading-10 text-white md:text-[62px]'>
+          Impressum &{' '}
         </span>
-        <span className="text-[#CD9246] text-[32px] md:text-[62px] font-semibold font-Marsden leading-10">
+        <span className='font-Marsden text-[32px] font-semibold leading-10 text-[#CD9246] md:text-[62px]'>
           Kontakt
           <br />
         </span>
       </div>
 
-      <div className="mt-10 w-[243px] md:w-auto text-center text-[#CD9246] text-2xl md:text-[32px] font-semibold font-Marsden leading-[59.04px]">
+      <div className='mt-10 w-[243px] text-center font-Marsden text-2xl font-semibold leading-[59.04px] text-[#CD9246] md:w-auto md:text-[32px]'>
         Unternehmen
         <br />
       </div>
 
-      <div className=" w-[202px] md:w-[805px] text-center text-white text-2xl font-medium font-Marsden">
+      <div className=' w-[202px] text-center font-Marsden text-2xl font-medium text-white md:w-[805px]'>
         KI Mentor Technology GmbH Amtsgericht Mannheim HRB 744712
         Geschäftsführer: Christian Krauter
       </div>
 
-      <div className="md:w-auto mt-10 w-[243px] text-center text-[#CD9246] md:text-[32px] text-2xl font-semibold font-Marsden leading-[59.04px]">
+      <div className='mt-10 w-[243px] text-center font-Marsden text-2xl font-semibold leading-[59.04px] text-[#CD9246] md:w-auto md:text-[32px]'>
         Adresse
         <br />
       </div>
 
-      <div className="w-[203px]  md:w-auto text-center text-white text-2xl font-medium font-Marsden">
+      <div className='w-[203px]  text-center font-Marsden text-2xl font-medium text-white md:w-auto'>
         Wachtelstraße 4 75245 Neulingen
       </div>
 
-      <div className="mt-10 w-[243px] text-center text-[#CD9246] text-2xl md:text-[32px] font-semibold font-Marsden leading-[59.04px]">
+      <div className='mt-10 w-[243px] text-center font-Marsden text-2xl font-semibold leading-[59.04px] text-[#CD9246] md:text-[32px]'>
         Telefon
         <br />
       </div>
-      <div className="w-[203px] md:w-auto text-center text-white text-2xl font-medium font-Marsden">
+      <div className='w-[203px] text-center font-Marsden text-2xl font-medium text-white md:w-auto'>
         +49 176 60415870
       </div>
 
-      <div className="mt-10 w-[243px] text-center text-[#CD9246] text-2xl md:text-[32px] font-semibold font-Marsden leading-[59.04px]">
+      <div className='mt-10 w-[243px] text-center font-Marsden text-2xl font-semibold leading-[59.04px] text-[#CD9246] md:text-[32px]'>
         Email
         <br />
       </div>
-      <div className="w-[203px] md:w-auto text-center text-white text-2xl font-medium font-Marsden">
-       email
+      <div className='w-[203px] text-center font-Marsden text-2xl font-medium text-white md:w-auto'>
+        email
       </div>
 
-
-      <div className="mt-20 w-[201px] md:w-auto text-center">
-        <span className="text-white text-[32px] md:text-[62px] font-medium font-Marsden leading-[42px]">
-          Kontakt{" "}
+      <div className='mt-20 w-[201px] text-center md:w-auto'>
+        <span className='font-Marsden text-[32px] font-medium leading-[42px] text-white md:text-[62px]'>
+          Kontakt{' '}
         </span>
-        <span className="text-[#CD9246] text-[32px]   md:text-[62px] font-medium font-Marsden leading-[42px]">
+        <span className='font-Marsden text-[32px]   font-medium leading-[42px] text-[#CD9246] md:text-[62px]'>
           aufnehmen
         </span>
       </div>
 
-      <form className="mt-16 md:grid  md:grid-cols-2 gap-5 mx-5">
-        
-        <div className="flex flex-col text-white text-xl">
-          <label htmlFor="vorname" className="mb-3">
+      <form className='mx-5 mt-16  gap-5 md:grid md:grid-cols-2'>
+        <div className='flex flex-col text-xl text-white'>
+          <label htmlFor='vorname' className='mb-3'>
             Vorname*
           </label>
           <input
-            id="vorname"
-            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[425px]"
-            type="text"
+            id='vorname'
+            className='w-[425px] rounded-lg bg-white/10 px-3 py-5 outline-none'
+            type='text'
           />
         </div>
 
-        <div className="flex flex-col text-white text-xl">
-          <label htmlFor="Nachname" className="mb-3">
+        <div className='flex flex-col text-xl text-white'>
+          <label htmlFor='Nachname' className='mb-3'>
             Nachname*
           </label>
           <input
-            id="Nachname"
-            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[425px]"
-            type="text"
+            id='Nachname'
+            className='w-[425px] rounded-lg bg-white/10 px-3 py-5 outline-none'
+            type='text'
           />
         </div>
 
-        <div className="flex flex-col text-white text-xl">
-          <label htmlFor="Unternehmen" className="mb-3">
+        <div className='flex flex-col text-xl text-white'>
+          <label htmlFor='Unternehmen' className='mb-3'>
             Unternehmen*
           </label>
           <input
-            id="Unternehmen"
-            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[425px]"
-            type="text"
+            id='Unternehmen'
+            className='w-[425px] rounded-lg bg-white/10 px-3 py-5 outline-none'
+            type='text'
           />
         </div>
 
-        <div className="flex flex-col text-white text-xl">
-          <label htmlFor="E-Mail-Adresse" className="mb-3">
+        <div className='flex flex-col text-xl text-white'>
+          <label htmlFor='E-Mail-Adresse' className='mb-3'>
             E-Mail-Adresse*
           </label>
           <input
-            id="E-Mail-Adresse"
-            className="bg-white/10 outline-none px-3 py-5 rounded-lg w-[425px]"
-            type="text"
+            id='E-Mail-Adresse'
+            className='w-[425px] rounded-lg bg-white/10 px-3 py-5 outline-none'
+            type='text'
           />
         </div>
 
-        <div className="flex flex-col text-white text-xl col-span-2 w-full">
-          <label htmlFor="Nachricht schreiben" className="mb-3">
+        <div className='col-span-2 flex w-full flex-col text-xl text-white'>
+          <label htmlFor='Nachricht schreiben' className='mb-3'>
             Nachricht schreiben*
           </label>
           <textarea
-            id="Nachricht schreiben"
-            className=" bg-white/10 outline-none px-3 py-5 rounded-lg"
+            id='Nachricht schreiben'
+            className=' rounded-lg bg-white/10 px-3 py-5 outline-none'
           />
         </div>
 
-        <button className="w-[225px] h-[61px] bg-[#B77828] rounded-[10px] flex items-center justify-center  mt-4">
-          <div className="text-white text-xl font-medium font-Marsden">
+        <button className='mt-4 flex h-[61px] w-[225px] items-center justify-center rounded-[10px]  bg-[#B77828]'>
+          <div className='font-Marsden text-xl font-medium text-white'>
             Absenden
           </div>
         </button>

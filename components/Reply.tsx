@@ -1,124 +1,158 @@
-import React from "react";
-import ReadMoreButton from "./ReadMoreButton";
+import React from 'react';
+import ReadMoreButton from './ReadMoreButton';
 
 function Reply() {
   return (
     <form
-      action="https://formsubmit.co/Christian.Krauter@ki-mentor.com"
-      method="POST"
-      className="flex flex-col"
+      // action="https://formsubmit.co/Christian.Krauter@ki-mentor.com"
+      action='https://formsubmit.co/ghumanhammad420@gmail.com'
+      method='POST'
+      className='flex flex-col'
     >
       <div
-        id="BewerbenSiesichjetztalsPartner"
-        className="flex flex-col items-c space-y-5 md:space-x-0 mt-10 bg-[#4969a1]/40 px-10 py-10 mx-10 md:mx-96 rounded-[20px]"
+        id='BewerbenSiesichjetztalsPartner'
+        className='items-c mx-10 mt-10 flex w-[1100px] flex-col space-y-5 rounded-[20px] bg-[#4969a1]/40 px-10 py-10 md:space-x-0'
       >
-        <h1 className="text-white text-4xl font-bold font-['Marsden']">
-          Contact
+        <h1 className="font-['Marsden'] text-4xl font-bold text-white">
+          Kontaktperson
         </h1>
-        <div className="grid grid-cols-2 gap-10">
+        <div className='grid grid-cols-2 gap-10'>
           {/* First Name */}
-          <div className="grid grid-cols-1 gap-3">
-            <h1 className="text-white text-2xl font-medium font-['Marsden']">
+          <div className='grid grid-cols-1 gap-3'>
+            <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               Vorname *
             </h1>
             <input
-              type="text"
-              name="vorname"
-              className="px-3 text-white text-xl bg-blue-400 bg-opacity-10 h-[72px] md:w-[425px] rounded-[20px]"
+              type='text'
+              name='vorname'
+              className='h-[72px] rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl  text-white'
             />
           </div>
           {/* Last Name */}
-          <div className="grid grid-cols-1 gap-3">
-            <h1 className="text-white text-2xl font-medium font-['Marsden']">
+          <div className='grid grid-cols-1 gap-3'>
+            <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               Nachname *
             </h1>
             <input
-              type="text"
-              name="nachname"
-              className="px-3 text-white text-xl bg-blue-400 bg-opacity-10 h-[72px] md:w-[425px] rounded-[20px]"
+              type='text'
+              name='nachname'
+              className='h-[72px] rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl  text-white'
             />
           </div>
 
           {/* Email */}
-          <div className="grid grid-cols-1 gap-3 col-span-2">
-            <h1 className="text-white text-2xl font-medium font-['Marsden']">
+          <div className='col-span-2 grid grid-cols-1 gap-3'>
+            <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               E-Mail-Adresse *
             </h1>
             <input
-              type="email"
-              name="email"
-              className="px-3 text-white text-xl bg-blue-400 bg-opacity-10 h-[72px] rounded-[20px]"
+              type='email'
+              name='email'
+              className='h-[72px] rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl text-white'
             />
           </div>
 
-          <div className="text-white text-[32px] font-medium font-['Marsden'] col-span-2">
-            Company Details (optional)
+          <div className="col-span-2 font-['Marsden'] text-[32px] font-medium text-white">
+            Firmendaten (optional)
           </div>
           {/* Company Name */}
-          <div className="grid grid-cols-1 gap-3 ">
-            <h1 className="text-white text-2xl font-medium font-['Marsden']">
-              Company Name
+          <div className='grid grid-cols-1 gap-3 '>
+            <h1 className="font-['Marsden'] text-2xl font-medium text-white">
+              Unternehmensname
             </h1>
             <input
-              type="text"
-              name="company_name"
-              className="px-3 text-white text-xl bg-blue-400 bg-opacity-10 h-[72px] rounded-[20px]"
+              type='text'
+              name='company_name'
+              className='h-[72px] rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl text-white'
             />
           </div>
 
           {/* Legal Form */}
-          <div className="grid grid-cols-1 gap-3">
-            <h1 className="text-white text-2xl font-medium font-['Marsden']">
-              Legal Form
+          <div className='grid grid-cols-1 gap-3'>
+            <h1 className="font-['Marsden'] text-2xl font-medium text-white">
+              Rechtsform{' '}
             </h1>
             <select
-              name="legalfrom"
-              className="px-3 text-white text-xl bg-blue-400 bg-opacity-10 h-[72px] rounded-[20px] appearance-none"
+              name='legalfrom'
+              className='h-[72px] appearance-none rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl text-white'
             >
-              <option className="bg-blue-400 text-white" value="option1">
-                Option 1
+              <option className='bg-blue-400 text-white' value='option1'>
+                AG
               </option>
-              <option className="bg-blue-400 text-white" value="option2">
-                Option 2
+              <option className='bg-blue-400 text-white' value='option2'>
+                BV & Co.KG
               </option>
-              <option className="bg-blue-400 text-white" value="option3">
-                Option 3
+              <option className='bg-blue-400 text-white' value='option3'>
+                e.K.
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                Einzelunternehmer ohne Handesregistereintrag
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                GbR
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                GmbH
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                GmbH & Co.KG
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                GmbH & Co.KgaA
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                KG
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                KgaA
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                OHG
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                SE
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                UG (haftungsbeschrankt)
+              </option>
+              <option className='bg-blue-400 text-white' value='option3'>
+                Sonstige
               </option>
             </select>
           </div>
 
           {/* Description of Company */}
 
-          <div className="grid grid-cols-1 gap-3 col-span-2">
-            <h1 className="text-white text-2xl font-medium font-['Marsden']">
-              Description of Company
+          <div className='col-span-2 grid grid-cols-1 gap-3'>
+            <h1 className="font-['Marsden'] text-2xl font-medium text-white">
+              Beschreibung des Unternehmens
             </h1>
             <input
-              type="text"
-              name="companydescription"
-              className="px-3 text-white text-xl bg-blue-400 bg-opacity-10 h-[72px] rounded-[20px]"
+              type='text'
+              name='companydescription'
+              className='h-[72px] rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl text-white'
             />
           </div>
 
           {/* Link to Website */}
-          <div className="grid grid-cols-1 gap-3 col-span-2">
-            <h1 className="text-white text-2xl font-medium font-['Marsden']">
-              Link to Website
+          <div className='col-span-2 grid grid-cols-1 gap-3'>
+            <h1 className="font-['Marsden'] text-2xl font-medium text-white">
+              Link zur Webseite
             </h1>
             <input
-              type="text"
-              name="websitelink"
-              className="px-3 text-white text-xl bg-blue-400 bg-opacity-10 h-[72px] rounded-[20px]"
+              type='text'
+              name='websitelink'
+              className='h-[72px] rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl text-white'
             />
           </div>
         </div>
       </div>
       <button
-        type="submit"
-        className="w-[225px] md:mx-96 h-[61px] mt-10 flex items-center justify-center bg-[#B77828] rounded-[10px]"
+        type='submit'
+        className='mt-10 flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#B77828] md:mx-96'
       >
-        <div className="text-white text-center text-xl font-medium">
-          {"Send Message"}
+        <div className='text-center text-xl font-medium text-white'>
+          {'Absenden'}
         </div>
       </button>
     </form>

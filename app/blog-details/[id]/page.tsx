@@ -1,9 +1,9 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import BlogDetailCard from "@/components/BlogDetailCard";
-import Paragraph from "@/components/Paragraph";
-import NewUserCard from "@/components/NewUserCard";
-import Reply2 from "@/components/Reply2";
+'use client';
+import React, { useEffect, useState } from 'react';
+import BlogDetailCard from '@/components/BlogDetailCard';
+import Paragraph from '@/components/Paragraph';
+import NewUserCard from '@/components/NewUserCard';
+import Reply2 from '@/components/Reply2';
 interface Props {
   params: Params;
   searchParams: SearchParams;
@@ -36,7 +36,7 @@ function BlogDetails(props: Props) {
       {blogData && <BlogDetailCard img={blogData.attributes.imageurl} />}
       {blogData && <Paragraph content={blogData.attributes.content} />}
       <NewUserCard />
-      <div className="mt-40">
+      <div className='mt-40'>
         <Reply2 />
       </div>
     </main>

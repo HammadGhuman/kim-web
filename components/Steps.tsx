@@ -1,21 +1,22 @@
-import React from "react";
-import Check1 from "@/public/check 1.png";
-import Image from "next/image";
+import React from 'react';
+import Check1 from '@/public/check 1.png';
+import Image, { StaticImageData } from 'next/image';
 
 type Props = {
   step: string;
   instruction: string;
+  image: StaticImageData;
 };
 function Steps(props: Props) {
   return (
     <>
-      <div className="border-white border-2 p-5 rounded-full">
-      <Image width={75} height={75} src={Check1} alt="step1" />
+      <div className='rounded-full border-2 border-white p-5'>
+        <Image width={75} height={75} src={props.image} alt='step1' />
       </div>
-      <div className="text-center text-orange-400 text-5xl font-extrabold mt-10">
+      <div className='mt-10 text-center text-5xl font-extrabold text-orange-400'>
         {props.step}
       </div>
-      <div className="w-[302px] text-center text-white text-[26px] font-medium ">
+      <div className='w-[302px] text-center text-[26px] font-medium text-white '>
         {props.instruction}
         <br />
       </div>

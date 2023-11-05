@@ -3,46 +3,51 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Marsden";
-  src: url("../public/Fonts/Marsden-Light.ttf") format("truetype"),
-    url("../public/Fonts/Marsden-Light.woff") format("woff"),
-    url("../public/Fonts/Marsden-Light.woff2") format("woff2");
+  font-family: 'Marsden';
+  src:
+    url('../public/Fonts/Marsden-Light.ttf') format('truetype'),
+    url('../public/Fonts/Marsden-Light.woff') format('woff'),
+    url('../public/Fonts/Marsden-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: light;
 }
 
 @font-face {
-  font-family: "Marsden";
-  src: url("../public/Fonts/Marsden-Regular.ttf") format("truetype"),
-    url("../public/Fonts/Marsden-Regular.woff") format("woff"),
-    url("../public/Fonts/Marsden-Regular.woff2") format("woff2");
+  font-family: 'Marsden';
+  src:
+    url('../public/Fonts/Marsden-Regular.ttf') format('truetype'),
+    url('../public/Fonts/Marsden-Regular.woff') format('woff'),
+    url('../public/Fonts/Marsden-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Marsden";
-  src: url("../public/Fonts/Marsden-SemiBold.ttf") format("truetype"),
-    url("../public/Fonts/Marsden-SemiBold.woff") format("woff"),
-    url("../public/Fonts/Marsden-SemiBold.woff2") format("woff2");
+  font-family: 'Marsden';
+  src:
+    url('../public/Fonts/Marsden-SemiBold.ttf') format('truetype'),
+    url('../public/Fonts/Marsden-SemiBold.woff') format('woff'),
+    url('../public/Fonts/Marsden-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: semibold;
 }
 
 @font-face {
-  font-family: "Marsden";
-  src: url("../public/Fonts/Marsden-Medium.ttf") format("truetype"),
-    url("../public/Fonts/Marsden-Medium.woff") format("woff"),
-    url("../public/Fonts/Marsden-Medium.woff2") format("woff2");
+  font-family: 'Marsden';
+  src:
+    url('../public/Fonts/Marsden-Medium.ttf') format('truetype'),
+    url('../public/Fonts/Marsden-Medium.woff') format('woff'),
+    url('../public/Fonts/Marsden-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: medium;
 }
 
 @font-face {
-  font-family: "Marsden";
-  src: url("../public/Fonts/Marsden-Bold.ttf") format("truetype"),
-    url("../public/Fonts/Marsden-Bold.woff") format("woff"),
-    url("../public/Fonts/Marsden-Bold.woff2") format("woff2");
+  font-family: 'Marsden';
+  src:
+    url('../public/Fonts/Marsden-Bold.ttf') format('truetype'),
+    url('../public/Fonts/Marsden-Bold.woff') format('woff'),
+    url('../public/Fonts/Marsden-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: bold;
 }
@@ -51,7 +56,7 @@
 pre {
   background-color: white;
   color: black;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
   padding: 1em;
   margin: 35px 0;
@@ -61,7 +66,7 @@ pre {
 code {
   color: black;
   background: none;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
   word-spacing: normal;
   word-break: normal;
@@ -94,7 +99,6 @@ code {
 ::-webkit-scrollbar-thumb {
   background-color: #8b99b9; /* Color of the thumb */
   border-radius: 5px; /* Set the border-radius to make it rounded */
-
 }
 
 ::-webkit-scrollbar-track {
@@ -105,7 +109,6 @@ code {
   background-color: #8b99b9; /* Color of the thumb on hover */
 }
 
-
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -115,6 +118,6 @@ code {
   }
 }
 
-#logo-slide{
-  animation : slide 25s linear infinite;
+#logo-slide {
+  animation: slide 25s linear infinite;
 }

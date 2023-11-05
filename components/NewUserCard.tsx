@@ -1,33 +1,33 @@
-import React from "react";
-import Image from "next/image";
-import Person1 from "@/public/UserImage.png";
+import React from 'react';
+import Image from 'next/image';
+import Person1 from '@/public/UserImage.png';
 function NewUserCard() {
   return (
-    <div className="flex items-center justify-between ">
-      <div className="flex bg-white/10 flex-row space-x-3 mx-12 pl-8 pr-5 py-4 rounded-[20px] mt-10 md:mx-[28rem] font-Marsden">
-        <div className="">
+    <div className='flex items-center justify-between '>
+      <div className='mx-12 mt-10 flex flex-row space-x-3 rounded-[20px] bg-white/10 py-4 pl-8 pr-5 font-Marsden md:mx-[28rem]'>
+        <div className=''>
           <Image
-            className="w-[63px] h-[65px] md:w-[164px] md:h-[171px] "
+            className='h-[65px] w-[63px] md:h-[171px] md:w-[164px] '
             src={Person1}
-            alt="image"
+            alt='image'
           />
         </div>
-        <div className="flex flex-col space-y-2 items-start justify-center text-white max-w-xl">
-          <h1 className="text-[10px] font-bold md:text-2xl">
+        <div className='flex max-w-xl flex-col items-start justify-center space-y-2 text-white'>
+          <h1 className='text-[10px] font-bold md:text-2xl'>
             Christian Krauter
           </h1>
-          <p className="text-[8px] min-w-[600px] md:text-lg font-medium">
+          <p className='min-w-[600px] text-[8px] font-medium md:text-lg'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor
             repudiandae laboriosam blanditiis officia porro expedita a odio
             necessitatibus eaque.
           </p>
-          <div className="flex flex-row space-x-3 ">
-            <span className="w-[30px] h-[9px]  md:w-auto md:h-auto text-center text-white text-[8px] md:text-base font-normal font-['Readex Pro'] capitalize">
+          <div className='flex flex-row space-x-3 '>
+            <span className="font-['Readex Pro']  h-[9px] w-[30px] text-center text-[8px] font-normal capitalize text-white md:h-auto md:w-auto md:text-base">
               31. May
-            </span>{" "}
-            <span className="w-[77px] h-2  md:w-auto md:h-auto text-center text-white text-[8px] md:text-base font-normal font-['Readex Pro'] capitalize">
+            </span>{' '}
+            <span className="font-['Readex Pro']  h-2 w-[77px] text-center text-[8px] font-normal capitalize text-white md:h-auto md:w-auto md:text-base">
               4 min reading time
-            </span>{" "}
+            </span>{' '}
           </div>
         </div>
       </div>

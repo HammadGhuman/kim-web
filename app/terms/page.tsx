@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 
 function Page() {
   return (
-    <div className="flex flex-col items-center justify-center md:px-20">
-      <h1 className="text-center text-white text-[32px] font-semibold font-Marsden leading-[72px]">
+    <div className='flex flex-col items-center justify-center md:px-20'>
+      <h1 className='text-center font-Marsden text-[32px] font-semibold leading-[72px] text-white'>
         Nutzungsbedingungen
       </h1>
-      <h1 className="w-[281px] md:w-auto text-center text-white text-2xl  font-Marsden">
+      <h1 className='w-[281px] text-center font-Marsden text-2xl text-white  md:w-auto'>
         KI Mentor Technology GmbH Amtsgericht Mannheim HRB 744712
         Geschäftsführer: Christian Krauter
       </h1>
 
-      <div className="w-[257px] mb-20 md:w-[820px] text-center">
-        <span className="text-white text-lg md:text-[32px] font-medium  font-Marsden">
+      <div className='mb-20 w-[257px] text-center md:w-[820px]'>
+        <span className='font-Marsden text-lg font-medium text-white  md:text-[32px]'>
           <br />
           Stand: 25.08.2022
           <br />​<br />
@@ -219,13 +219,13 @@ function Page() {
           <br />
           Anschrift: Wachtelstraße 4; 75245 Neulingen
           <br />
-          E-Mail:{" "}
+          E-Mail:{' '}
         </span>
-        <span className="text-white text-2xl md:text-[32px] font-['Marsden'] underline">
+        <span className="font-['Marsden'] text-2xl text-white underline md:text-[32px]">
           Christian.Krauter@ki-mentor.com
           <br />
         </span>
-        <span className="text-white text-2xl md:text-[32px] font-['Marsden']">
+        <span className="font-['Marsden'] text-2xl text-white md:text-[32px]">
           ​<br />​<br />
           Gewährleistungsausschluss für die Nutzung der Site und der Dienste
           <br />​<br />
@@ -332,13 +332,13 @@ function Page() {
           Bestimmungen) und sind entsprechend auszulegen.
           <br />​<br />
           (2) Die Europäische Kommission stellt eine Plattform zur
-          Online-Streitbeilegung (OS) bereit, aufrufbar unter:{" "}
+          Online-Streitbeilegung (OS) bereit, aufrufbar unter:{' '}
         </span>
-        <span className="text-white text-2xl  font-['Marsden'] underline">
+        <span className="font-['Marsden'] text-2xl  text-white underline">
           https://ec.europa.eu/consumers/odr/.
         </span>
-        <span className="text-white text-2xl  font-['Marsden']">
-          {" "}
+        <span className="font-['Marsden'] text-2xl  text-white">
+          {' '}
           Bitte beachten Sie, dass wir nicht verpflichtet sind, Streitigkeiten
           mit Verbrauchern vor alternativen Streitbeilegungsstellen beizulegen.
           <br />​<br />​<br />​<br />
@@ -382,13 +382,13 @@ function Page() {
           <br />
           Anschrift: Wachtelstraße 4; 75245 Neulingen
           <br />
-          E-Mail:{" "}
+          E-Mail:{' '}
         </span>
-        <span className="text-white text-2xl  font-['Marsden'] underline">
+        <span className="font-['Marsden'] text-2xl  text-white underline">
           Christian.Krauter@ki-mentor.com
           <br />
         </span>
-        <span className="text-white text-2xl  font-['Marsden']">
+        <span className="font-['Marsden'] text-2xl  text-white">
           ​<br />
           KI Mentor Technology GmbH
           <br />

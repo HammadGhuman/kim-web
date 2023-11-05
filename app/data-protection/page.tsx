@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 
 function Page() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h1 className="w-[201px] md:w-auto  text-white text-[32px] mt-20 md:text-[62px] font-semibold font-Marsden leading-[72px]">
+    <div className='flex flex-col items-center justify-center'>
+      <h1 className='mt-20 w-[201px]  font-Marsden text-[32px] font-semibold leading-[72px] text-white md:w-auto md:text-[62px]'>
         Datenschutz
         <br />
       </h1>
-      <h1 className="w-[202px] md:w-auto text-center text-white text-lg md:text-2xl mt-20  font-Marsden">
+      <h1 className='mt-20 w-[202px] text-center font-Marsden text-lg text-white md:w-auto  md:text-2xl'>
         KI Mentor Technology GmbH Amtsgericht Mannheim HRB 744712
         Geschäftsführer: Christian Krauter
       </h1>
 
-      <div className="w-[1148px] text-center">
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+      <div className='w-[1148px] text-center'>
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           <br />
           1. Datenschutz auf einen Blick
           <br />​<br />
@@ -88,22 +88,22 @@ function Page() {
           Servern weltweit gespeichert werden. Die Server von WIX stehen u. a.
           in den USA.
           <br />
-          Details entnehmen Sie der Datenschutzerklärung von WIX:{" "}
+          Details entnehmen Sie der Datenschutzerklärung von WIX:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://de.wix.com/about/privacy
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           .<br />
           Die Datenübertragung in die USA und sonstige Drittstaaten wird laut
           WIX auf die Standardvertragsklauseln der EU-Kommission bzw.
           vergleichbare Garantien nach Art. 46 DSGVO gestützt. Details finden
-          Sie hier:{" "}
+          Sie hier:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://de.wix.com/about/privacy-dpa-users
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           .<br />
           Die Verwendung von WIX erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f
           DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst
@@ -237,11 +237,11 @@ function Page() {
           „reCAPTCHA“ erlangten Informationen erfolgt gemäß den
           Google-Nutzungsbedingungen (
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://www.google.com/intl/de/policies/privacy/).
           <br />
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           ​<br />
           Widerruf Ihrer Einwilligung zur Datenverarbeitung
           <br />
@@ -311,7 +311,7 @@ function Page() {
           folgenden Fällen:
           <br />
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen
           Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu
           überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die
@@ -335,7 +335,7 @@ function Page() {
           personenbezogenen Daten zu verlangen.
           <br />
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt
           haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit
           Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung
@@ -447,7 +447,7 @@ function Page() {
           übermittelt. Dies sind:
           <br />
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           Browsertyp und Browserversion
           <br />
           verwendetes Betriebssystem
@@ -461,7 +461,7 @@ function Page() {
           IP-Adresse
           <br />
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht
           vorgenommen.
           <br />
@@ -556,19 +556,19 @@ function Page() {
           Informationen auf Ihrem Konto zu nutzen, um Ihr Profil bei uns zu
           vervollständigen. Ob und welche Informationen das sind, entscheiden
           Sie im Rahmen Ihrer Google-Sicherheitseinstellungen, die Sie hier
-          finden:{" "}
+          finden:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://myaccount.google.com/security
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
-          {" "}
-          und{" "}
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+          {' '}
+          und{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://myaccount.google.com/permissions
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           .<br />
           Die Datenverarbeitung, die mit der Google-Registrierung einhergeht
           beruht auf unserem berechtigten Interesse, unseren Nutzern einen
@@ -595,7 +595,7 @@ function Page() {
           Ihre bei Facebook hinterlegten Daten. Dies sind vor allem:
           <br />
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           Facebook-Name
           <br />
           Facebook-Profil- und Titelbild
@@ -619,7 +619,7 @@ function Page() {
           Sprache
           <br />
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           Diese Daten werden zur Einrichtung, Bereitstellung und
           Personalisierung Ihres Accounts genutzt.
           <br />
@@ -639,12 +639,12 @@ function Page() {
           der gemeinsamen Verantwortung. Die uns gemeinsam obliegenden
           Verpflichtungen wurden in einer Vereinbarung über gemeinsame
           Verarbeitung festgehalten. Den Wortlaut der Vereinbarung finden Sie
-          unter:{" "}
+          unter:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://www.facebook.com/legal/controller_addendum
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           . Laut dieser Vereinbarung sind wir für die Erteilung der
           Datenschutzinformationen beim Einsatz des Facebook-Tools und für die
           datenschutzrechtlich sichere Implementierung des Tools auf unserer
@@ -656,40 +656,40 @@ function Page() {
           an Facebook weiterzuleiten.
           <br />
           Die Datenübertragung in die USA wird auf die Standardvertragsklauseln
-          der EU-Kommission gestützt. Details finden Sie hier:{" "}
+          der EU-Kommission gestützt. Details finden Sie hier:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://www.facebook.com/legal/EU_data_transfer_addendum
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
-          ,{" "}
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+          ,{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://de-de.facebook.com/help/566994660333381
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
-          {" "}
-          und{" "}
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+          {' '}
+          und{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://www.facebook.com/policy.php
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           .<br />
           Weitere Informationen finden Sie in den Facebook-Nutzungsbedingungen
-          und den Facebook-Datenschutzbestimmungen. Diese finden Sie unter:{" "}
+          und den Facebook-Datenschutzbestimmungen. Diese finden Sie unter:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://de-de.facebook.com/about/privacy/
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
-          {" "}
-          und{" "}
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+          {' '}
+          und{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://de-de.facebook.com/legal/terms/
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           .<br />​<br />
           Kommentar­funktion auf dieser Website
           <br />
@@ -807,33 +807,33 @@ function Page() {
           Canal Harbour, Dublin 2, Irland.
           <br />
           Die Datenübertragung in die USA wird auf die Standardvertragsklauseln
-          der EU-Kommission gestützt. Details finden Sie hier:{" "}
+          der EU-Kommission gestützt. Details finden Sie hier:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://www.facebook.com/legal/EU_data_transfer_addendum
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
-          ,{" "}
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+          ,{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://help.instagram.com/519522125107875
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
-          {" "}
-          und{" "}
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+          {' '}
+          und{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://de-de.facebook.com/help/566994660333381
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           .<br />
           Details zu deren Umgang mit Ihren personenbezogenen Daten entnehmen
-          Sie der Datenschutzerklärung von Instagram:{" "}
+          Sie der Datenschutzerklärung von Instagram:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://help.instagram.com/519522125107875
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           .<br />​<br />
           LinkedIn
           <br />
@@ -842,35 +842,35 @@ function Page() {
           Irland. LinkedIn verwendet Werbecookies.
           <br />
           Wenn Sie LinkedIn-Werbe-Cookies deaktivieren möchten, nutzen Sie bitte
-          folgenden Link:{" "}
+          folgenden Link:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           .<br />
           Die Datenübertragung in die USA wird auf die Standardvertragsklauseln
-          der EU-Kommission gestützt. Details finden Sie hier:{" "}
+          der EU-Kommission gestützt. Details finden Sie hier:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://www.linkedin.com/legal/l/dpa
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
-          {" "}
-          und{" "}
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+          {' '}
+          und{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://www.linkedin.com/legal/l/eu-sccs
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           .<br />
           Details zu deren Umgang mit Ihren personenbezogenen Daten entnehmen
-          Sie der Datenschutzerklärung von LinkedIn:{" "}
+          Sie der Datenschutzerklärung von LinkedIn:{' '}
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] underline leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
           https://www.linkedin.com/legal/privacy-policy
         </span>
-        <span className="text-white text-[32px] font-medium font-['Marsden'] leading-[74.08px]">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
           .
         </span>
       </div>

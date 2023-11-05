@@ -1,5 +1,5 @@
-import React from "react";
-import VideoBackgroundMobile from "./VideoBackgroundMobile";
+import React from 'react';
+import VideoBackgroundMobile from './VideoBackgroundMobile';
 function Hero() {
   return (
     <div>

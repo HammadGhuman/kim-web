@@ -1,79 +1,82 @@
-"use client";
-import React, { useState } from "react";
-import Image from "next/image";
+'use client';
+import React, { useState } from 'react';
+import Image from 'next/image';
 
-import Logo from "@/public/MobileLogo.png";
-import Hamburger from "@/public/Hamburger.svg";
-import Arrow from "@/public/arrow.svg";
-import CLose from "@/public/icons8-close.svg";
-import Link from "next/link";
+import Logo from '@/public/MobileLogo.png';
+import Hamburger from '@/public/Hamburger.svg';
+import Arrow from '@/public/arrow.svg';
+import CLose from '@/public/icons8-close.svg';
+import Link from 'next/link';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="flex items-center justify-between px-5 py-10 font-Marsden">
+    <div className='flex items-center justify-between px-5 py-10 font-Marsden'>
       <div
-        className="md:hidden block hover:cursor-pointer"
+        className='block hover:cursor-pointer md:hidden'
         onClick={() => setIsOpen(!isOpen)}
       >
         <Image
           src={CLose}
-          alt="close"
-          className={`transition ease-in-out duration-300 ${
-            isOpen ? "opacity-100 block" : "opacity-0 hidden"
+          alt='close'
+          className={`transition duration-300 ease-in-out ${
+            isOpen ? 'block opacity-100' : 'hidden opacity-0'
           }`}
         />
 
         <Image
           src={Hamburger}
-          alt="hamburger"
-          className={`transition ease-in-out duration-300 ${
-            isOpen ? "opacity-0 hidden" : "opacity-100 block"
+          alt='hamburger'
+          className={`transition duration-300 ease-in-out ${
+            isOpen ? 'hidden opacity-0' : 'block opacity-100'
           }`}
         />
       </div>
-      <Link href="/" className="ml-10">
-        <Image src={Logo} alt="Logo" />
+      <Link href='/' className='ml-10'>
+        <Image src={Logo} alt='Logo' />
       </Link>
       <ul
-        className={`md:flex items-center justify-between md:space-x-28 md:ml-20 md:z-auto z-10 md:static absolute top-28 py-10 md:py-0 space-y-10 md:space-y-0  md:w-auto w-full md:h-auto bg-image bg-cover bg-no-repeat md:opacity-100 md:bg-none ${
-          isOpen ? "opacity-100" : "opacity-0"
-        } duration-300 transition-all ease-in-out`}
+        className={`absolute top-28 z-10 w-full items-center   justify-between space-y-10 bg-image bg-cover bg-no-repeat py-10 text-lg md:static md:z-auto md:ml-20  md:flex md:h-auto md:w-auto md:space-x-28 md:space-y-0 md:bg-none md:py-0 md:opacity-100 ${
+          isOpen ? 'opacity-100' : 'opacity-0'
+        } transition-all duration-300 ease-in-out`}
       >
-        <li className="text-white  duration-300 transition-all hover:text-[#B77828] ">
-          <Link href="/about-kim">Uber KI.m</Link>
+        <li className='text-white  transition-all duration-300 hover:text-[#B77828] '>
+          <Link href='/about-kim'>Über KI.m</Link>
         </li>
-        <li className="text-white  duration-300 transition-all hover:text-[#B77828] ">
-          <Link href="/partners">Partner werden</Link>
+        <li className='text-white  transition-all duration-300 hover:text-[#B77828] '>
+          <Link href='/partners'>Partner werden</Link>
         </li>
-        <li className="text-white  duration-300 transition-all hover:text-[#B77828] ">
-          <Link href="/meet-our-team">Uber Uns</Link>
+        <li className='text-white  transition-all duration-300 hover:text-[#B77828] '>
+          <Link href='/meet-our-team'>Über Uns</Link>
         </li>
-        <li className="text-white  duration-300 transition-all hover:text-[#B77828] ">
-          <Link href="/ask-question">Blog & FAQs</Link>
+        <li className='text-white  transition-all duration-300 hover:text-[#B77828] '>
+          <Link href='/faqs'>FAQs</Link>
         </li>
-        <li>
-          <div className="md:hidden flex items-center justify-center space-x-5">
-            <button className="flex items-center justify-center border-white border-2 space-x-3 hover:bg-[#B77828] hover:border-[#B77828] transition-colors duration-300 text-white px-1 py-1 rounded-lg">
-              <span className="text-center text-lg px-7 text-white">Login</span>
+        <li className='text-white  transition-all duration-300 hover:text-[#B77828] '>
+          <Link href='/ask-question'>Blogs</Link>
+        </li>
+        <li className=' md:hidden'>
+          <div className='flex items-center justify-center space-x-5'>
+            <button className='flex items-center justify-center space-x-3 rounded-lg border-2 border-white px-1 py-1 text-white transition-colors duration-300 hover:border-[#B77828] hover:bg-[#B77828]'>
+              <span className='px-7 text-center text-lg text-white'>Login</span>
             </button>
-            <button className="flex items-center justify-center bg-[#B77828] space-x-3 text-white px-1 py-1 rounded-lg">
-              <span className="text-center pl-3">Buy Now</span>
-              <div className="bg-white w-8 h-8 flex items-center justify-center rounded-md">
-                <Image src={Arrow} alt="arrow" />
+            <button className='flex items-center justify-center  space-x-3 rounded-lg bg-[#B77828] px-1 py-1 text-white'>
+              <span className='pl-3 text-center'>Jetzt kaufen!</span>
+              <div className='flex h-8 w-8 items-center justify-center rounded-md bg-white'>
+                <Image src={Arrow} alt='arrow' />
               </div>
             </button>
           </div>
         </li>
       </ul>
-      <div className="hidden md:flex items-center justify-center space-x-5">
-        <button className="flex items-center justify-center border-white border-2 space-x-3 hover:bg-[#B77828] hover:border-[#B77828] transition-colors duration-300 text-white px-1 py-1 rounded-lg">
-          <span className="text-center text-lg px-7 text-white">Login</span>
+      <div className='hidden items-center justify-center space-x-5 md:flex text-lg'>
+        <button className='flex items-center justify-center space-x-3 rounded-lg border-2 border-white px-1 py-1 text-white transition-colors duration-300 hover:border-[#B77828] hover:bg-[#B77828]'>
+          <span className='px-7 text-center text-lg text-white'>Login</span>
         </button>
-        <button className="flex items-center justify-center bg-[#B77828] space-x-3 text-white px-1 py-1 rounded-lg">
-          <span className="text-center pl-3">Buy Now</span>
-          <div className="bg-white w-8 h-8 flex items-center justify-center rounded-md">
-            <Image src={Arrow} alt="arrow" />
+        <button className='flex items-center justify-center space-x-3 rounded-lg bg-[#B77828] px-1 py-1 text-white'>
+          <span className='pl-3 text-center'>Jetzt kaufen!</span>
+          <div className='flex h-8 w-8 items-center justify-center rounded-md bg-white'>
+            <Image src={Arrow} alt='arrow' />
           </div>
         </button>
       </div>

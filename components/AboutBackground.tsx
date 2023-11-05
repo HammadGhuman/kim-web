@@ -1,5 +1,5 @@
-"use client";
-import React, { useEffect, useRef } from "react";
+'use client';
+import React, { useEffect, useRef } from 'react';
 
 function AboutBackground() {
   const videoRef = useRef(null);
@@ -12,7 +12,7 @@ function AboutBackground() {
   }, []);
   return (
     <div>
-      <video ref={videoRef} loop muted src="video11.mp4"></video>
+      <video ref={videoRef} loop muted src='video11.mp4'></video>
     </div>
   );
 }

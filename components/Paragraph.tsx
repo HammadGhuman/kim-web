@@ -1,13 +1,13 @@
-import React from "react";
-import ReactMarkdown from "react-markdown";
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 function Paragraph({ content }: { content: string }) {
   return (
-    <div className="flex flex-col items-center justify-center mt-8 font-Marsden md:mx-72">
+    <div className='mt-8 flex flex-col items-center justify-center font-Marsden md:mx-72'>
       {/* <div dangerouslySetInnerHTML={{__html:content}} className="w-[263px]  md:w-full text-center md:text-left text-white">
       </div> */}
 
-      <ReactMarkdown className="md:prose-2xl min-w-[1100px] prose-li:decoration-white prose prose-headings:text-white text-white ">
+      <ReactMarkdown className='prose min-w-[1100px] text-white md:prose-2xl prose-headings:text-white prose-li:decoration-white '>
         {content}
       </ReactMarkdown>
     </div>

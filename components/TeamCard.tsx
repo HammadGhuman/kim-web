@@ -1,6 +1,6 @@
-import Image from "next/image";
-import React from "react";
-import Member1 from "@/public/Member1.png";
+import Image from 'next/image';
+import React from 'react';
+import Member1 from '@/public/Member1.png';
 
 type Props = {
   img: any;
@@ -9,29 +9,29 @@ type Props = {
   index: number;
 };
 
-function TeamCard({ img, name, position,index }: Props) {
+function TeamCard({ img, name, position, index }: Props) {
   return (
-    <div className="flex flex-col items-center justify-center md:w-auto w-[350px] font-Marsden">
-      <div className="relative">
+    <div className='flex w-[350px] flex-col items-center justify-center font-Marsden md:w-auto'>
+      <div className='relative'>
         <Image
-          alt="team-member"
-          className="lg:w-[334px] lg:h-[334px] w-[180px] rounded-full"
+          alt='team-member'
+          className='w-[180px] rounded-full lg:h-[334px] lg:w-[334px]'
           src={img}
         />
         {index === 0 && (
-          <div className="bg-yellow-600 h-4 w-4 rounded-full absolute top-20 left-3" />
+          <div className='absolute left-3 top-20 h-4 w-4 rounded-full bg-yellow-600' />
         )}
-         {index === 1 && (
-          <div className="bg-yellow-600 h-4 w-4 rounded-full absolute top-16 right-5" />
+        {index === 1 && (
+          <div className='absolute right-5 top-16 h-4 w-4 rounded-full bg-yellow-600' />
         )}
-         {index === 2 && (
-          <div className="bg-yellow-600 h-4 w-4 rounded-full absolute bottom-20 right-3" />
+        {index === 2 && (
+          <div className='absolute bottom-20 right-3 h-4 w-4 rounded-full bg-yellow-600' />
         )}
       </div>
-      <div className="text-white text-2xl font-medium leading-[72px] tracking-tight">
+      <div className='text-2xl font-medium leading-[72px] tracking-tight text-white'>
         {name}
       </div>
-      <div className="text-stone-300 text-xl font-medium -mt-3">{position}</div>
+      <div className='-mt-3 text-xl font-medium text-stone-300'>{position}</div>
     </div>
   );
 }

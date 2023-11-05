@@ -1,29 +1,33 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
-import Blog1 from "@/public/Blog1.png";
-import ReadMoreBlog from "@/public/ReadMoreBlog.svg";
+import Blog1 from '@/public/Blog1.png';
+import ReadMoreBlog from '@/public/ReadMoreBlog.svg';
 function BlogCard() {
   return (
-    <div className="flex md:flex-row flex-col md:mx-0 mx-10 rounded-[10px] shadow-md">
+    <div className='mx-10 flex flex-col rounded-[10px] shadow-md md:mx-0 md:flex-row'>
       <Image
-        className="w-full lg:w-[516px] lg:h-[287px] rounded-l-[10px]"
+        className='w-full rounded-l-[10px] lg:h-[287px] lg:w-[516px]'
         src={Blog1}
-        alt={"Blog 1"}
+        alt={'Blog 1'}
       />
-      <div className="lg:w-[516px]  md:h-[287px] bg-[#214777] pl-3 md:pl-12 pr-4 pt-8 rounded-t-none md:rounded-l-none rounded-b-[10px] md:rounded-r-[10px]">
-        <h1 className=" text-white md:text-2xl text-xl font-bold font-Marsden leading-normal ">
+      <div className='rounded-b-[10px]  rounded-t-none bg-[#214777] pl-3 pr-4 pt-8 md:h-[287px] md:rounded-l-none md:rounded-r-[10px] md:pl-12 lg:w-[516px]'>
+        <h1 className=' font-Marsden text-xl font-bold leading-normal text-white md:text-2xl '>
           Leadership is reshaping itself – what are the trends?
         </h1>
-        <div className=" text-stone-300 mt-3 text-base font-normal font-Marsden leading-relaxed">
+        <div className=' mt-3 font-Marsden text-base font-normal leading-relaxed text-stone-300'>
           Multi-crisis scenarios, technological and social change and the ESG
           paradigm of a sustainable economy are...
         </div>
-        <button className="flex items-center py-3 space-x-3 group text-white hover:text-[#b77828]">
-          <div className="text-center  text-base font-normal font-Marsden capitalize group-hover:font-medium">
+        <button className='group flex items-center space-x-3 py-3 text-white hover:text-[#b77828]'>
+          <div className='text-center  font-Marsden text-base font-normal capitalize group-hover:font-medium'>
             Read More
           </div>
-          <Image className="group-hover:rotate-45 duration-300 transition-transform" src={ReadMoreBlog} alt="read more" />
+          <Image
+            className='transition-transform duration-300 group-hover:rotate-45'
+            src={ReadMoreBlog}
+            alt='read more'
+          />
         </button>
       </div>
     </div>
