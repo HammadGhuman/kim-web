@@ -6,9 +6,13 @@ function Faq() {
   const [activeFaqId, setActiveFaqId] = useState(null);
 
   async function fetchData() {
-    const res = await fetch(`http://localhost:1337/api/faqs`);
-    const data = await res.json();
-    setFaqs(data.data);
+    try {
+      const res = await fetch(`http://localhost:1337/api/faqs`);
+      const data = await res.json();
+      setFaqs(data.data);
+    } catch (err) {
+      console.log(err);
+    }
   }
   useEffect(() => {
     fetchData();
