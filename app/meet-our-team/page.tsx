@@ -1,16 +1,16 @@
 'use client';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import Team1 from '@/public/team-1.jpg.png';
-import Team2 from '@/public/team-2.jpg.png';
-import Team3 from '@/public/team-3.jpg.png';
-import Team4 from '@/public/Team4.jpg';
+import Team1 from '@/public/Team1.webp';
+import Team2 from '@/public/Team2.webp';
+import Team3 from '@/public/Team3.webp';
+import Team4 from '@/public/Team4.webp';
 
-import Team1Land from '@/public/Team-1land.png';
-import Team2Land from '@/public/team-2land.jpg';
-import Team3Land from '@/public/team3-land.jpg';
-import Team4Land from '@/public/team-4land.jpg';
+import Team1Land from '@/public/Team1Land.webp';
+import Team2Land from '@/public/Team2Land.webp';
+import Team3Land from '@/public/Team3Land.webp';
+import Team4Land from '@/public/Team4Land.webp';
 
 import Partner1 from '@/public/logo 1.png';
 import Partner2 from '@/public/logo 2.png';
@@ -21,14 +21,12 @@ import Partner6 from '@/public/logo 6.png';
 import Partner7 from '@/public/Partner7.png';
 
 import Partner1Land from '@/public/Quids_groupphoto_all_groß.webp';
-import Partner2Land from '@/public/IMG-20220208-WA0000.webp';
-import Partner3Land from '@/public/Britta rund.webp';
-import Partner4Land from '@/public/20_Gomeringer_DSC_8704 - Kopie_JPG.webp';
-import Partner5Land from '@/public/Hornke_rund.webp';
-import Partner6Land from '@/public/Kunze_rund.webp';
-import Partner7Land from '@/public/Partner7land.png';
-
-import Partner1Side from '@/public/Partner1side.png';
+import Partner2Land from '@/public/SecondPartnerLand.jpg';
+import Partner3Land from '@/public/ThirdPartnerLand.webp';
+import Partner4Land from '@/public/FourthPartnerLand.webp';
+import Partner5Land from '@/public/FifthPartnerLand.webp';
+import Partner6Land from '@/public/SixthPartnerLand.webp';
+import Partner7Land from '@/public/SeventhPartnerLand.webp';
 
 import ContactForm from '@/public/icons8-form-100.png';
 import Carousel from 'react-simply-carousel';
@@ -39,6 +37,14 @@ import Link from 'next/link';
 function Page() {
   const [sidebarData, setSidebarData] = useState<any>({});
   const [activeSlide, setActiveSlide] = useState(0);
+
+  const [currentImage, setCurrentImage] = useState('');
+
+  useEffect(() => {
+    if (sidebarData.img) {
+      setCurrentImage(sidebarData.img);
+    }
+  }, [sidebarData]);
 
   const roadmapContent = [
     [
@@ -119,13 +125,15 @@ function Page() {
   return (
     <div className='drawer drawer-end'>
       <input id='my-drawer-1' type='checkbox' className='drawer-toggle' />
+
       <div className='drawer-content mx-0 flex flex-col items-center justify-center px-0 font-Marsden'>
         <div className='mt-[104px] w-[225px] text-center text-[38px] font-medium leading-10 text-white md:w-full  md:text-[62px]'>
           Lerne unser <br className='md:hidden' />
           <span className='text-[#B77828]'>Team kennen</span>
         </div>
 
-        <div className='ml-0 flex items-center justify-center lg:ml-32'>
+        <div className='flex w-full items-center justify-center '>
+          {/* <div className='grid'> */}
           <div className='drawer-button mt-20 flex flex-col flex-wrap items-center justify-start md:flex-row'>
             <label
               htmlFor='my-drawer-1'
@@ -202,8 +210,8 @@ function Page() {
                     `Was auf Deinem Schreibtisch ist essenziell zum Arbeiten für Dich?`,
                     `Computer, Familienfotos`,
 
-                    `Was ist das spannendste Gebäude, in dem Du jemals warst?
-                  Golden Gate Bridge, San Francisco, USA
+                    `Was ist das spannendste Gebäude, in dem Du jemals warst?`,
+                    `Golden Gate Bridge, San Francisco, USA
                   `,
                   ],
                 })
@@ -289,6 +297,20 @@ function Page() {
                     `Eric Heisch ist unser Sales-Experte. Eric begann sein Studium in Frankreich und setzte es dann in Deutschland fort. Innerhalb seines BWL-Studiums wählte er die Schwerpunkte Finanzen, Logistik, Marketing und Vertrieb. Aktuell schreibt er seine Bachelorarbeit an der Hochschule für Technik in Stuttgart, in der es um die Anwendung von Künstlicher Intelligenz in Unternehmen geht. Er kann zudem schon auf eine mehrjährige Sales-Erfahrung in der Branche der Informationsdienste zurückblicken.`,
                     `Eric ist in seiner Position aktuell für den Vertriebsprozess von KI.m verantwortlich. Dies umfasst die Akquise neuer Kunden, die Betreuung bestehender Kunden sowie die Beantwortung sämtlicher Fragen und Anliegen. 
                   `,
+                    `Wo ist dein Lieblingsort, um abzuschalten und neue Ideen zu sammeln?`,
+                    `Am liebsten am Strand`,
+
+                    `Wenn du den Rest deines Lebens nur noch ein Gericht essen könntest, welches wäre das?`,
+                    `Pulposalat`,
+
+                    `Was ist dein Geheimrezept für eine gute Work-Life-Balance?`,
+                    `Hobbys nachgehen; Screenfreie Zeit einplanen & Interessen/Fähigkeiten entwickeln, die das berufliche und private Leben verbinden`,
+
+                    `Welcher war der beste Rat, den du je bekommen hast?`,
+                    `Bleibe immer neugierig und offen für ständiges Lernen.`,
+
+                    `Welches Lied motiviert dich, wenn du mal einen Energie-Boost brauchst?`,
+                    `Ain´t No Mountain High Enough-Marvin Gaye & Tammi Terrell`,
                   ],
                 })
               }
@@ -361,7 +383,7 @@ function Page() {
           >
             <Image
               width={200}
-              className='rounded md:mx-10'
+              className='rounded hover:cursor-pointer md:mx-10'
               src={Partner1}
               alt='partner1'
             />
@@ -370,7 +392,7 @@ function Page() {
             htmlFor='my-drawer-1'
             onClick={() =>
               setSidebarData({
-                img: Partner5Land,
+                img: Partner2Land,
                 name: 'Kathrin Hornke',
                 href: `https://www.mediation-hornke.de/`,
                 description: [
@@ -383,7 +405,7 @@ function Page() {
           >
             <Image
               width={200}
-              className='rounded md:mx-10'
+              className='rounded hover:cursor-pointer md:mx-10'
               src={Partner2}
               alt='Partner2'
             />
@@ -392,7 +414,7 @@ function Page() {
             htmlFor='my-drawer-1'
             onClick={() =>
               setSidebarData({
-                img: Partner2Land,
+                img: Partner3Land,
                 name: 'Tngo Zwermann',
                 href: `https://ingozwermann.com/`,
                 description: [
@@ -403,7 +425,7 @@ function Page() {
           >
             <Image
               width={200}
-              className='rounded md:mx-10'
+              className='rounded hover:cursor-pointer md:mx-10'
               src={Partner3}
               alt='partner3'
             />
@@ -425,7 +447,7 @@ function Page() {
           >
             <Image
               width={200}
-              className='rounded md:mx-10'
+              className='rounded hover:cursor-pointer md:mx-10'
               src={Partner4}
               alt='partner4'
             />
@@ -434,7 +456,7 @@ function Page() {
             htmlFor='my-drawer-1'
             onClick={() =>
               setSidebarData({
-                img: Partner3Land,
+                img: Partner5Land,
                 name: 'Britta Eremit',
                 href: `https://www.bechangecompany.com/en/home/`,
                 description: [
@@ -447,7 +469,7 @@ function Page() {
           >
             <Image
               width={200}
-              className='scale-[0.70] rounded md:mx-10'
+              className='scale-[0.70] rounded hover:cursor-pointer md:mx-10'
               src={Partner5}
               alt='partner1'
             />
@@ -469,7 +491,7 @@ function Page() {
           >
             <Image
               width={200}
-              className='rounded md:mx-10'
+              className='rounded hover:cursor-pointer md:mx-10'
               src={Partner6}
               alt='partner1'
             />
@@ -492,7 +514,7 @@ function Page() {
           >
             <Image
               width={200}
-              className='scale-[0.70] rounded md:mx-10'
+              className='scale-[0.70] rounded hover:cursor-pointer md:mx-10'
               src={Partner7}
               alt='partner1'
             />
@@ -576,7 +598,7 @@ function Page() {
         </div>
       </div>
 
-      <div className='drawer-side'>
+      <div className='drawer-side z-50'>
         <label
           htmlFor='my-drawer-1'
           aria-label='close sidebar'
@@ -584,7 +606,12 @@ function Page() {
         ></label>
         <div className='min-h-full w-[718px] bg-white'>
           <div className='flex flex-col items-center justify-center'>
-            <Image src={sidebarData.img} alt='partner1 side' />
+            <Image
+              placeholder='blur'
+              blurDataURL='/blur.png'
+              src={currentImage}
+              alt='partner1 side'
+            />
 
             <div className='mt-10 flex flex-col items-center justify-center space-y-5 px-4'>
               {sidebarData.href ? (
@@ -604,7 +631,11 @@ function Page() {
               <div className='pb-10'>
                 {sidebarData.description?.map((date: any) => (
                   <h1 className=" text-center font-['Marsden'] text-base font-light leading-[27px] text-black">
-                    {date}
+                    {date.endsWith('?') ? (
+                      <span className='font-semibold'>{date}</span>
+                    ) : (
+                      <span>{date}</span>
+                    )}
                   </h1>
                 ))}
               </div>

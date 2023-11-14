@@ -7,7 +7,7 @@ function VideoBackgroundMobile() {
     setTimeout(() => {
       // @ts-expect-error
       videoRef.current.play();
-    }, 5000);
+    }, 100);
   }, []);
 
   return (

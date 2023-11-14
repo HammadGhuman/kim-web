@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import NextTopLoader from 'nextjs-toploader';
+
 // const marsden = localFont({
 //   src: [
 //     {
@@ -37,7 +38,7 @@ export default function RootLayout({
       <body className={`overflow-x-hidden bg-image bg-cover bg-no-repeat`}>
         <NextTopLoader />
         <Navbar />
-        {children}
+        <div className=''>{children}</div>
         <Footer />
         <Analytics />
       </body>

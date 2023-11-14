@@ -7,20 +7,30 @@ import { useRouter } from 'next/navigation';
 import BlogHorizontal from './BlogHorizontal';
 function BlogsCard({ query }: { query: string }) {
   const [blogs, setBlogs] = useState<any>([]);
-
   useEffect(() => {
     async function fetchBlogs() {
       console.log('fetch called');
-      const res = await fetch(
-        `http://localhost:1337/api/blogs?filters[Category]${query}`
-      );
-      console.log(`http://localhost:1337/api/blogs?filters[Category]${query}`);
+      const res = await fetch(`http://localhost:1337/api/blogs?populate=*`);
       const body = await res.json();
-      setBlogs(body.data);
-      console.log(body.data);
+      const filterBlogs = [];
+      for (let blog of body.data) {
+        // console.log(blog)
+        const cat = blog.attributes.categories.data;
+        console.log(query)
+        for (let categories of cat) {
+          if (query.trim() === "" || categories.attributes.category_name === query) {
+            filterBlogs.push(blog);
+            break;
+          }
+        }
+      }
+
+      console.log(filterBlogs);
+      setBlogs(filterBlogs);
     }
     fetchBlogs();
-  }, []);
+    console.log('run')
+  },[query]);
   const router = useRouter();
   return (
     <div className='flex items-center justify-center'>
@@ -41,13 +51,13 @@ function BlogsCard({ query }: { query: string }) {
               <BlogHorizontal
                 title={blog.attributes.Title}
                 description={blog.attributes.Description}
-                img={blog.attributes.imageurl}
+                img={blog.attributes.blogimage.data.attributes.url}
               />
             ) : (
               <Blogs
                 title={blog.attributes.Title}
                 description={blog.attributes.Description}
-                image={blog.attributes.imageurl}
+                image={blog.attributes.blogimage.data.attributes.url}
               />
             )}
           </div>

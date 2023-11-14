@@ -5,6 +5,7 @@ function CareersForm() {
   const fileInputRef = useRef(null);
 
   const handleButtonClick = () => {
+    //@ts-ignore
     fileInputRef.current.click();
   };
   return (

@@ -42,7 +42,7 @@ const benifits = [
 
 function AskQuestion() {
   return (
-    <div className='flex flex-col items-center justify-center font-Marsden md:mt-20'>
+    <div className='flex flex-col items-center justify-center font-Marsden md:pt-20'>
       <div className='w-[225px] text-center md:w-auto'>
         <span className='text-[32px] font-medium leading-[38px] text-white  md:text-6xl'>
           KI.m für
@@ -53,7 +53,7 @@ function AskQuestion() {
         </span>
       </div>
 
-      <div className='mt-7'>
+      <div className='pt-7'>
         <PartnerBackground />
       </div>
       <div className='-mt-10'>
@@ -185,7 +185,7 @@ function AskQuestion() {
           Los geht&apos;s!
         </div>
         <div className="absolute left-[386px] top-[80px] w-[310px] text-center font-['Marsden'] text-[26px] font-medium text-white">
-          Wir prüfen Deine Daten.  Wir kontaktieren und
+          Wir prüfen Deine Daten. Wir kontaktieren und
         </div>
         <div className='absolute left-0 top-[29px] h-[0px] w-[143px] border border-neutral-200'></div>
         <div className='absolute left-[245px] top-[29px] h-[0px] w-[238px] border border-neutral-200'></div>

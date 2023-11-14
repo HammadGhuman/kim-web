@@ -1,8 +1,8 @@
 import React from 'react';
 import TeamCard from './TeamCard';
-import Team1 from '@/public/team-1.jpg.png';
-import Team2 from '@/public/team-2.jpg.png';
-import Team3 from '@/public/team-3.jpg.png';
+import Team1 from '@/public/Team1.webp';
+import Team2 from '@/public/Team2.webp';
+import Team3 from '@/public/Team3.webp';
 import { it } from 'node:test';
 import Link from 'next/link';
 function MeetOurTeam() {

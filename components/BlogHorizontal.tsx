@@ -25,15 +25,16 @@ function BlogHorizontal({ title, description, img }: Props) {
 
         <h2 className="mt-4 w-[446px] font-['Marsden'] text-base font-normal leading-relaxed text-white">
           {description}
+          
         </h2>
       </div>
       {/* right side image */}
-      <div>
+      <div className=''>
         <Image
           width={483}
           height={332}
           className='rounded-[10px]'
-          src={img}
+          src={`http://localhost:1337${img}`}
           alt='blog-image'
         />
       </div>

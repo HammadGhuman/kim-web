@@ -20,11 +20,10 @@ function BlogDetails(props: Props) {
 
   async function fetchBlogs() {
     const res = await fetch(
-      `http://localhost:1337/api/blogs/${props.params.id}`
+      `http://localhost:1337/api/blogs/${props.params.id}?populate=*`
     );
     const body = await res.json();
     setBlogData(body.data);
-    console.log(body.data);
   }
 
   useEffect(() => {
@@ -33,9 +32,9 @@ function BlogDetails(props: Props) {
 
   return (
     <main>
-      {blogData && <BlogDetailCard img={blogData.attributes.imageurl} />}
+      {blogData && <BlogDetailCard img={blogData.attributes.blogimage.data.attributes.url} />}
       {blogData && <Paragraph content={blogData.attributes.content} />}
-      <NewUserCard />
+      {blogData &&  <NewUserCard img={blogData.attributes.authorImage.data[0].attributes.url} authorName={blogData.attributes.authorName} /> }
       <div className='mt-40'>
         <Reply2 />
       </div>

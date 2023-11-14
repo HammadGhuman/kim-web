@@ -1,5 +1,7 @@
 import React from 'react';
 import ReadMoreButton from './ReadMoreButton';
+import Arrow from '@/public/arrowWhite.svg';
+import Image from 'next/image';
 
 function Reply() {
   return (
@@ -68,54 +70,59 @@ function Reply() {
           </div>
 
           {/* Legal Form */}
-          <div className='grid grid-cols-1 gap-3'>
+          <div className='relative grid grid-cols-1 gap-3'>
             <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               Rechtsform{' '}
             </h1>
+            <Image  className='absolute rotate-90 right-5 top-16' width={20} height={20} src={Arrow} alt='arrow' />
             <select
               name='legalfrom'
-              className='h-[72px] appearance-none rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl text-white'
+              className='h-[72px] appearance-none rounded-[20px] bg-blue-400 bg-opacity-10 px-10 text-xl text-white'
             >
-              <option className='bg-blue-400 text-white' value='option1'>
+              <option
+                className='bg-blue-400/90 text-white'
+                value='option1'
+              ></option>
+              <option className='bg-blue-400/90 text-white' value='option1'>
                 AG
               </option>
-              <option className='bg-blue-400 text-white' value='option2'>
+              <option className='bg-blue-400/90 text-white' value='option2'>
                 BV & Co.KG
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 e.K.
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 Einzelunternehmer ohne Handesregistereintrag
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 GbR
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 GmbH
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 GmbH & Co.KG
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 GmbH & Co.KgaA
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 KG
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 KgaA
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 OHG
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 SE
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 UG (haftungsbeschrankt)
               </option>
-              <option className='bg-blue-400 text-white' value='option3'>
+              <option className='bg-blue-400/90 text-white' value='option3'>
                 Sonstige
               </option>
             </select>
@@ -147,14 +154,16 @@ function Reply() {
           </div>
         </div>
       </div>
-      <button
-        type='submit'
-        className='mt-10 flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#B77828] md:mx-96'
-      >
-        <div className='text-center text-xl font-medium text-white'>
-          {'Absenden'}
-        </div>
-      </button>
+      <div className='flex items-center justify-center'>
+        <button
+          type='submit'
+          className='mt-10 flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#B77828] md:mx-96'
+        >
+          <div className='text-center text-xl font-medium text-white'>
+            {'Absenden'}
+          </div>
+        </button>
+      </div>
     </form>
   );
 }

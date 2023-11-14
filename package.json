@@ -19,6 +19,8 @@
     "daisyui": "^3.7.7",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.2",
+    "framer-motion": "^10.16.4",
+    "fuse.js": "^7.0.0",
     "install": "^0.13.0",
     "next": "13.5.2",
     "nextjs-toploader": "^1.5.3",
@@ -27,12 +29,16 @@
     "react-dom": "18.2.0",
     "react-markdown": "^9.0.0",
     "react-simply-carousel": "^9.0.5",
+    "react-slick": "^0.29.0",
     "remark-gfm": "^4.0.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.0.4",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "@types/react-slick": "^0.23.12",
     "file-loader": "^6.2.0",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.6"

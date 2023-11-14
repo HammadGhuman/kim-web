@@ -11,7 +11,7 @@ function OurBlog() {
     >
       <div className='text-center font-Marsden'>
         <span className='text-4xl font-medium leading-[44px] tracking-wide text-white md:text-6xl'>
-          Unsere Blogs
+          Unsere <span className='text-yellow-600'>Blogs</span>
         </span>
       </div>
       <div className='mt-10 space-y-8 md:mt-20 md:flex md:flex-col'>

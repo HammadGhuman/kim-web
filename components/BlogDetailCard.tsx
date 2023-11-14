@@ -21,7 +21,7 @@ function BlogDetailCard({ img }: Props) {
           <Image
             width={1101}
             height={598}
-            src={img}
+            src={`http://localhost:1337${img}`}
             alt='image'
             className='w-[350px] md:h-[598px] md:w-[1101px] md:rounded-[48px] '
           />
