@@ -26,7 +26,27 @@ function OurBlog() {
         </span>
       </div>
       <div className='mt-10 space-y-8 md:mt-20 md:flex md:flex-col'>
-        {blogs && blogs.map((item) => <BlogCard key={item.id} img={item.attributes.blogimage.url} heading={item.attributes.Title} description={item.attributes.Description} />)}
+        {blogs &&
+          blogs.map((item) => (
+            <BlogCard
+              key={
+                //@ts-ignore
+                item.id
+              }
+              img={
+                //@ts-ignore
+                item.attributes.blogimage.url
+              }
+              heading={
+                //@ts-ignore
+                item.attributes.Title
+              }
+              description={
+                //@ts-ignore
+                item.attributes.Description
+              }
+            />
+          ))}
       </div>
       <Link href='ask-question'>
         <div className='mt-20'>
