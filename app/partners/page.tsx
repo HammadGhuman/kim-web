@@ -16,6 +16,8 @@ import Benifits from '@/components/Benifits';
 import ReadMoreButton from '@/components/ReadMoreButton';
 import OurPartners from '@/components/OurPartners';
 import AffiliateCarousal from '@/components/AffiltateProgram';
+import AboutKimCard from '@/components/AboutKimCard';
+import PartnerCard from '@/components/PartnerCard';
 
 const benifits = [
   {
@@ -56,7 +58,9 @@ function AskQuestion() {
       <div className='pt-7'>
         <PartnerBackground />
       </div>
-      <div className='-mt-10'>
+      <PartnerCard />
+
+      <div className='mt-10'>
         <OurPartners />
       </div>
 
@@ -78,31 +82,10 @@ function AskQuestion() {
       <div className='hidden md:block'>
         <BenefitsCarousal />
       </div>
-      <div
-        id='Partnerprogramm'
-        className='mt-10 w-[249.60px] text-center md:-mt-4 md:w-auto'
-      >
-        <span className='text-6xl font-medium leading-[72px]  text-white'>
-          Partnerprogramm
-        </span>
-      </div>
-
-      <div className='flex flex-col space-y-5 md:hidden'>
-        {benifits.map((benifit) => (
-          <Benifits
-            heading={benifit.heading}
-            description={benifit.description}
-            key={benifit.heading}
-          />
-        ))}
-      </div>
-      <div className='-mt-10 hidden md:block'>
-        <AffiliateCarousal />
-      </div>
 
       <div
         id='SowerdenSiePartner'
-        className='mt-10 w-[291px] text-center md:mt-0 md:w-auto'
+        className='mt-10 w-[291px] text-center md:mt-10 md:w-auto'
       >
         <span className='text-5xl font-medium leading-[72px] text-white  md:text-6xl'>
           Wie wird man

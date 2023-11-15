@@ -12,7 +12,7 @@ function CareersForm() {
     <form className='flex flex-col'>
       <div
         id='BewerbenSiesichjetztalsPartner'
-        className='items-c mx-10 mt-10 flex flex-col space-y-5 rounded-[20px] bg-[#4969a1]/40 px-10 py-10 w-[900px] md:space-x-0'
+        className='items-c mx-10 mt-10 flex w-[900px] flex-col space-y-5 rounded-[20px] bg-[#4969a1]/40 px-10 py-10 md:space-x-0'
       >
         <h1 className="font-['Marsden'] text-4xl font-bold text-white">
           Hier bewerben
@@ -71,6 +71,15 @@ function CareersForm() {
             <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               Motivationsschreiben
             </h1>
+            <p className='text-white'>
+              Bei uns stehen nicht deine Noten und Zertifikate im Vordergrund,
+              sondern deine Persönlichkeit und Motivation. In nur wenigen Sätzen
+              möchten wir von dir erfahren, was dich dazu bewegt, dich bei uns
+              zu bewerben. Was bringt dich dazu, morgens voller Vorfreude auf
+              die Arbeit zu gehen? Welche Herausforderungen möchtest du
+              gemeinsam mit uns meistern? Warum bist du das fehlende Puzzleteil,
+              das unser Team komplett macht?
+            </p>
             <textarea
               name='websitelink'
               rows={10}
@@ -78,27 +87,7 @@ function CareersForm() {
             />
           </div>
 
-          <div className='grid grid-cols-2 gap-10'>
-            <div className='col-span-2 grid grid-cols-1 gap-3'>
-              <h1 className="font-['Marsden'] text-2xl font-medium text-white">
-                Lebenslauf hochladen *
-              </h1>
-              <input
-                type='file'
-                name='resume'
-                accept='.pdf, .doc, .docx'
-                className='hidden'
-                ref={fileInputRef}
-              />
-              <button
-                type='button'
-                className='rounded-[20px] bg-blue-400 bg-opacity-10 px-3 py-5 text-xl text-white'
-                onClick={handleButtonClick}
-              >
-                Lebenslauf
-              </button>
-            </div>
-          </div>
+      
         </div>
         <button
           type='submit'

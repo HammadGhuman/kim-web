@@ -1,9 +1,20 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useState } from 'react';
 import BlogCard from './BlogCard';
 import ReadMoreButton from './ReadMoreButton';
 import Link from 'next/link';
 
 function OurBlog() {
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    const fetchBlog = async () => {
+      const res = await fetch('http://localhost:1337/api/blogs?populate=*');
+      const { data } = await res.json();
+      setBlogs(data.slice(0, 3));
+    };
+
+    fetchBlog();
+  }, []);
   return (
     <div
       id='UnsereBlogs'
@@ -15,9 +26,7 @@ function OurBlog() {
         </span>
       </div>
       <div className='mt-10 space-y-8 md:mt-20 md:flex md:flex-col'>
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        {blogs && blogs.map((item) => <BlogCard key={item.id} img={item.attributes.blogimage.url} heading={item.attributes.Title} description={item.attributes.Description} />)}
       </div>
       <Link href='ask-question'>
         <div className='mt-20'>

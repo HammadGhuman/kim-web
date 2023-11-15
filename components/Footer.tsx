@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import Image1 from '@/public/image1.png';
-import Image2 from '@/public/image2.png';
+import Image2 from "@/public/Logo_Allianz_fuer_Cyber-Sicherheit_Teilnehmer_RGB.png"
 import Link from 'next/link';
 import Instagram from '@/public/Subtract.svg';
 import Linkedin from '@/public/Frame.svg';
@@ -11,12 +11,12 @@ function Footer() {
     <div className='mt-10 py-16 md:bg-[#264b78] '>
       <div className='border-y-2 border-slate-500 py-5 lg:mx-2'>
         <div className='mr-10 flex items-center justify-end space-x-4'>
-          <div>
+          <Link href="https://www.linkedin.com/company/ki-m/" className='hover:cursor-pointer'>
             <Image src={Instagram} alt='instagram' />
-          </div>
-          <div>
+          </Link>
+          <Link href="https://www.instagram.com/_ki.mentor/" className='hover:cursor-pointer'>
             <Image src={Linkedin} alt='linkedin' />
-          </div>
+          </Link>
         </div>
         <div className='flex justify-around'>
           <div className='flex flex-col  flex-wrap justify-center space-y-4 py-4 md:flex-row md:space-y-0 lg:space-x-0 '>
@@ -169,7 +169,7 @@ function Footer() {
                 <Image src={Image1} className='mt-10' alt='img1' />
               </Link>
               <Link href='https://www.allianz-fuer-cybersicherheit.de/Webs/ACS/DE/Home/home_node.html'>
-                <Image src={Image2} alt='img1' />
+                <Image className='w-[253px] h-[93px]' src={Image2} alt='img1' />
               </Link>
             </div>
           </div>

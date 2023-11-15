@@ -3,7 +3,12 @@ import Image from 'next/image';
 
 import Blog1 from '@/public/Blog1.png';
 import ReadMoreBlog from '@/public/ReadMoreBlog.svg';
-function BlogCard() {
+type Props = {
+  img: any;
+  heading: string;
+  description: string;
+};
+function BlogCard({ img, heading, description }: Props) {
   return (
     <div className='mx-10 flex flex-col rounded-[10px] shadow-md md:mx-0 md:flex-row'>
       <Image

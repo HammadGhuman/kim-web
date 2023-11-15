@@ -7,14 +7,14 @@ const sentence = {
     opacity: 1,
     transition: {
       delay: 0,
-      staggerChildren: 0.05,
+      staggerChildren: 0.1,
     },
   },
 };
 
 const letter = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
+  hidden: { scale: 0, y: 50 },
+  visible: { scale: 1, y: 0  },
 };
 const cursor = {
   hidden: { opacity: 0 },
