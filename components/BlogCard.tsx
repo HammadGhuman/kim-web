@@ -8,21 +8,25 @@ type Props = {
   heading: string;
   description: string;
 };
+
 function BlogCard({ img, heading, description }: Props) {
+  console.log(img);
+
   return (
     <div className='mx-10 flex flex-col rounded-[10px] shadow-md md:mx-0 md:flex-row'>
       <Image
         className='w-full rounded-l-[10px] lg:h-[287px] lg:w-[516px]'
-        src={Blog1}
+        src={`http://localhost:1337${img}`}
         alt={'Blog 1'}
+        width={516}
+        height={287}
       />
       <div className='rounded-b-[10px]  rounded-t-none bg-[#214777] pl-3 pr-4 pt-8 md:h-[287px] md:rounded-l-none md:rounded-r-[10px] md:pl-12 lg:w-[516px]'>
         <h1 className=' font-Marsden text-xl font-bold leading-normal text-white md:text-2xl '>
-          Leadership is reshaping itself – what are the trends?
+          {heading}
         </h1>
         <div className=' mt-3 font-Marsden text-base font-normal leading-relaxed text-stone-300'>
-          Multi-crisis scenarios, technological and social change and the ESG
-          paradigm of a sustainable economy are...
+          {description}
         </div>
         <button className='group flex items-center space-x-3 py-3 text-white hover:text-[#b77828]'>
           <div className='text-center  font-Marsden text-base font-normal capitalize group-hover:font-medium'>

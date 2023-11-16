@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function LeaderShipDial() {
   return (
-    <div className='relative ml-10 mt-20'>
+    <div className='relative ml-10 mt-20 hidden md:block'>
       <div className='relative'>
         <Image width={600} src={LeaderShipCircle} alt='LeaderShip' />
         <div className='absolute left-[22%] top-[33%] text-center font-Marsden text-[44px] leading-[44px] font-medium text-white'>

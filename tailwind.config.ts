@@ -31,7 +31,14 @@ const config: Config = {
   },
   plugins: [require('daisyui'), require('@tailwindcss/typography')],
   daisyui: {
-    themes: false,
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/theming/themes')['[data-theme=light]'],
+          warning: '#CD9246',
+        },
+      },
+    ],
     darkTheme: 'light',
     base: true,
     styled: true,

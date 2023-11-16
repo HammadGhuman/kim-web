@@ -10,7 +10,9 @@ function OurBlog() {
     const fetchBlog = async () => {
       const res = await fetch('http://localhost:1337/api/blogs?populate=*');
       const { data } = await res.json();
+      console.log(data);
       setBlogs(data.slice(0, 3));
+      console.log(blogs);
     };
 
     fetchBlog();
@@ -35,7 +37,7 @@ function OurBlog() {
               }
               img={
                 //@ts-ignore
-                item.attributes.blogimage.url
+                item.attributes.blogimage.data.attributes.url
               }
               heading={
                 //@ts-ignore

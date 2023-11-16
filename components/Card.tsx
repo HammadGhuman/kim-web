@@ -22,7 +22,7 @@ function Card(props: Props) {
         </div>
         <div className='absolute left-20 top-8 scale-100 text-white'>
           <h1 className='font-medium'>{props.title}</h1>
-          <p className='mt-5 pr-2 font-Marsden text-sm leading-relaxed text-white  md:w-[313px] md:pr-0 md:text-sm'>
+          <p className='mt-5 pr-2 font-Marsden text-[12px] leading-relaxed text-white  md:w-[313px] md:pr-0 md:text-sm'>
             {props.description}
           </p>
         </div>

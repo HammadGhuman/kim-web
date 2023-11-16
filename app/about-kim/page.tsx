@@ -22,6 +22,7 @@ import Arrow from '@/public/arrow.svg';
 import Image from 'next/image';
 import React from 'react';
 import AboutKimMobileCard2 from '@/components/AboutKimMobileCard2';
+import KommtCardMob from '@/components/KommtCardMob';
 const VertileKimContent = [
   {
     text: 'Effektivere Führung',
@@ -129,15 +130,15 @@ function page() {
   return (
     <div className='flex flex-col items-center justify-center'>
       {/* Heading Section */}
-      <div className='mt-24 text-center'>
-        <span className="font-['Marsden'] text-[62px] font-medium leading-[72px] text-white">
+      <div className='mt-10 text-center md:mt-24'>
+        <span className="font-['Marsden'] text-[32px] font-medium leading-10 text-white md:text-[62px] md:leading-[72px]">
           KI.m für{' '}
         </span>
-        <span className="font-['Marsden'] text-[62px] font-medium leading-[72px] text-yellow-600">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-10 text-yellow-600 md:text-[62px] md:leading-[72px]">
           Unternehmen
         </span>
       </div>
-      <div className="mt-2 w-[758px] text-center font-['Marsden'] text-[26px] font-medium text-white">
+      <div className="mt-2 w-auto text-center font-['Marsden'] text-sm font-medium text-white md:w-[758px] md:text-[26px]">
         Hier erfährst Du wie KI.m Unternehmen hilft, den Unternehmenserfolg zu
         steigern.
       </div>
@@ -152,12 +153,12 @@ function page() {
         <span className="font-['Marsden'] text-4xl font-semibold leading-[72px] text-white">
           Vorteile{' '}
         </span>
-        <span className="font-['Marsden'] text-4xl font-semibold leading-[72px] text-orange-400">
+        <span className="font-['Marsden'] text-4xl font-semibold leading-[72px] text-yellow-600">
           KI.m
         </span>
       </div>
       <div className='relative overflow-hidden'>
-        <div className='absolute h-[950px] w-[1440px] bg-blue-400 bg-opacity-40 blur-[1085px]' />
+        {/* <div className='absolute h-[950px] w-[1440px] bg-blue-400 bg-opacity-40 blur-[1085px]' /> */}
         <div className='relative'>
           {VertileKimContent.map(({ text, subText }) => (
             <VortieleKimCard key={text} subText={subText} heading={text} />
@@ -168,13 +169,17 @@ function page() {
       <div className="mt-24 text-center font-['Marsden'] text-[32px] font-medium leading-[72px] text-white">
         Kommt Ihnen das bekannt vor?
       </div>
-      <KommtCarousal />
+      <div className='hidden md:block'>
+        <KommtCarousal />
+      </div>
+      <KommtCardMob />
+
       {/* Yellow Card Section */}
-      <div className='flex h-[216px] w-[1068px] flex-col items-center justify-center rounded-[5px] bg-[#CD9246]'>
-        <div className="text-center font-['Marsden'] text-[32px] font-medium leading-[72px] text-white">
+      <div className='flex md:h-[216px] md:w-[1068px] md:px-0 px-3 md:mt-0 mt-10 md:py-0 py-8 flex-col items-center justify-center rounded-[5px] bg-[#CD9246]'>
+        <div className="text-center font-['Marsden'] text-[32px] font-medium leading-10 md:leading-[72px] text-white">
           Unser Eigenes Sprachmodell
         </div>
-        <div className="w-[1027px] text-center font-['Marsden'] text-xl font-normal leading-[49px] tracking-tight text-white">
+        <div className="md:w-[1027px] text-center font-['Marsden'] text-xl mt-4 md:mt-0 font-normal leading-10 md:leading-[49px] tracking-tight text-white">
           Um einen bestmöglichen Schutz ihrer Daten zu garantieren, haben wir
           unser eigenes KI.m Sprachmodell entwickelt, welches ab Februar 2024
           für Sie verfügbar sein wird!
