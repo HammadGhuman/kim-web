@@ -50,6 +50,7 @@ function CookieBanner() {
           </div>
           <div className='flex md:flex-col md:space-x-0 space-x-6 md:items-center md:justify-between py-10'>
             <button
+            //@ts-ignore
               onClick={() => document.getElementById('my_modal_3').showModal()}
               className='flex  h-[47px] w-[171px] items-center justify-center rounded-[5px] border border-white'
             >
