@@ -8,7 +8,7 @@ type Props = {
 
 function AboutKim2Card({ heading, description, index }: Props) {
   return (
-    <div className='flex h-[166px] w-[334px] flex-col items-center justify-center space-y-5 rounded-[5px] border border-white bg-blue-400 bg-opacity-10 px-4 md:h-[480px] md:w-auto md:px-24 md:py-10'>
+    <div className='flex py-10 w-[334px] flex-col items-center justify-center space-y-5 rounded-[5px] border border-white bg-blue-400 bg-opacity-10 px-4 md:h-[480px] md:w-auto md:px-24 md:py-10'>
       <div className="text-center font-['Marsden'] text-sm font-semibold tracking-tight  text-[#cd9146] md:w-[697px] md:text-[40px] md:leading-[60px]">
         {heading}
       </div>

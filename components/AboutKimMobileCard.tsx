@@ -6,39 +6,47 @@ import ReadMoreButton from './ReadMoreButton';
 function AboutKimMobileCard() {
   return (
     <div className='flex flex-col'>
-      <div className='mt-20 flex flex-row'>
-        <div className="h-[370px] w-[586px] text-justify font-['Marsden'] text-2xl font-normal leading-[74px] tracking-tight text-white">
+      <div className='mt-20 flex flex-col md:flex-row'>
+        <div className="md:h-[370px]  w-auto md:w-[586px] px-5 text-justify font-['Marsden'] text-2xl font-normal leading-10 md:leading-[74px] tracking-tight text-white">
           Im Rahmen einer ganzheitlichen Learning-Journey, durchläuft eine
           Führungskraft ein strukturiertes und systematisches
           Kompetenzentwicklungsprogramm, welches in unterschiedlichen Phasen
           Möglichkeiten für Lernen, Reflexion und Evaluation mit einbezieht.
         </div>
         <Image
-          className='ml-24 h-[554px] w-[375px]'
+          className='ml-24 md:h-[554px] md:w-[375px] w-[329px] h-auto md:mt-0 mt-8'
           src={Mobile1}
           alt='mobile'
         />
       </div>
 
-      <div className='mt-20 flex flex-row'>
-        <Image className='h-[554px] w-[375px] mr-20' src={Mobile2} alt='mobile' />
+      <div className='mt-20 flex flex-col md:flex-row'>
+        <Image
+          className='mr-20 hidden h-[554px] w-[375px] md:block'
+          src={Mobile2}
+          alt='mobile'
+        />
         <div>
-          <div className="text-center font-['Marsden'] text-4xl font-medium leading-[72px] text-yellow-600 -ml-20">
-            Der Zugang zur KI.m App enthält:
+          <div className="-ml-8 md:-ml-20 text-center font-['Marsden'] w-full text-2xl md:text-4xl font-medium leading-10 md:leading-[72px] text-yellow-600">
+            Der Zugang zur KI.m App enthält
           </div>
-          <div className="w-[623px] font-['Marsden'] text-2xl font-normal leading-[74px] tracking-tight text-white">
-            <ul></ul>
-            <li> Individuelle Mentorings mit KI.m</li>
-            <li> Impulse von Experten</li>
-            <li>Video Kurse zu verschiedenen Leadership Themen</li>
-            <li>Analysen des eigenen (Führungs-) Verhaltens</li>
-            <li>Lerntagebuch</li>
-            <li>Technischer Support</li>
+          <div className="md:w-[623px] font-['Marsden']  px-4 md:px-0 font-normal leading-[74px] tracking-tight text-white">
+            <li className='md:text-2xl text-lg mt-5'> Individuelle Mentorings mit KI.m</li>
+            <li className='md:text-2xl text-lg mt-10'> Impulse von Experten</li>
+            <li className='md:text-2xl text-lg mt-10'>Video Kurse zu verschiedenen Leadership Themen</li>
+            <li className='md:text-2xl text-lg mt-10'>Analysen des eigenen (Führungs-) Verhaltens</li>
+            <li className='md:text-2xl text-lg mt-10'>Lerntagebuch</li>
+            <li className='md:text-2xl text-lg mt-10 mb-10'>Technischer Support</li>
           </div>
-          <div className='flex place-items-end space-x-10'>
+          <div className='flex flex-col md:flex-row space-y-3 px-3 md:place-items-end md:space-x-10 md:space-y-0 md:px-0'>
             <ReadMoreButton text='Sales kontaktieren' />
             <ReadMoreButton text='Sales kontaktieren' />
           </div>
+          <Image
+            className='mt-8 h-[554px] w-[375px] md:hidden'
+            src={Mobile2}
+            alt='mobile'
+          />
         </div>
       </div>
     </div>

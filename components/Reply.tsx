@@ -1,9 +1,12 @@
-import React from 'react';
+'use client';
+import React, { useRef } from 'react';
 import ReadMoreButton from './ReadMoreButton';
 import Arrow from '@/public/arrowWhite.svg';
 import Image from 'next/image';
 
 function Reply() {
+  const selectRef = useRef(null);
+
   return (
     <form
       // action="https://formsubmit.co/Christian.Krauter@ki-mentor.com"
@@ -13,14 +16,14 @@ function Reply() {
     >
       <div
         id='BewerbenSiesichjetztalsPartner'
-        className='items-c mx-10 mt-10 flex w-[1100px] flex-col space-y-5 rounded-[20px] bg-[#4969a1]/40 px-10 py-10 md:space-x-0'
+        className='items-c mx-10 mt-10 flex flex-col space-y-5 rounded-[20px] bg-[#4969a1]/40 px-10 py-10 md:w-[1100px] md:space-x-0'
       >
         <h1 className="font-['Marsden'] text-4xl font-bold text-white">
           Kontaktperson
         </h1>
         <div className='grid grid-cols-2 gap-10'>
           {/* First Name */}
-          <div className='grid grid-cols-1 gap-3'>
+          <div className='col-span-2 grid grid-cols-1 gap-3 md:col-span-1'>
             <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               Vorname *
             </h1>
@@ -31,7 +34,7 @@ function Reply() {
             />
           </div>
           {/* Last Name */}
-          <div className='grid grid-cols-1 gap-3'>
+          <div className='col-span-2 grid grid-cols-1 gap-3 md:col-span-1'>
             <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               Nachname *
             </h1>
@@ -58,7 +61,7 @@ function Reply() {
             Firmendaten (optional)
           </div>
           {/* Company Name */}
-          <div className='grid grid-cols-1 gap-3 '>
+          <div className='col-span-2 grid grid-cols-1 gap-3 md:col-span-1 '>
             <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               Unternehmensname
             </h1>
@@ -70,14 +73,19 @@ function Reply() {
           </div>
 
           {/* Legal Form */}
-          <div className='relative grid grid-cols-1 gap-3'>
+          <div className='relative col-span-2 grid grid-cols-1 gap-3 md:col-span-1'>
             <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               Rechtsform{' '}
             </h1>
-            <Image  className='absolute rotate-90 right-5 top-16' width={20} height={20} src={Arrow} alt='arrow' />
+            <div className='absolute right-5 top-16 z-10 rotate-90'>
+              <Image width={20} height={20} src={Arrow} alt='arrow' />
+            </div>
+
             <select
+              ref={selectRef}
+              id='drop'
               name='legalfrom'
-              className='h-[72px] appearance-none rounded-[20px] bg-blue-400 bg-opacity-10 px-10 text-xl text-white'
+              className='h-[72px] appearance-none rounded-[20px] bg-blue-400 bg-opacity-10 px-10 text-xl text-white hover:cursor-pointer'
             >
               <option
                 className='bg-blue-400/90 text-white'
@@ -157,7 +165,8 @@ function Reply() {
       <div className='flex items-center justify-center'>
         <button
           type='submit'
-          className='mt-10 flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#B77828] md:mx-96'
+          className='mt-10 flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
+          transition-all duration-200 hover:bg-yellow-700 focus:scale-90 md:mx-96'
         >
           <div className='text-center text-xl font-medium text-white'>
             {'Absenden'}

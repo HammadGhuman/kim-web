@@ -23,6 +23,7 @@ import Image from 'next/image';
 import React from 'react';
 import AboutKimMobileCard2 from '@/components/AboutKimMobileCard2';
 import KommtCardMob from '@/components/KommtCardMob';
+import AboutKimCardMob from '@/components/AboutKimCardMob';
 const VertileKimContent = [
   {
     text: 'Effektivere Führung',
@@ -175,11 +176,11 @@ function page() {
       <KommtCardMob />
 
       {/* Yellow Card Section */}
-      <div className='flex md:h-[216px] md:w-[1068px] md:px-0 px-3 md:mt-0 mt-10 md:py-0 py-8 flex-col items-center justify-center rounded-[5px] bg-[#CD9246]'>
-        <div className="text-center font-['Marsden'] text-[32px] font-medium leading-10 md:leading-[72px] text-white">
+      <div className='mt-10 flex flex-col items-center justify-center rounded-[5px] bg-[#CD9246] px-3 py-8 md:mt-0 md:h-[216px] md:w-[1068px] md:px-0 md:py-0'>
+        <div className="text-center font-['Marsden'] text-[32px] font-medium leading-10 text-white md:leading-[72px]">
           Unser Eigenes Sprachmodell
         </div>
-        <div className="md:w-[1027px] text-center font-['Marsden'] text-xl mt-4 md:mt-0 font-normal leading-10 md:leading-[49px] tracking-tight text-white">
+        <div className="mt-4 text-center font-['Marsden'] text-xl font-normal leading-10 tracking-tight text-white md:mt-0 md:w-[1027px] md:leading-[49px]">
           Um einen bestmöglichen Schutz ihrer Daten zu garantieren, haben wir
           unser eigenes KI.m Sprachmodell entwickelt, welches ab Februar 2024
           für Sie verfügbar sein wird!
@@ -197,10 +198,10 @@ function page() {
       </div>
       <AboutKimMobileCard />
       <div className='mb-10 mt-24 text-center'>
-        <span className="font-['Marsden'] text-[62px] font-medium leading-[72px] text-white">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-10 text-white md:text-[62px] md:leading-[72px]">
           KI.m für{' '}
         </span>
-        <span className="font-['Marsden'] text-[62px] font-medium leading-[72px] text-yellow-600">
+        <span className="font-['Marsden'] text-[32px] font-medium leading-10 text-yellow-600 md:text-[62px] md:leading-[72px]">
           Führungskräfte
         </span>
       </div>
@@ -208,10 +209,16 @@ function page() {
         <AboutKim3 />
       </div>
       {/* Führungskräfte  */}
-      <div className="mt-24 text-center font-['Marsden'] text-[40px] font-semibold leading-[72px] text-white">
+      <div className="mt-24 text-center font-['Marsden'] text-[32px] font-semibold leading-10 text-white md:text-[40px] md:leading-[72px]">
         Führungskräfte wie Sie haben es nicht leicht:
       </div>
-      <AboutKimCarousal />
+      <div className='hidden md:block'>
+        <AboutKimCarousal />
+      </div>
+
+      <div className='mt-10 md:hidden'>
+        <AboutKimCardMob />
+      </div>
 
       {/*  Vorteile kIM 2*/}
 
@@ -247,11 +254,11 @@ function page() {
         </button>{' '}
       </div>
       {/* LeaderSHip Model */}
-      <div className='mt-24 w-[530px]'>
-        <span className="font-['Marsden'] text-[62px] font-semibold leading-[72px] text-white">
+      <div id='leadership-model' className='mt-24 md:w-[530px]'>
+        <span className="font-['Marsden'] text-[32px] font-semibold leading-10 text-white md:text-[62px] md:leading-[72px]">
           Leadership{' '}
         </span>
-        <span className="font-['Marsden'] text-[62px] font-semibold leading-[72px] text-yellow-600">
+        <span className="font-['Marsden'] text-[32px] font-semibold leading-10 text-yellow-600 md:text-[62px] md:leading-[72px]">
           Model
         </span>
       </div>
@@ -266,19 +273,22 @@ function page() {
         ))}
       </div>
       <LeaderShipDial />
-      <div className="w-[861px] text-center font-['Marsden'] text-4xl font-semibold leading-[72px] text-white">
+      <div className="mt-10 text-center font-['Marsden'] text-4xl font-semibold leading-10 text-white md:mt-0 md:w-[861px] md:leading-[72px]">
         Publications related to our leadership mode
       </div>
-      <div className="h-[99px] w-[429px] text-center font-['Marsden'] text-2xl font-normal leading-[47.17px] text-white">
+      <div className="mt-4 px-3 text-center font-['Marsden'] text-2xl font-normal leading-10 text-white md:h-[99px] md:w-[429px] md:px-0 md:leading-[47.17px]">
         Hier werden wir verschiedene PDFs hinterlegen
       </div>
 
-      <div className='mb-10 flex items-center justify-center space-x-16'>
+      <div className='mb-10 mt-10 flex flex-col items-center justify-center space-y-10 md:flex-row md:space-x-16 md:space-y-0'>
         <div className='flex flex-col items-center justify-center space-y-5'>
           <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white underline">
             1. PHD arbeit
           </div>
-          <button className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-yellow-600'>
+          <button
+            className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
+     transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+          >
             <h1 className="font-['Marsden'] text-xl font-medium text-white">
               Download
             </h1>
@@ -288,7 +298,10 @@ function page() {
           <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white underline">
             2. Studie{' '}
           </div>
-          <button className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-yellow-600'>
+          <button
+            className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
+     transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+          >
             <h1 className="font-['Marsden'] text-xl font-medium text-white">
               Download
             </h1>
@@ -298,7 +311,10 @@ function page() {
           <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white underline">
             3. Studie{' '}
           </div>
-          <button className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-yellow-600'>
+          <button
+            className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
+     transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+          >
             <h1 className="font-['Marsden'] text-xl font-medium text-white">
               Download
             </h1>
@@ -308,7 +324,10 @@ function page() {
           <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white underline">
             4. Buch Titel{' '}
           </div>
-          <button className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-yellow-600'>
+          <button
+            className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
+     transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+          >
             <h1 className="font-['Marsden'] text-xl font-medium text-white">
               Download
             </h1>
@@ -321,14 +340,14 @@ function page() {
       </div>
 
       <AboutKim2 />
-      <div className="mt-20  w-[1133px] text-center font-['Marsden'] text-2xl font-normal  text-white">
+      <div className="mt-20 px-4 text-center font-['Marsden'] text-xl font-normal text-white md:w-[1133px]  md:text-2xl">
         Als innovatives KI-Startup präsentieren wir stolz KI.m - unsere speziell
         für iOS und Android entwickelte Smartphone-App. KI.m nutzt
         fortschrittlichste KI-Technologien, um Führungskräften ein
         maßgeschneidertes Mentoring-Erlebnis zu ermöglichen.
       </div>
 
-      <div className="mt-12 w-[849px] text-center font-['Marsden'] text-[32px] font-semibold leading-[49px] text-white">
+      <div className="mt-12 px-4 text-center font-['Marsden'] text-[32px] font-semibold leading-[49px] text-white md:w-[849px] md:px-0">
         {' '}
         State of the Art Technologien in Nutzerhand: Unser Technologieportfolio
         bietet nur das Beste für unsere Nutzer, darunter:
@@ -339,7 +358,7 @@ function page() {
       <h1 className="mt-24 h-[38px] w-[121px] text-center font-['Marsden'] text-[32px] font-semibold text-white">
         Produkt
       </h1>
-      <p className="mt-3 h-[167px] w-[689px] text-center font-['Marsden'] text-2xl font-medium leading-[42.24px] text-white">
+      <p className="mt-3 text-center font-['Marsden'] text-2xl font-medium leading-[42.24px] text-white md:h-[167px] md:w-[689px]">
         KI.m basiert auf einem wissenschaftlich fundiertem Leadership-Modell und
         bietet eine Vielzahl von Funktionen
       </p>

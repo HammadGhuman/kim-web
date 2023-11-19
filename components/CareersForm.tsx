@@ -12,14 +12,14 @@ function CareersForm() {
     <form className='flex flex-col'>
       <div
         id='BewerbenSiesichjetztalsPartner'
-        className='items-c mx-10 mt-10 flex w-[900px] flex-col space-y-5 rounded-[20px] bg-[#4969a1]/40 px-10 py-10 md:space-x-0'
+        className='items-c mx-10 mt-10 flex flex-col space-y-5 rounded-[20px] bg-[#4969a1]/40 px-10 py-10 md:w-[900px] md:space-x-0'
       >
         <h1 className="font-['Marsden'] text-4xl font-bold text-white">
           Hier bewerben
         </h1>
         <div className='grid grid-cols-2 gap-10'>
           {/* First Name */}
-          <div className='grid grid-cols-1 gap-3'>
+          <div className='col-span-2 grid grid-cols-1 gap-3  md:col-span-1'>
             <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               Vorname *
             </h1>
@@ -30,7 +30,7 @@ function CareersForm() {
             />
           </div>
           {/* Last Name */}
-          <div className='grid grid-cols-1 gap-3'>
+          <div className='col-span-2 grid grid-cols-1 gap-3 md:col-span-1'>
             <h1 className="font-['Marsden'] text-2xl font-medium text-white">
               Nachname *
             </h1>
@@ -86,12 +86,11 @@ function CareersForm() {
               className='h-[300px] rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl text-white'
             />
           </div>
-
-      
         </div>
         <button
           type='submit'
-          className='mt-10 flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#B77828] md:mx-96 md:w-full'
+          className='mt-10 flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
+          transition-all duration-200 hover:bg-yellow-700 focus:scale-90 md:mx-96 md:w-full'
         >
           <div className='text-center text-xl font-medium text-white'>
             {'Einreichen'}

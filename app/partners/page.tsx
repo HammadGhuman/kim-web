@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Check1 from '@/public/icons8-check-96.png';
 import HandShake from '@/public/icons8-handshake-50.png';
 import Contact from '@/public/contact-form.png';
-import Benefits from '@/components/Benifits';
 
 import Steps from '@/components/Steps';
 import Reply from '@/components/Reply';
@@ -13,11 +12,9 @@ import Folder from '@/public/folder.png';
 
 import BenefitsCarousal from '@/components/BenifitsCarosal';
 import Benifits from '@/components/Benifits';
-import ReadMoreButton from '@/components/ReadMoreButton';
 import OurPartners from '@/components/OurPartners';
-import AffiliateCarousal from '@/components/AffiltateProgram';
-import AboutKimCard from '@/components/AboutKimCard';
 import PartnerCard from '@/components/PartnerCard';
+import OurPartners2 from '@/components/OurPartner2';
 
 const benifits = [
   {
@@ -44,8 +41,8 @@ const benifits = [
 
 function AskQuestion() {
   return (
-    <div className='flex flex-col items-center justify-center font-Marsden md:pt-20'>
-      <div className='w-[225px] text-center md:w-auto'>
+    <div className='flex flex-col items-center justify-center font-Marsden md:pt-20 '>
+      <div className='mt-10 w-[225px] text-center md:mt-0 md:w-auto'>
         <span className='text-[32px] font-medium leading-[38px] text-white  md:text-6xl'>
           KI.m für
         </span>
@@ -58,11 +55,11 @@ function AskQuestion() {
       <div className='pt-7'>
         <PartnerBackground />
       </div>
-      <PartnerCard />
+    <div className='-mt-10'>
+    <OurPartners2 />
+    </div>
 
-      <div className='mt-10'>
-        <OurPartners />
-      </div>
+      <PartnerCard />
 
       <div
         id='Vorteile'

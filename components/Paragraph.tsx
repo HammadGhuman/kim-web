@@ -6,8 +6,8 @@ function Paragraph({ content }: { content: string }) {
     <div className='mt-8 flex flex-col items-center justify-center font-Marsden md:mx-72'>
       {/* <div dangerouslySetInnerHTML={{__html:content}} className="w-[263px]  md:w-full text-center md:text-left text-white">
       </div> */}
-
-      <ReactMarkdown className='prose min-w-[1100px] text-white md:prose-2xl prose-headings:text-white prose-li:decoration-white '>
+     
+      <ReactMarkdown className='prose-sm px-10 prose-strong:text-white md:min-w-[1100px]  text-white md:prose-2xl prose-headings:text-white prose-li:decoration-white '>
         {content}
       </ReactMarkdown>
     </div>

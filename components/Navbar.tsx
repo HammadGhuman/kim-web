@@ -11,20 +11,17 @@ import Link from 'next/link';
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className='pb-[102px]'>
-      <div className='fixed z-50 flex w-full items-center justify-between bg-image  bg-cover bg-no-repeat px-5 py-5 font-Marsden'>
+    <div className='overflow-x-hidden overflow-y-hidden pb-[102px]'>
+      <div className='fixed z-50 flex w-full items-center  justify-between bg-image  bg-cover bg-no-repeat px-5 py-5 font-Marsden'>
+       
+        <Link href='/' className=''>
+          <Image src={Logo} alt='Logo' />
+        </Link>
         <div
           className='block hover:cursor-pointer md:hidden'
           onClick={() => setIsOpen(!isOpen)}
         >
-          <Image
-            src={CLose}
-            alt='close'
-            className={`transition duration-300 ease-in-out ${
-              isOpen ? 'block opacity-100' : 'hidden opacity-0'
-            }`}
-          />
-
+          {' '}
           <Image
             src={Hamburger}
             alt='hamburger'
@@ -32,13 +29,17 @@ function Navbar() {
               isOpen ? 'hidden opacity-0' : 'block opacity-100'
             }`}
           />
+          <Image
+            src={CLose}
+            alt='close'
+            className={`transition duration-300 ease-in-out ${
+              isOpen ? 'block opacity-100' : 'hidden opacity-0'
+            }`}
+          />
         </div>
-        <Link href='/' className='ml-10'>
-          <Image src={Logo} alt='Logo' />
-        </Link>
         <ul
-          className={`absolute top-28 z-10 w-full items-center   justify-between space-y-10 bg-image bg-cover bg-no-repeat py-10 text-lg md:static md:z-auto md:ml-20  md:flex md:h-auto md:w-auto md:space-x-28 md:space-y-0 md:bg-none md:py-0 md:opacity-100 ${
-            isOpen ? 'opacity-100' : 'opacity-0'
+          className={`absolute left-0  top-24 w-full items-center justify-between space-y-10  bg-image bg-cover bg-no-repeat px-10 py-10 text-lg md:static md:z-auto md:ml-20 md:flex  md:h-auto md:w-auto md:space-x-28 md:space-y-0 md:bg-none md:px-0 md:py-0 md:opacity-100 ${
+            isOpen ? 'block opacity-100' : 'hidden opacity-0'
           } transition-all duration-300 ease-in-out`}
         >
           <li className='text-white  transition-all duration-300 hover:text-[#B77828] '>

@@ -20,8 +20,9 @@ function page() {
 
   async function fetchData() {
     try {
-      const res = await fetch(`http://82.165.71.137:1337/api/faqs`);
+      const res = await fetch(`http://localhost:1337/api/faqs`);
       const data = await res.json();
+      console.log(data);
       setFaqs(data.data);
     } catch (err) {
       console.log(err);

@@ -5,7 +5,7 @@ import React from 'react';
 function page() {
   return (
     <div className='flex flex-col items-center justify-center'>
-      <div className='flex w-[900px] flex-col space-y-10 text-[22px] mt-24 text-white'>
+      <div className='flex w-auto px-3 md:w-[900px] flex-col space-y-10 text-[22px] mt-24 text-white'>
         <h1>
           Sei Teil der KI.m Familie und gestalte die Zukunft der
           Führungskräfteentwicklung mit! Wir sind ein aufstrebendes Start-Up,

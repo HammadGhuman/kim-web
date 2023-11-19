@@ -48,8 +48,11 @@ function MeetOurTeam() {
         </div>
       </div>
       <div className='mt-[65px] flex items-center justify-center'>
-        <Link href='#'>
-          <button className='h-[61px] w-[225px]  rounded-[10px] bg-[#B77828]'>
+        <Link href='/meet-our-team'>
+          <button
+            className='h-[61px] w-[225px]  rounded-[10px] bg-[#b77828]
+     transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+          >
             <div className='font-Marsden text-xl font-medium text-white'>
               Alle kennenlernen
             </div>

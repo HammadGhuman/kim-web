@@ -111,7 +111,10 @@ function AskQuestion() {
         </div>
       </div>
       <div className='flex flex-col items-center justify-center'>
-        <div className='my-10 flex max-w-[60%] space-x-20 overflow-x-scroll pr-10  '>
+        <div
+          id='jjkkll'
+          className='custom-scroll my-10 flex max-w-[60%] space-x-20 overflow-x-scroll pr-10  '
+        >
           {categories &&
             categories.map((item, index) => (
               <div
@@ -128,13 +131,16 @@ function AskQuestion() {
                   handleActiveTab(index + 1, item.attributes?.category_name)
                 }
               >
-                
-                <h1 className='w-max'> {
-                  //@ts-ignore
-                item.attributes?.category_name
-                }</h1>
+                <h1 className='w-max'>
+                  {' '}
+                  {
+                    //@ts-ignore
+                    item.attributes?.category_name
+                  }
+                </h1>
               </div>
             ))}
+            
         </div>
         <div>
           <BlogsCard query={activeCat} />

@@ -12,18 +12,18 @@ function Reply2() {
       </h1>
       <div className='grid grid-cols-2 gap-10'>
         {/* First Name */}
-        <div className='grid grid-cols-1 gap-3'>
+        <div className='grid grid-cols-1 md:col-span-1 col-span-2 gap-3'>
           <h1 className="font-['Marsden'] text-2xl font-medium text-white">
             Vorname *
           </h1>
           <input
-            type='email'
-            className='h-[72px] w-[425px] rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl text-white'
+            type='text'
+            className='h-[72px] md:w-[425px] rounded-[20px] bg-blue-400 bg-opacity-10 px-3 text-xl text-white'
           />
         </div>
 
         {/* Email */}
-        <div className='grid grid-cols-1 gap-3'>
+        <div className='grid grid-cols-1 md:col-span-1 col-span-2  gap-3'>
           <h1 className="font-['Marsden'] text-2xl font-medium text-white">
             E-Mail-Adresse *
           </h1>
@@ -33,7 +33,7 @@ function Reply2() {
           />
         </div>
         {/* Link to Website */}
-        <div className='grid grid-cols-1 gap-3'>
+        <div className='grid grid-cols-1 md:col-span-1 col-span-2  gap-3'>
           <h1 className="font-['Marsden'] text-2xl font-medium text-white">
             Website
           </h1>
@@ -43,7 +43,7 @@ function Reply2() {
           />
         </div>
         {/* Company Name */}
-        <div className='grid grid-cols-1 gap-3 '>
+        <div className='grid grid-cols-1 md:col-span-1 col-span-2  gap-3 '>
           <h1 className="font-['Marsden'] text-2xl font-medium text-white">
             Company Name
           </h1>

@@ -32,9 +32,19 @@ function BlogDetails(props: Props) {
 
   return (
     <main>
-      {blogData && <BlogDetailCard img={blogData.attributes.blogimage.data.attributes.url} />}
+      {blogData && (
+        <BlogDetailCard
+          img={blogData.attributes.blogimage.data.attributes.url}
+        />
+      )}
       {blogData && <Paragraph content={blogData.attributes.content} />}
-      {blogData &&  <NewUserCard img={blogData.attributes.authorImage.data[0].attributes.url} authorName={blogData.attributes.authorName} /> }
+      {blogData && (
+        <NewUserCard
+          img={blogData.attributes.authorImage.data[0].attributes.url}
+          authorName={blogData.attributes.authorName}
+          authorDes={blogData.attributes.authorDes}
+        />
+      )}
       <div className='mt-40'>
         <Reply2 />
       </div>

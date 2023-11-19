@@ -16,9 +16,12 @@ function BlogsCard({ query }: { query: string }) {
       for (let blog of body.data) {
         // console.log(blog)
         const cat = blog.attributes.categories.data;
-        console.log(query)
+        console.log(query);
         for (let categories of cat) {
-          if (query.trim() === "" || categories.attributes.category_name === query) {
+          if (
+            query.trim() === '' ||
+            categories.attributes.category_name === query
+          ) {
             filterBlogs.push(blog);
             break;
           }
@@ -26,20 +29,22 @@ function BlogsCard({ query }: { query: string }) {
       }
 
       console.log(filterBlogs);
+      // const duplicates = [...filterBlogs, ...filterBlogs];
+      // setBlogs(duplicates);
       setBlogs(filterBlogs);
     }
     fetchBlogs();
-    console.log('run')
-  },[query]);
+    console.log('run');
+  }, [query]);
   const router = useRouter();
   return (
     <div className='flex items-center justify-center'>
-      <div className='flex max-w-5xl flex-col items-center justify-center md:grid md:grid-cols-3 md:gap-3'>
+      <div className='hidden max-w-5xl ml-8 md:grid md:grid-cols-3 md:gap-3'>
         {blogs.map((blog: any, index: number) => (
           <div
             className={`cursor-pointer ${
-              index === 0 || index === blogs.length - 1
-                ? ' col-span-3 mr-10'
+              index === 0 || index % 4 === 0
+                ? '  mr-10 md:col-span-3'
                 : 'col-span-1'
             } `}
             key={blog.id}
@@ -47,7 +52,7 @@ function BlogsCard({ query }: { query: string }) {
               router.push(`blog-details/${blog.id}`);
             }}
           >
-            {index === 0 || index === blogs.length - 1 ? ( // Check if it's the first or last blog
+            {index === 0 || index % 4 === 0 ? (
               <BlogHorizontal
                 title={blog.attributes.Title}
                 description={blog.attributes.Description}
@@ -60,6 +65,24 @@ function BlogsCard({ query }: { query: string }) {
                 image={blog.attributes.blogimage.data.attributes.url}
               />
             )}
+          </div>
+        ))}
+      </div>
+
+      <div className='md:hidden flex max-w-5xl flex-col items-center justify-center'>
+        {blogs.map((blog: any, index: number) => (
+          <div
+            className={`cursor-pointer `}
+            key={blog.id}
+            onClick={() => {
+              router.push(`blog-details/${blog.id}`);
+            }}
+          >
+            <Blogs
+              title={blog.attributes.Title}
+              description={blog.attributes.Description}
+              image={blog.attributes.blogimage.data.attributes.url}
+            />
           </div>
         ))}
       </div>

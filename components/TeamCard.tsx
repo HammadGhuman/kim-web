@@ -1,6 +1,8 @@
+'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Member1 from '@/public/Member1.png';
+import { motion } from 'framer-motion';
 
 type Props = {
   img: any;
@@ -22,10 +24,10 @@ function TeamCard({ img, name, position, index }: Props) {
           <div className='absolute -left-2 md:left-3 top-20 h-4 w-4 rounded-full bg-yellow-600' />
         )}
         {index === 1 && (
-          <div className='absolute -right-1 md:right-5 top-16 h-4 w-4 rounded-full bg-yellow-600' />
+          <div className='absolute -right-1 top-16 h-4 w-4 rounded-full bg-yellow-600 md:right-5' />
         )}
         {index === 2 && (
-          <div className='absolute bottom-20 -right-2 md:right-3 h-4 w-4 rounded-full bg-yellow-600' />
+          <div className='absolute -right-2 bottom-20 h-4 w-4 rounded-full bg-yellow-600 md:right-3' />
         )}
       </div>
       <div className='text-2xl font-medium leading-[72px] tracking-tight text-white'>

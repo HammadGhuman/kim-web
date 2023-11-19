@@ -24,13 +24,14 @@ function OurPartners() {
           Partner
         </span>
       </div>
+
       <div className='relative mt-10 flex  flex-col items-center justify-between space-y-10 md:flex-row md:justify-between md:space-y-0 md:bg-[#263A64] md:pr-10'>
         <div
           onClick={() => router.push('/partners')}
           className='absolute z-10 hidden h-[200px] min-w-[450px] cursor-pointer bg-[#263a64] md:block md:pl-10'
         >
           <div className='flex h-full items-center justify-center'>
-            <span className="font-['Marsden'] text-4xl mr-3 font-medium leading-[44px] tracking-wide text-white">
+            <span className="mr-3 font-['Marsden'] text-4xl font-medium leading-[44px] tracking-wide text-white">
               Unsere{' '}
             </span>
             <span className="font-['Marsden'] text-4xl font-medium leading-[44px] tracking-wide text-[#CD9145] ">
@@ -39,6 +40,7 @@ function OurPartners() {
             </span>
           </div>
         </div>
+
         <div className='grid grid-cols-1 md:hidden'>
           <Image
             className='mx-10 inline-block w-44 '
@@ -76,6 +78,7 @@ function OurPartners() {
             alt='partner1'
           />
         </div>
+
         <div id='logos' className='hidden py-4 md:block'>
           <div id='logo-slide' className=' whitespace-nowrap'>
             <Image
@@ -190,6 +193,376 @@ function OurPartners() {
             />
 
             <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner1}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner2}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner3}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner4}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner5}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner6}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block  w-44  '
+              src={Partner7}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner1}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner2}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner3}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner4}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner5}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner6}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block  w-44  '
+              src={Partner7}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner1}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner2}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner3}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner4}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner5}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner6}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block  w-44  '
+              src={Partner7}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner1}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner2}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner3}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner4}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner5}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner6}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block  w-44  '
+              src={Partner7}
+              alt='partner1'
+            />
+
+<Image
+              className='mx-10 inline-block w-44 '
+              src={Partner1}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner2}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner3}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner4}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner5}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner6}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block  w-44  '
+              src={Partner7}
+              alt='partner1'
+            />
+
+<Image
+              className='mx-10 inline-block w-44 '
+              src={Partner1}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner2}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner3}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner4}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner5}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner6}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block  w-44  '
+              src={Partner7}
+              alt='partner1'
+            />
+
+<Image
+              className='mx-10 inline-block w-44 '
+              src={Partner1}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner2}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner3}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner4}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner5}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner6}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block  w-44  '
+              src={Partner7}
+              alt='partner1'
+            />
+
+<Image
+              className='mx-10 inline-block w-44 '
+              src={Partner1}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner2}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner3}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner4}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner5}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner6}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block  w-44  '
+              src={Partner7}
+              alt='partner1'
+            />
+
+<Image
+              className='mx-10 inline-block w-44 '
+              src={Partner1}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner2}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner3}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner4}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner5}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner6}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block  w-44  '
+              src={Partner7}
+              alt='partner1'
+            />
+
+<Image
+              className='mx-10 inline-block w-44 '
+              src={Partner1}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner2}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner3}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner4}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner5}
+              alt='partner1'
+            />
+
+            <Image
+              className='mx-10 inline-block w-44 '
+              src={Partner6}
+              alt='partner1'
+            />
+            <Image
+              className='mx-10 inline-block  w-44  '
+              src={Partner7}
+              alt='partner1'
+            />
+
+<Image
               className='mx-10 inline-block w-44 '
               src={Partner1}
               alt='partner1'

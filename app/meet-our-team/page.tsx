@@ -27,7 +27,7 @@ import Partner4Land from '@/public/FourthPartnerLand.webp';
 import Partner5Land from '@/public/FifthPartnerLand.webp';
 import Partner6Land from '@/public/SixthPartnerLand.webp';
 import Partner7Land from '@/public/SeventhPartnerLand.webp';
-
+import Rec from '@/public/Recruiting4.png';
 import ContactForm from '@/public/icons8-form-100.png';
 import Carousel from 'react-simply-carousel';
 import ReadMoreButton from '@/components/ReadMoreButton';
@@ -122,6 +122,54 @@ function Page() {
     ],
   ];
 
+  const roadmapContentmob = [
+    {
+      date: '2009',
+      sub: 'Die Entstehung des Leadership Modells',
+      main: 'Ausgelöst durch die Finanzkrise erforschte Jörg Krauter die Frage: „Wie führt man wirksam in Krisen und extremen Situationen in einem volatilen, unsicheren, komplexen und mehrdeutigen Geschäftsumfeld?“. In seiner Promotion zum PhD, die er in 2018 abschloss, entwickelte er die Grundlage für das Leadership Modell, das wir heute in KI.m einsetzen.',
+    },
+    {
+      date: 'März 2020\n\n        ',
+      sub: 'Corona Pandemie, die Theorie wird zu Praxis\n\n        ',
+      main: 'Die Corona Pandemie wird als Extremereignis in unsere Geschichte eingehen. Diesen Umstand nutzte Jörg, um anhand einer empirischen Studie die Erkenntnisse seiner bisherigen Forschungsarbeit zu überprüfen und um aktuelle Trends, wie Digitalisierung und agiles Arbeiten zu erweitern.  ',
+    },
+    {
+      date: 'September 2020',
+      sub: 'Die Idee von KI.m entstand',
+      main: 'Die Corona Pandemie rückte die Notwendigkeit der Digitalisierung im Bereich des Leadership Development ins Licht der Aufmerksamkeit, Präsenztrainings konnten nicht mehr stattfinden. In der gemeinsamen Diskussion zwischen Christian und Jörg entstand die Vision eines KI basierten Mentors.',
+    },
+    {
+      date: 'Juni 2021',
+      sub: 'Beginn der Konzeption von KI.m',
+      main: 'Diese Idee griff Christian Krauter in seiner Bachelorarbeit auf und entwickelte ein technisches Konzept, sowie ein passendes Geschäftsmodell. ',
+    },
+    {
+      date: 'Januar 2022',
+      sub: 'Beginn der Entwicklung des ersten Prototypen',
+      main: 'Nach der ausgiebigen Konzeptionsphase wurde im Januar 2022 damit begonnen, den ersten Prototypen zu entwickeln, um die Idee von KI.m wirklichkeit werden zu lassen.',
+    },
+    {
+      date: 'Juni 2022',
+      sub: 'Fertigstellung des ersten Portotypen ',
+      main: 'Happy Birthday! Mit dem ersten Prototypen ist KI.m offiziell "geboren" und es war eine große Freude sie zu testen und mit ihr Mentorings durchzuführen. Natürlich hatte die noch sehr junge KI.m noch Schwierigkeiten und es wurden einige Verbesserungepotenziale aufgedeckt.',
+    },
+    {
+      date: 'Juli 2022\n\n        ',
+      sub: 'Beginn der Entwicklungsphase für den zweiten Prototypen\n\n        ',
+      main: 'Da KI.m noch sehr jung ist, muss sie weiter lernen und sich entwickeln. Deshalb wurde in einer zweiten Entwicklungsphase damit begonnen, KI.m weiter zu verbessern, damit sie den Ansprüchen ihrer zukünftigen Mentees gerecht werden kann. ',
+    },
+    {
+      date: 'Oktober 2022 ',
+      sub: 'Geplante Fertigstellung des zweiten Prototypen\n\n        ',
+      main: 'Wenn alles wie geplant läuft, wird im Oktober der zweite Prototyp von KI.m fertiggestellt sein und KI.m bereits dazu in der Lage sein, begeisternde und hilfreiche Mentorings mit Führungskräften durchzuführen.',
+    },
+    {
+      date: 'Juni 2023\n\n        ',
+      sub: 'KI.m tritt in den Markt ein\n\n\n\n        ',
+      main: 'Voraussichtlich wird KI.m im Juni 2023 für ihre Mentees da sein um diese zu unterstützen. Bis dahin wird sie einen vollwertigen Mentor darstellen und ihnen als vertrauensvoller Partner mit Ratschlägen zur Seite stehen.\n\n        ',
+    },
+  ];
+
   return (
     <div className='drawer drawer-end'>
       <input id='my-drawer-1' type='checkbox' className='drawer-toggle' />
@@ -134,8 +182,9 @@ function Page() {
 
         <div className='flex w-full items-center justify-center '>
           {/* <div className='grid'> */}
-          <div className='drawer-button mt-20 flex flex-col flex-wrap items-center justify-start md:flex-row'>
+          <div className='drawer-button  mt-20 flex flex-col flex-wrap items-center justify-start md:flex-row'>
             <label
+              className='z-20'
               htmlFor='my-drawer-1'
               onClick={() =>
                 setSidebarData({
@@ -297,6 +346,7 @@ function Page() {
                     `Eric Heisch ist unser Sales-Experte. Eric begann sein Studium in Frankreich und setzte es dann in Deutschland fort. Innerhalb seines BWL-Studiums wählte er die Schwerpunkte Finanzen, Logistik, Marketing und Vertrieb. Aktuell schreibt er seine Bachelorarbeit an der Hochschule für Technik in Stuttgart, in der es um die Anwendung von Künstlicher Intelligenz in Unternehmen geht. Er kann zudem schon auf eine mehrjährige Sales-Erfahrung in der Branche der Informationsdienste zurückblicken.`,
                     `Eric ist in seiner Position aktuell für den Vertriebsprozess von KI.m verantwortlich. Dies umfasst die Akquise neuer Kunden, die Betreuung bestehender Kunden sowie die Beantwortung sämtlicher Fragen und Anliegen. 
                   `,
+                    `________________________________________________________`,
                     `Wo ist dein Lieblingsort, um abzuschalten und neue Ideen zu sammeln?`,
                     `Am liebsten am Strand`,
 
@@ -315,9 +365,9 @@ function Page() {
                 })
               }
             >
-              <div className='group relative mx-[50px] md:mx-0'>
+              <div className='group relative md:mx-0'>
                 <Image
-                  className='cursor-pointer transition-opacity duration-300 group-hover:opacity-50 md:h-[525px] md:w-[488px]'
+                  className='cursor-pointer transition-opacity duration-300 group-hover:opacity-50  md:h-[525px] md:w-[488px]'
                   src={Team4}
                   alt='team4'
                 />
@@ -332,7 +382,7 @@ function Page() {
               </div>
             </label>
 
-            <div className='hidden items-center justify-center md:col-span-1 md:flex'>
+            {/* <div className='hidden items-center justify-center md:col-span-1 md:flex'>
               <div className=' w-[488px] flex-col items-center justify-center md:flex '>
                 <div className='mt-10 text-center text-4xl font-semibold text-white'>
                   Werde Teil <br /> des Teams
@@ -347,11 +397,14 @@ function Page() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <Link href={'/careers'} className='md:h-[525px] md:w-[488px] overflow-hidden'>
+              <Image width={488} height={525} src={Rec} alt='re' />
+            </Link>
           </div>
         </div>
 
-        <div className='mt-10 text-center text-4xl font-semibold text-white md:hidden'>
+        <div className='mb-10 mt-10 text-center text-4xl font-semibold text-white md:hidden'>
           Werde Teil <br /> des Teams
         </div>
 
@@ -530,7 +583,7 @@ function Page() {
         <div className='relative mb-20'>
           <div className='absolute z-10 mt-96 h-[770px] w-[1000px] bg-blue-400 bg-opacity-50 blur-[1200px]' />
           <div className='flex flex-col items-center justify-center'></div>
-          <div>
+          <div className='hidden md:block'>
             <Carousel
               containerProps={{
                 style: {
@@ -595,6 +648,22 @@ function Page() {
               ))}
             </Carousel>
           </div>
+
+          <div className='px-10 md:hidden'>
+            {roadmapContentmob.map((item, index) => (
+              <div key={index} className='z- mt-16 flex  flex-col space-y-10'>
+                <Roadmap
+                  date={item.date}
+                  title={item.sub}
+                  description={item.main}
+                />
+                <div className='relative hidden w-[1232px]  border-t border-stone-300 md:block '>
+                  <div className='absolute left-10 top-[-1.2px] h-[5px] w-6 border-t-2 border-white' />
+                  <div className='absolute right-10 top-[-1.2px] h-[5px] w-6 border-t-2 border-white' />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -604,7 +673,23 @@ function Page() {
           aria-label='close sidebar'
           className='drawer-overlay'
         ></label>
-        <div className='min-h-full w-[718px] bg-white'>
+        <div className='min-h-full w-full bg-white md:w-[718px]'>
+          <button
+            className='btn btn-circle absolute right-1 top-1'
+            onClick={() => {
+              document.getElementById('my-drawer-1')?.click();
+            }}
+          >
+            <svg
+              className='swap-on fill-current'
+              xmlns='http://www.w3.org/2000/svg'
+              width='32'
+              height='32'
+              viewBox='0 0 512 512'
+            >
+              <polygon points='400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49' />
+            </svg>
+          </button>
           <div className='flex flex-col items-center justify-center'>
             <Image
               placeholder='blur'

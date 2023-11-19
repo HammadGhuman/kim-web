@@ -24,22 +24,26 @@ function CookieBanner() {
       title: 'Analytics-Cookies',
     },
   ];
-  const [hidden,setHidden] = useState(false);
+  const [hidden, setHidden] = useState(false);
   return (
-    <div className={`${hidden ? "hidden" : "block"}`}>
+    <div className={`${hidden ? 'hidden' : 'block'}`}>
       <div className=''>
-        <button onClick={()=>setHidden(true)} className='flex h-[54.19px] w-[252px] items-center justify-center rounded-r-xl bg-[#B77828] px-3'>
+        <button
+          onClick={() => setHidden(true)}
+          className='flex h-[54.19px] w-[252px] items-center justify-center rounded-r-xl bg-[#b77828]
+     px-3 transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+        >
           <h1 className="mr-3 text-center font-['Marsden'] text-base font-medium leading-[72px] text-white">
             Cookie-Einstellungen
           </h1>
           <Image className='mt-1' src={CookieButtonTop} alt='close' />
         </button>
-        <div className='flex flex-col md:flex-row md:h-[185px] justify-around border border-white border-opacity-30 bg-blue-400 bg-opacity-20 px-4'>
+        <div className='flex flex-col justify-around border border-white border-opacity-30 bg-blue-400 bg-opacity-20 px-4 md:h-[185px] md:flex-row'>
           <div>
             <h1 className="mt-10 font-['Marsden'] text-[32px] font-semibold leading-7 text-white">
               Cookies
             </h1>{' '}
-            <p className="mt-3 md:w-[1207px] font-['Marsden'] text-[15px] font-normal leading-7 text-white">
+            <p className="mt-3 font-['Marsden'] text-[15px] font-normal leading-7 text-white md:w-[1207px]">
               We’d like to collect data from your device while you use this
               website. This helps give you the best experience, keeps your
               account secure and supports personalised marketing on our website
@@ -48,18 +52,22 @@ function CookieBanner() {
               out more: cookie policy
             </p>
           </div>
-          <div className='flex md:flex-col md:space-x-0 space-x-6 md:items-center md:justify-between py-10'>
+          <div className='flex space-x-6 py-10 md:flex-col md:items-center md:justify-between md:space-x-0'>
             <button
-            //@ts-ignore
+              //@ts-ignore
               onClick={() => document.getElementById('my_modal_3').showModal()}
-              className='flex  h-[47px] w-[171px] items-center justify-center rounded-[5px] border border-white'
+              className='flex  h-[47px] w-[171px] items-center justify-center rounded-[5px] border border-white hover:border-[#b77828] hover:bg-[#b77828] transition-all duration 300 focus:scale-90'
             >
               {' '}
               <h1 className="font-['Marsden'] text-xl font-medium text-white">
                 Preferences
               </h1>
             </button>
-            <button  onClick={()=>setHidden(true)}  className='flex h-[47px] w-[171px] items-center justify-center rounded-[5px] bg-yellow-600'>
+            <button
+              onClick={() => setHidden(true)}
+              className='flex h-[47px] w-[171px] items-center justify-center rounded-[5px] bg-[#b77828]
+              transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+            >
               <h1 className="font-['Marsden'] text-xl font-medium text-white">
                 Accept All
               </h1>

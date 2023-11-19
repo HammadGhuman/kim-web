@@ -44,7 +44,7 @@ function LeaderShipDial() {
         <h1>PERSONALITY</h1>
       </div>
       <div className='absolute -right-[6.5rem] top-[8.5rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
-        <h1>SELF_EFFICACY</h1>
+        <h1>SELF EFFICACY</h1>
       </div>
       <div className='absolute -right-[1rem] top-[12rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>POWER</h1>

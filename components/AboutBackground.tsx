@@ -15,7 +15,7 @@ function PartnerBackground() {
   }, []);
 
   return (
-    <div className='relative group'>
+    <div className='group relative hover:cursor-pointer'>
       <video
         onClick={() => setMute(!mute)}
         ref={videoRef}
@@ -24,12 +24,18 @@ function PartnerBackground() {
         src='video11.mp4'
       ></video>
       {mute && (
-        <div className='hidden opacity-50 group-hover:block absolute bottom-4 right-3'>
+        <div
+          onClick={() => setMute(!mute)}
+          className='absolute bottom-4 right-3 hidden opacity-50 group-hover:block'
+        >
           <Image width={30} height={30} src={Mute} alt='mute' />
         </div>
       )}
       {!mute && (
-        <div className='hidden opacity-50 group-hover:block absolute bottom-4 right-3'>
+        <div
+          onClick={() => setMute(!mute)}
+          className='absolute bottom-4 right-3 hidden opacity-50 group-hover:block'
+        >
           <Image width={30} height={30} src={Speaker} alt='mute' />
         </div>
       )}
