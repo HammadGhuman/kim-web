@@ -2,16 +2,16 @@ import React from 'react';
 
 function Page() {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center px-4'>
       <div className='mt-20 w-[201px] text-center font-Marsden text-[32px] font-semibold leading-[72px] text-white md:w-auto md:text-[62px]'>
         Cookie-Richtlinie
       </div>
-      <div className="mt-16 w-[805px]  text-center font-['Marsden'] text-2xl font-medium text-white">
+      <div className="mt-16 w-auto text-center  font-['Marsden'] text-2xl font-medium text-white md:w-[805px]">
         KI Mentor Technology GmbH Amtsgericht Mannheim HRB 744712
         Geschäftsführer: Christian Krauter
       </div>
-      <div className='mb-10 w-[820px]  text-center '>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+      <div className='mb-10 w-auto text-center  md:w-[820px] '>
+        <span className="font-['Marsden'] text-xl font-medium leading-10 text-white md:text-[32px] md:leading-[74.08px]">
           <br />
           1. Was ist ein Cookie?
           <br />
@@ -44,10 +44,10 @@ function Page() {
           <br />​<br />
           Sehen Sie{' '}
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white underline md:text-[32px] md:leading-[74.08px]">
           hier
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white md:text-[32px] md:leading-[74.08px]">
           {' '}
           nach, welche Cookies auf Websites von Wix verwendet werden können.
           <br />​<br />​<br />
@@ -57,17 +57,17 @@ function Page() {
           Cookies gesetzt wurden und wie man sie verwaltet, löscht und
           blockiert, besuchen Sie{' '}
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white underline md:text-[32px] md:leading-[74.08px]">
           www.aboutcookies.org
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white md:text-[32px] md:leading-[74.08px]">
           {' '}
           oder{' '}
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white underline md:text-[32px] md:leading-[74.08px]">
           www.allaboutcookies.org
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white md:text-[32px] md:leading-[74.08px]">
           .<br />​<br />
           Alternativ ist es auch möglich, dass Ihr Browser Cookies grundsätzlich
           blockiert. Dazu müssen Sie die Cookie-Einstellungen in Ihrem Browser
@@ -84,41 +84,41 @@ function Page() {
           „Hilfe“ in Ihrem Browser aufrufen.
           <br />
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white underline md:text-[32px] md:leading-[74.08px]">
           Cookie-Einstellungen in Firefox
           <br />
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white underline md:text-[32px] md:leading-[74.08px]">
           Cookie-Einstellungen im Internet Explorer
           <br />
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white underline md:text-[32px] md:leading-[74.08px]">
           Cookie-Einstellungen in Google Chrome
           <br />
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white underline md:text-[32px] md:leading-[74.08px]">
           Cookie-Einstellungen in Safari (OS X)
           <br />
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white underline md:text-[32px] md:leading-[74.08px]">
           Cookie-Einstellungen in Safari (iOS)
           <br />
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white underline md:text-[32px] md:leading-[74.08px]">
           Cookie-Einstellungen in Android
           <br />
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white md:text-[32px] md:leading-[74.08px]">
           ​<br />
           Um die Verwendung Ihrer Daten durch Google Analytics auf allen
           Websites abzulehnen und zu verhindern, lesen Sie die folgenden
           Anweisungen:{' '}
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white underline">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white underline md:text-[32px] md:leading-[74.08px]">
           https://tools.google.com/dlpage/gaoptout.
           <br />
         </span>
-        <span className="font-['Marsden'] text-[32px] font-medium leading-[74.08px] text-white">
+        <span className="font-['Marsden']  text-xl font-medium leading-10 text-white md:text-[32px] md:leading-[74.08px]">
           Wir können diese Cookie-Richtlinie aktualisieren. Wir bitten Sie,
           diese Seite regelmäßig aufzurufen, um sich über den aktuellen Stand in
           Bezug auf die Verwendung von Cookies auf dem Laufenden zu halten.

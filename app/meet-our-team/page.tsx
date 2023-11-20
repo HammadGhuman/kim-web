@@ -34,6 +34,7 @@ import ReadMoreButton from '@/components/ReadMoreButton';
 import Roadmap from '@/components/Roadmap';
 import Arrow from '@/public/right-arrow.png';
 import Link from 'next/link';
+import RoadmapCarousel from '@/components/RoadMapCarousal';
 function Page() {
   const [sidebarData, setSidebarData] = useState<any>({});
   const [activeSlide, setActiveSlide] = useState(0);
@@ -398,7 +399,10 @@ function Page() {
                 </div>
               </div>
             </div> */}
-            <Link href={'/careers'} className='md:h-[525px] md:w-[488px] overflow-hidden'>
+            <Link
+              href={'/careers'}
+              className='overflow-hidden md:h-[525px] md:w-[488px]'
+            >
               <Image width={488} height={525} src={Rec} alt='re' />
             </Link>
           </div>
@@ -580,90 +584,22 @@ function Page() {
           Roadmap
         </div>
 
-        <div className='relative mb-20'>
-          <div className='absolute hidden md:block z-10 mt-96 h-[770px] w-[1000px] bg-blue-400 bg-opacity-50 blur-[1200px]' />
-          <div className='flex flex-col items-center justify-center'></div>
-          <div className='hidden md:block'>
-            <Carousel
-              containerProps={{
-                style: {
-                  width: '100%',
-                  justifyContent: 'space-between',
-                  userSelect: 'none',
-                },
-              }}
-              swipeTreshold={60}
-              activeSlideIndex={activeSlide}
-              onRequestChange={setActiveSlide}
-              forwardBtnProps={{
-                children: (
-                  <div className='mx-10 cursor-pointer rounded-md border-[1px] border-white bg-white/10 px-4 py-4 text-white  hover:bg-white/40 group-hover:block'>
-                    <Image
-                      src={Arrow}
-                      className='rotate-90'
-                      alt='arrow'
-                      width={20}
-                    />
-                  </div>
-                ),
-              }}
-              backwardBtnProps={{
-                children: (
-                  <div className='mx-10 cursor-pointer rounded-md border-[1px] border-white bg-white/10 px-4 py-4 text-white  hover:bg-white/40 group-hover:block'>
-                    <Image
-                      src={Arrow}
-                      className='-rotate-90'
-                      alt='arrow'
-                      width={20}
-                    />
-                  </div>
-                ),
-              }}
-              itemsToShow={1}
-              speed={400}
-              centerMode
-            >
-              {roadmapContent.map((item, index) => (
-                <div key={index} className='z- mt-16 flex  flex-col space-y-10'>
-                  <Roadmap
-                    date={item[0].date}
-                    title={item[0].sub}
-                    description={item[0].main}
-                  />
-                  <div className='relative hidden w-[1232px]  border-t border-stone-300 md:block '>
-                    <div className='absolute left-10 top-[-1.2px] h-[5px] w-6 border-t-2 border-white' />
-                    <div className='absolute right-10 top-[-1.2px] h-[5px] w-6 border-t-2 border-white' />
-                  </div>
+        <RoadmapCarousel />
 
-                  {item[1] && (
-                    <div className='md:w-[700px] md:self-end'>
-                      <Roadmap
-                        date={item[1].date}
-                        title={item[1].sub}
-                        description={item[1].main}
-                      />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </Carousel>
-          </div>
-
-          <div className='px-10 md:hidden'>
-            {roadmapContentmob.map((item, index) => (
-              <div key={index} className='z- mt-16 flex  flex-col space-y-10'>
-                <Roadmap
-                  date={item.date}
-                  title={item.sub}
-                  description={item.main}
-                />
-                <div className='relative hidden w-[1232px]  border-t border-stone-300 md:block '>
-                  <div className='absolute left-10 top-[-1.2px] h-[5px] w-6 border-t-2 border-white' />
-                  <div className='absolute right-10 top-[-1.2px] h-[5px] w-6 border-t-2 border-white' />
-                </div>
+        <div className='px-10 md:hidden'>
+          {roadmapContentmob.map((item, index) => (
+            <div key={index} className='z- mt-16 flex  flex-col space-y-10'>
+              <Roadmap
+                date={item.date}
+                title={item.sub}
+                description={item.main}
+              />
+              <div className='relative hidden w-[1232px]  border-t border-stone-300 md:block '>
+                <div className='absolute left-10 top-[-1.2px] h-[5px] w-6 border-t-2 border-white' />
+                <div className='absolute right-10 top-[-1.2px] h-[5px] w-6 border-t-2 border-white' />
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -713,7 +649,7 @@ function Page() {
               <h1 className="w-auto text-center font-['Marsden'] text-2xl font-medium leading-[37.50px] text-yellow-600">
                 {sidebarData.position}
               </h1>
-              <div className='pb-10 w-[80%]'>
+              <div className='w-[80%] pb-10'>
                 {sidebarData.description?.map((date: any) => (
                   <h1 className=" text-center font-['Marsden']  text-base font-light leading-[27px] text-black">
                     {date.endsWith('?') ? (

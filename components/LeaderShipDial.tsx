@@ -16,13 +16,13 @@ function LeaderShipDial() {
       <div className='absolute -left-[6rem] top-[5rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>PSYCHOLOGY</h1>
       </div>
-      <div className='absolute -left-[3.75rem] top-[8.5rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
+      <div className='absolute -left-[4rem] top-[8.5rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>STRESS</h1>
       </div>
       <div className='absolute -left-[8rem] top-[12rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>INFLUENCE</h1>
       </div>
-      <div className='absolute -left-[5rem] top-[15.5rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
+      <div className='absolute -left-[5.3rem] top-[15.5rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>POWER</h1>
       </div>
       <div className='absolute -left-[5.75rem] top-[19rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
@@ -31,7 +31,7 @@ function LeaderShipDial() {
       <div className='absolute -left-[7.5rem] top-[22rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>HIERARCHY</h1>
       </div>
-      <div className='absolute -left-[2rem] top-[25rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
+      <div className='absolute -left-[2.6rem] top-[25rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>ETHICS</h1>
       </div>
       <div className='absolute left-[2rem] top-[28rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
@@ -40,10 +40,10 @@ function LeaderShipDial() {
 
       {/* right side  */}
 
-      <div className='absolute -right-[3rem] top-[5rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
+      <div className='absolute -right-[2.8rem] top-[5rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>PERSONALITY</h1>
       </div>
-      <div className='absolute -right-[6.5rem] top-[8.5rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
+      <div className='absolute -right-[6rem] top-[8.5rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>SELF EFFICACY</h1>
       </div>
       <div className='absolute -right-[1rem] top-[12rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
@@ -58,10 +58,10 @@ function LeaderShipDial() {
       <div className='absolute -right-[2.25rem] top-[22rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>BEHAVIOR</h1>
       </div>
-      <div className='absolute -right-[2.5rem] top-[25rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
+      <div className='absolute -right-[2.9rem] top-[25rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>BASIC NEEDS</h1>
       </div>
-      <div className='absolute -right-[0.5rem] top-[28rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
+      <div className='absolute -right-[1rem] top-[28rem] text-2xl font-semibold text-[#70819E] transition-all duration-150 hover:scale-125 hover:cursor-pointer hover:text-white'>
         <h1>WILLINGNESS</h1>
       </div>
     </div>

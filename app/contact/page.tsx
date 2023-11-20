@@ -58,7 +58,7 @@ function Page() {
       </div>
 
       <form className='mx-5 mt-16  gap-5 md:grid md:grid-cols-2'>
-        <div className='flex flex-col text-xl text-white'>
+        <div className='col-span-2 flex flex-col text-xl text-white md:col-span-1'>
           <label htmlFor='vorname' className='mb-3'>
             Vorname*
           </label>
@@ -69,7 +69,7 @@ function Page() {
           />
         </div>
 
-        <div className='flex flex-col text-xl text-white'>
+        <div className='col-span-2 flex flex-col text-xl text-white md:col-span-1'>
           <label htmlFor='Nachname' className='mb-3'>
             Nachname*
           </label>
@@ -80,7 +80,7 @@ function Page() {
           />
         </div>
 
-        <div className='flex flex-col text-xl text-white'>
+        <div className='col-span-2 flex flex-col text-xl text-white md:col-span-1'>
           <label htmlFor='Unternehmen' className='mb-3'>
             Unternehmen*
           </label>
@@ -91,7 +91,7 @@ function Page() {
           />
         </div>
 
-        <div className='flex flex-col text-xl text-white'>
+        <div className='col-span-2 flex flex-col text-xl text-white md:col-span-1'>
           <label htmlFor='E-Mail-Adresse' className='mb-3'>
             E-Mail-Adresse*
           </label>

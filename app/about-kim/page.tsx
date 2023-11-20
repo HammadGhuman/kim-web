@@ -282,8 +282,8 @@ function page() {
 
       <div className='mb-10 mt-10 flex flex-col items-center justify-center space-y-10 md:flex-row md:space-x-16 md:space-y-0'>
         <div className='flex flex-col items-center justify-center space-y-5'>
-          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white underline">
-            1. PHD arbeit
+          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white ">
+            1. Paper
           </div>
           <button
             className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
@@ -295,8 +295,8 @@ function page() {
           </button>
         </div>
         <div className='flex flex-col items-center justify-center space-y-5'>
-          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white underline">
-            2. Studie{' '}
+          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white ">
+            2. Paper{' '}
           </div>
           <button
             className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
@@ -308,8 +308,8 @@ function page() {
           </button>
         </div>
         <div className='flex flex-col items-center justify-center space-y-5'>
-          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white underline">
-            3. Studie{' '}
+          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white ">
+            3. Paper{' '}
           </div>
           <button
             className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
@@ -321,8 +321,63 @@ function page() {
           </button>
         </div>
         <div className='flex flex-col items-center justify-center space-y-5'>
-          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white underline">
-            4. Buch Titel{' '}
+          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white ">
+            4. Paper{' '}
+          </div>
+          <button
+            className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
+     transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+          >
+            <h1 className="font-['Marsden'] text-xl font-medium text-white">
+              Download
+            </h1>
+          </button>
+        </div>
+      </div>
+
+      <div className='mb-10 mt-10 flex flex-col items-center justify-center space-y-10 md:flex-row md:space-x-16 md:space-y-0'>
+        <div className='flex flex-col items-center justify-center space-y-5'>
+          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white ">
+            5. Paper
+          </div>
+          <button
+            className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
+     transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+          >
+            <h1 className="font-['Marsden'] text-xl font-medium text-white">
+              Download
+            </h1>
+          </button>
+        </div>
+        <div className='flex flex-col items-center justify-center space-y-5'>
+          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white ">
+            6. Paper
+          </div>
+          <button
+            className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
+     transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+          >
+            <h1 className="font-['Marsden'] text-xl font-medium text-white">
+              Download
+            </h1>
+          </button>
+        </div>
+        <div className='flex flex-col items-center justify-center space-y-5'>
+          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white ">
+            7. Paper
+          </div>
+          <button
+            className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]
+     transition-all duration-200 hover:bg-yellow-700 focus:scale-90'
+          >
+            <h1 className="font-['Marsden'] text-xl font-medium text-white">
+              Download
+            </h1>
+          </button>
+        </div>
+        <div className='flex flex-col items-center justify-center space-y-5'>
+          <div className="text-center font-['Marsden'] text-[32px] font-semibold leading-[62.89px] text-white ">
+            8. Book
           </div>
           <button
             className='flex h-[61px] w-[225px] items-center justify-center rounded-[10px] bg-[#b77828]

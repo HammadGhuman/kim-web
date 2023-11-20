@@ -17,6 +17,7 @@ import Image from 'next/image';
 import GestureCard from '@/components/GestureCard';
 import Link from 'next/link';
 import CookieBanner from '@/components/CookieBanner';
+import CookieBanner2 from '@/components/CookieBanner2';
 export default function Home() {
   const cards = [
     {
@@ -92,7 +93,8 @@ export default function Home() {
           ></Link>
         </div>
       </div>
-      <CookieBanner />
+      {/* <CookieBanner /> */}
+      <CookieBanner2 />
     </main>
   );
 }

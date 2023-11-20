@@ -21,13 +21,31 @@ function TeamCard({ img, name, position, index }: Props) {
           src={img}
         />
         {index === 0 && (
-          <div className='absolute -left-2 md:left-3 top-20 h-4 w-4 rounded-full bg-yellow-600' />
+          <div
+            style={{
+              WebkitAnimation: 'circle 20s linear infinite',
+              animation: 'circle 20s linear infinite',
+            }}
+            className='absolute bottom-0 left-0 right-0 top-0 m-auto h-4 w-4 rounded-full bg-yellow-600'
+          />
         )}
         {index === 1 && (
-          <div className='absolute -right-1 top-16 h-4 w-4 rounded-full bg-yellow-600 md:right-5' />
+          <div
+            style={{
+              WebkitAnimation: 'circle 25s linear infinite',
+              animation: 'circle 25s linear infinite',
+            }}
+            className='absolute bottom-0 top-0 left-0 right-0 m-auto h-4 w-4 rounded-full bg-yellow-600 '
+          />
         )}
         {index === 2 && (
-          <div className='absolute -right-2 bottom-20 h-4 w-4 rounded-full bg-yellow-600 md:right-3' />
+          <div
+            style={{
+              WebkitAnimation: 'circle 30s linear infinite',
+              animation: 'circle 30s linear infinite',
+            }}
+            className='absolute bottom-0 left-0 right-0 top-0 m-auto h-4 w-4 rounded-full bg-yellow-600'
+          />
         )}
       </div>
       <div className='text-2xl font-medium leading-[72px] tracking-tight text-white'>

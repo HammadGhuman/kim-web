@@ -4,7 +4,7 @@ import React from 'react';
 import Carousel from 'react-simply-carousel';
 import Arrow from '@/public/right-arrow.png';
 import Image from 'next/image';
-function page() {
+function RoadmapCarousel() {
   const [sidebarData, setSidebarData] = React.useState<any>({});
   const [activeSlide, setActiveSlide] = React.useState(0);
   const roadmapContent = [
@@ -84,7 +84,7 @@ function page() {
   ];
 
   return (
-    <div className='mt-20 '>
+    <div className=' w-screen'>
       <Carousel
         containerProps={{
           style: {
@@ -146,4 +146,4 @@ function page() {
     </div>
   );
 }
-export default page;
+export default RoadmapCarousel;

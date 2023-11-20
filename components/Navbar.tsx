@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import Logo from '@/public/MobileLogo.png';
+import Logo from '@/public/KIm.png';
 import Hamburger from '@/public/Hamburger.svg';
 import Arrow from '@/public/arrow.svg';
 import CLose from '@/public/icons8-close.svg';
@@ -13,8 +13,7 @@ function Navbar() {
   return (
     <div className='overflow-x-hidden overflow-y-hidden pb-[102px]'>
       <div className='fixed z-50 flex w-full items-center  justify-between bg-image  bg-cover bg-no-repeat px-5 py-5 font-Marsden'>
-       
-        <Link href='/' className=''>
+        <Link href='/' className='w-16 h-16'>
           <Image src={Logo} alt='Logo' />
         </Link>
         <div
