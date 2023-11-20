@@ -7,14 +7,14 @@ function AboutKimMobileCard() {
   return (
     <div className='flex flex-col'>
       <div className='mt-20 flex flex-col md:flex-row'>
-        <div className="md:h-[370px]  w-auto md:w-[586px] px-5 text-justify font-['Marsden'] text-2xl font-normal leading-10 md:leading-[74px] tracking-tight text-white">
+        <div className="md:h-[370px]   w-screen md:w-[586px] px-5 text-justify font-['Marsden'] text-2xl font-normal leading-10 md:leading-[74px] tracking-tight text-white">
           Im Rahmen einer ganzheitlichen Learning-Journey, durchläuft eine
           Führungskraft ein strukturiertes und systematisches
           Kompetenzentwicklungsprogramm, welches in unterschiedlichen Phasen
           Möglichkeiten für Lernen, Reflexion und Evaluation mit einbezieht.
         </div>
         <Image
-          className='ml-24 md:h-[554px] md:w-[375px] w-[329px] h-auto md:mt-0 mt-8'
+          className=' md:h-[554px] md:w-[375px] w-[329px] h-auto md:mt-0 mt-8'
           src={Mobile1}
           alt='mobile'
         />

@@ -171,7 +171,7 @@ function Page() {
   ];
 
   return (
-    <div className='drawer drawer-end'>
+    <div className='drawer drawer-end overflow-hidden'>
       <input id='my-drawer-1' type='checkbox' className='drawer-toggle' />
 
       <div className='drawer-content mx-0 flex flex-col items-center justify-center px-0 font-Marsden'>
@@ -581,7 +581,7 @@ function Page() {
         </div>
 
         <div className='relative mb-20'>
-          <div className='absolute z-10 mt-96 h-[770px] w-[1000px] bg-blue-400 bg-opacity-50 blur-[1200px]' />
+          <div className='absolute hidden md:block z-10 mt-96 h-[770px] w-[1000px] bg-blue-400 bg-opacity-50 blur-[1200px]' />
           <div className='flex flex-col items-center justify-center'></div>
           <div className='hidden md:block'>
             <Carousel
@@ -713,9 +713,9 @@ function Page() {
               <h1 className="w-auto text-center font-['Marsden'] text-2xl font-medium leading-[37.50px] text-yellow-600">
                 {sidebarData.position}
               </h1>
-              <div className='pb-10'>
+              <div className='pb-10 w-[80%]'>
                 {sidebarData.description?.map((date: any) => (
-                  <h1 className=" text-center font-['Marsden'] text-base font-light leading-[27px] text-black">
+                  <h1 className=" text-center font-['Marsden']  text-base font-light leading-[27px] text-black">
                     {date.endsWith('?') ? (
                       <span className='font-semibold'>{date}</span>
                     ) : (

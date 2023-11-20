@@ -7,16 +7,16 @@ type Props = {
 
 function ModalContent({ title, description }: Props) {
   return (
-    <div className='flex border-b-2 pb-8'>
+    <div className='flex  justify-between border-b-2 pb-8'>
       <div className='flex flex-col items-start'>
-        <h1 className="text-center font-['Marsden'] text-2xl font-medium leading-[72px] text-white">
+        <h1 className="text-center font-['Marsden'] md:text-2xl font-medium leading-[72px] text-white">
           {title}
         </h1>
-        <h1 className="w-[1091px] font-['Marsden'] text-xl font-medium text-white">
+        <h1 className="md:w-[1091px] font-['Marsden'] md:text-xl font-medium text-white">
           {description}
         </h1>
       </div>
-      <input  type='checkbox' className='toggle toggle-warning mt-10' />
+      <input  type='checkbox' className='toggle toggle-warning md:mt-10 mt-6' />
     </div>
   );
 }

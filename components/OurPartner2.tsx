@@ -15,8 +15,8 @@ function OurPartners2() {
   const router = useRouter();
 
   return (
-    <div className='mt-12 md:mt-0'>
-      <div className='text-center md:hidden'>
+    <div className='mt-12 md:mt-0 w-screen overflow-hidden '>
+      <div className='text-center md:hidden '>
         <span className='text-4xl font-medium leading-[44px]  tracking-wide text-white'>
           Unsere
         </span>
@@ -25,7 +25,7 @@ function OurPartners2() {
         </span>
       </div>
 
-      <div className='relative mt-10 flex px-96 flex-col items-center justify-between space-y-10 md:flex-row md:justify-between md:space-y-0 md:bg-[#263A64] md:pr-10'>
+      <div className='relative mt-10 flex flex-col items-center justify-between space-y-10 md:flex-row md:justify-between md:space-y-0 md:bg-[#263A64] md:pr-10'>
         <div
           onClick={() => router.push('/partners')}
           className='absolute z-10 hidden h-[200px] min-w-[450px] cursor-pointer bg-[#263a64] md:block md:pl-10'

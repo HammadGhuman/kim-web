@@ -12,7 +12,7 @@ function Reply() {
       // action="https://formsubmit.co/Christian.Krauter@ki-mentor.com"
       action='https://formsubmit.co/ghumanhammad420@gmail.com'
       method='POST'
-      className='flex flex-col'
+      className='flex flex-col items-center justify-center w-screen'
     >
       <div
         id='BewerbenSiesichjetztalsPartner'

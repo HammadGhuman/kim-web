@@ -56,7 +56,7 @@ function CookieBanner() {
             <button
               //@ts-ignore
               onClick={() => document.getElementById('my_modal_3').showModal()}
-              className='flex  h-[47px] w-[171px] items-center justify-center rounded-[5px] border border-white hover:border-[#b77828] hover:bg-[#b77828] transition-all duration 300 focus:scale-90'
+              className='duration  300 flex h-[47px] w-[171px] items-center justify-center rounded-[5px] border border-white transition-all hover:border-[#b77828] hover:bg-[#b77828] focus:scale-90'
             >
               {' '}
               <h1 className="font-['Marsden'] text-xl font-medium text-white">
@@ -76,15 +76,14 @@ function CookieBanner() {
         </div>
       </div>
       <dialog id='my_modal_3' className='modal '>
-        <div className='modal-box min-w-[1200px]  rounded bg-image bg-cover bg-no-repeat'>
+        <div className='modal-box rounded  bg-image bg-cover bg-no-repeat md:min-w-[1200px]'>
           <form method='dialog'>
-            {/* if there is a button in form, it will close the modal */}
             <button className='btn btn-circle btn-ghost btn-sm absolute right-2 top-2'>
               ✕
             </button>
           </form>
           <div className='flex flex-col'>
-            <h1 className="text-start font-['Marsden'] text-[42px] font-medium leading-[72px] text-yellow-600">
+            <h1 className="text-start font-['Marsden'] md:text-[42px] font-medium leading-[72px] text-yellow-600">
               Erweiterte Cookie-Einstellungen
             </h1>
             {modalContent.map((item) => (

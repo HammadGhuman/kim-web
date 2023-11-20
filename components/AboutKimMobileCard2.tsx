@@ -13,7 +13,7 @@ function AboutKimMobileCard2() {
       <div className='mt-20 flex flex-col md:flex-row'>
         <div className='flex md:space-x-0 space-x-3 pl-5'>
           <Image src={Icons} alt='icons' />
-          <div className="-mt-1 flex md:h-[370px]  flex-col font-['Marsden'] text-2xl text-white">
+          <div className="-mt-1 flex md:h-[370px]  flex-col font-['Marsden'] md:text-2xl text-[12px] text-white">
             <h1 className='mt-5'>
               Situationsanalyse basierend auf Leadership-Modell
             </h1>
@@ -35,17 +35,17 @@ function AboutKimMobileCard2() {
             </h1>
           </div>
         </div>
-        <Image className='ml-24 md:mt-0 mt-10 h-[554px] w-[375px]' src={Mob1} alt='mobile' />
+        <Image className=' md:mt-0 mt-10 h-[554px] w-[375px]' src={Mob1} alt='mobile' />
       </div>
 
       <div className='mt-20 flex-col-reverse flex md:flex-row'>
         <Image
-          className='md:mr-20 ml-20 md:mt-0 mt-10 h-[554px] w-[375px] scale-x-[-1]'
+          className='md:mr-20 md:mt-0 mt-10 h-[554px] w-[375px] scale-x-[-1]'
           src={Mob2}
           alt='mobile'
         />
         <div className='flex items-center justify-center'>
-          <div className='h-[327px] md:w-[626px] px-3 md:text-right'>
+          <div className='md:h-[327px] md:w-[626px] px-3 md:text-right'>
             <span className="font-['Marsden'] text-[32px] font-semibold leading-[56.32px] text-yellow-600">
               Mit KI.m die alltäglichen <br />
             </span>
@@ -73,11 +73,11 @@ function AboutKimMobileCard2() {
             </span>
           </div>
         </div>
-        <Image className='md:mr-20 ml-10 mt-10 md:mt-0 h-[554px] w-[375px] ' src={Mob3} alt='mobile' />
+        <Image className='md:mr-20  mt-10 md:mt-0 h-[554px] w-[375px] ' src={Mob3} alt='mobile' />
       </div>
 
       <div className='mt-20 flex flex-col-reverse md:flex-row'>
-        <Image className='md:mr-20 ml-20 md:mt-0 mt-10 h-[554px] w-[375px] ' src={Mob4} alt='mobile' />
+        <Image className='md:mr-20  md:mt-0 mt-10 h-[554px] w-[375px] ' src={Mob4} alt='mobile' />
         <div className='flex items-center justify-center'>
           <div className='md:h-[327px] md:w-[628px] md:text-right px-3'>
             <span className="font-['Marsden'] text-[32px] font-semibold leading-[56.32px] text-yellow-600">
