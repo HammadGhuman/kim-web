@@ -37,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className=''>
-      <body className={` bg-image bg-cover bg-no-repeat`}>
+      <body className={`overflow-x-hidden bg-image bg-cover bg-no-repeat`}>
         <NextTopLoader />
         <Navbar />
         <div className=''>{children}</div>
